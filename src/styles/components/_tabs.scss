@@ -1,0 +1,52 @@
+.tabs {
+    @include flex;
+    align-items: center;
+    background: linear-gradient(239.5deg, rgba(255, 255, 255, 0.35) -0.02%, rgba(255, 255, 255, 0) 68.53%), #236eff;
+    border-radius: 20px;
+    @media(max-width: 575px) {
+        width: 432px;
+        overflow-x: scroll;
+        border-radius: 0px;
+        padding: 4px 0px 4px 30px;
+    }
+
+    // .tabs__content
+
+    &__content {
+        display: none;
+    }
+
+    // .tabs__content--active
+
+    &__content--active {
+        display: block;
+    }
+}
+
+.tabs.container {
+    max-width: $container;
+    padding: 7px;
+}
+
+.tab {
+    font-size: 16px;
+    line-height: 50px;
+    color: rgba(#fff, 0.6);
+    text-align: center;
+    cursor: pointer;
+    @media(max-width: 575px) {
+        width: auto;
+        padding: 0 6px;
+        font-size: 12px;
+    }
+    &--active {
+        background: rgba(255, 255, 255, 0.13);
+        border-radius: 20px;
+        padding: 9px 25px;
+        color: rgba(#fff, 1);
+        font-weight: 600;
+        @media(max-width: 575px) {
+            border-radius: 10px;
+        }
+    }
+}

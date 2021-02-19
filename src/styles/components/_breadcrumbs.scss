@@ -1,0 +1,23 @@
+.breadcrumbs {
+    a {
+        position: relative;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 16px;
+        padding-left: 21px;
+
+        &:before {
+            content: '';
+            position: absolute;
+            @include centerY;
+            left: 0;
+            width: 11px;
+            height: 8px;
+            background-image: url('../img/icons/arrows/crumb-arrow.svg');
+        }
+    }
+}
+
+.top-page .breadcrumbs a {
+    color: #fff;
+}

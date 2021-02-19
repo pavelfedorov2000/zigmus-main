@@ -1,0 +1,11 @@
+.sms-popup {
+    width: 375px;
+    min-height: 331px;
+
+    &__info {
+        font-weight: 500;
+        font-size: 12px;
+        opacity: 0.4;
+        margin-bottom: 20px;
+    }
+}
