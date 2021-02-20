@@ -4,6 +4,11 @@
     margin: 0 auto;
 }
 
+.wrapper {
+    position: relative;
+    overflow-x: hidden;
+}
+
 .flex {
     display: flex;
 }
@@ -27,11 +32,6 @@
     &--blue-bg {
         background: linear-gradient(180deg, #B5E0FF 0%, #B2DFFF 100%);
     }
-}
-
-.wrapper {
-    //position: relative;
-    overflow-x: hidden;
 }
 
 .icon-wrap {

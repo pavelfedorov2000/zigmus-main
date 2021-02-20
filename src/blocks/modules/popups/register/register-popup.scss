@@ -1,25 +1,28 @@
 .register-popup {
+    display: none;
     width: 750px;
     min-height: 630px;
+
+    &__block {
+        padding: 50px 40px;
+    }
+
     // .register-popup__form
 
     &__form {
         width: 50%;
+        box-shadow: 0px 10px 40px rgba(0, 4, 41, 0.05);
         padding-right: 40px;
     }
 
     // .register-popup__title
 
     &__title {
-        margin-bottom: 40px;
+
         // .register-popup__title--white
     }
 
-    &__form-item {
-        &:first-child {
-            margin-bottom: 10px;
-        }
-    }
+    &__form-item {}
 
     &__form-label {}
 
@@ -27,8 +30,9 @@
 
     // .register-popup__email-link
 
-    &__email-link {
-        margin-bottom: 10px;
+    &__link {
+        display: block;
+        margin: -10px 0 20px;
     }
 
     // .register-popup__btn
@@ -38,6 +42,7 @@
     }
 
     &__form-confirm {
+        @include center;
         line-height: 18px;
         margin-bottom: 30px;
 
@@ -49,6 +54,20 @@
         }
     }
 
+    &__form-confirm-check {
+        margin-right: 8px;
+    }
+
+    &__enter-btn {
+        height: 42px;
+        border-radius: 4px;
+        padding-left: 18px;
+        padding-right: 18px;
+        font-weight: 700;
+        line-height: 50px;
+        margin: 0 auto;
+    }
+
     // .register-popup__blue-block
 
     &__blue-block {
@@ -56,6 +75,10 @@
         padding-left: 40px;
         background: $blue;
         color: #ffffff;
+    }
+
+    &__blue-block-title {
+        max-width: 250px;
     }
 
     // .register-popup__benefits
@@ -69,29 +92,84 @@
     // .register-popup__benefits-item
 
     &__benefits-item {
-        position: relative;
-        padding-left: 70px;
+        align-items: center;
 
-        &::before,
-        &::after {
-            content: "";
-            position: absolute;
-            @include centerY;
-            border-radius: 50%;
-        }
-
-        &::before {
-            left: 0;
+        span {
+            position: relative;
+            display: block;
             width: 50px;
             height: 50px;
+            border-radius: 50%;
             background-color: #fff;
-        }
+            margin-right: 20px;
 
-        &:after {
-            left: 12px;
-            width: 26px;
-            height: 26px;
-            background-image: url("../img/icons/check.svg");
+            &:before,
+            &:after {
+                content: '';
+                position: absolute;
+                @include centerXY;
+            }
+
+            &:before {
+                display: block;
+                width: 26px;
+                height: 26px;
+                border: 1px solid $blue;
+                border-radius: 50%;
+            }
+
+            &:after {
+                width: 14px;
+                height: 10px;
+                background-image: url('../img/icons/blue-check.svg');
+                background-position: center;
+                background-size: contain;
+                background-repeat: no-repeat;
+            }
         }
     }
+
+    &__benefits-item+&__benefits-item {
+        margin-top: 10px;
+    }
 }
+
+.jq-checkbox {
+    @include center;
+    width: 10px;
+    height: 10px;
+    border: 1px solid rgba($blue, 0.6);
+    border-radius: 2px;
+    background: #fff;
+    box-shadow: none;
+    vertical-align: -2px;
+    //margin-right: 8px;
+}
+
+.jq-checkbox.checked {
+    background: transparent;
+    border: 1px solid rgba($blue, 0.6);
+}
+
+.jq-checkbox.checked .jq-checkbox {
+    &__div {
+        width: 8px;
+        height: 6px;
+        margin: 0;
+        border-bottom: none;
+        border-left: none;
+        transform: rotate(0deg);
+        background-image: url('../img/icons/checkbox.svg');
+    }
+}
+
+/* .jq-radio.checked .jq-radio {
+    &__div {
+        width: 0px;
+        height: 0px;
+        margin: 0;
+        border-radius: 0;
+        background: transparent;
+        box-shadow: none;
+    }
+} */

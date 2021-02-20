@@ -107,91 +107,111 @@
                 </div>
                 <div class="header__user-item header__avatar">
                     <div class="header__avatar-img"></div>
-                    <div class="header__user-name">Егор</div>
-                    <svg width="9" height="7" viewBox="0 0 9 7" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path
-                            d="M4.50022 6.06507C4.33892 6.06507 4.17764 6.00348 4.05467 5.88057L0.184871 2.01073C-0.0612983 1.76456 -0.0612983 1.36544 0.184871 1.11937C0.430941 0.873297 0.829984 0.873297 1.07617 1.11937L4.50022 4.54361L7.92429 1.11949C8.17046 0.873417 8.56946 0.873417 8.81551 1.11949C9.0618 1.36556 9.0618 1.76468 8.81551 2.01085L4.94577 5.88069C4.82274 6.00362 4.66146 6.06507 4.50022 6.06507Z"
-                            fill="black" />
-                    </svg>
+                    <div class="header__user-name">
+                        Егор
+                        <svg width="9" height="7" viewBox="0 0 9 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M4.50022 6.06507C4.33892 6.06507 4.17764 6.00348 4.05467 5.88057L0.184871 2.01073C-0.0612983 1.76456 -0.0612983 1.36544 0.184871 1.11937C0.430941 0.873297 0.829984 0.873297 1.07617 1.11937L4.50022 4.54361L7.92429 1.11949C8.17046 0.873417 8.56946 0.873417 8.81551 1.11949C9.0618 1.36556 9.0618 1.76468 8.81551 2.01085L4.94577 5.88069C4.82274 6.00362 4.66146 6.06507 4.50022 6.06507Z"
+                                fill="black" />
+                        </svg>
+                    </div>
                     <div class="dashboard header__dashboard header-dashboard">
                         <div class="dashboard__title header-dashboard__title">
                             Личный кабинет
-                        </div>
-                        <ul class="dashboard__list header-dashboard__list">
-                            <li class="dashboard__item header-dashboard__list-item">
-                                <img src="img/icons/dashboard/box.svg" alt="">
-                                <div class="dashboard__item-title">
-                                    Грузы
-                                </div>
-                            </li>
-                            <li class="dashboard__item header-dashboard__list-item">
-                                <img src="img/icons/dashboard/delivery-truck.svg" alt="">
-                                <div class="dashboard__item-menu">
-                                    <div class="dashboard__item-title">
-                                        Транспорт
+                            <ul class="dashboard__menu header-dashboard__menu">
+                                <li
+                                    class="dashboard__item header-dashboard__menu-item header-dashboard__menu-item--drop">
+                                    <div class="dashboard__item-header">
+                                        <img src="img/icons/dashboard/box.svg" alt="">
+                                        <div class="dashboard__item-title header-dashboard__item-title">
+                                            Грузы
+                                        </div>
                                     </div>
-                                    <ul class="dashboard__sublist header-dashboard__sublist">
-                                        <li class="dashboard__sublist-item header-dashboard__sublist-item">
-                                            <a class="header-dashboard__sublist-link" href="#">
+                                </li>
+                                <li
+                                    class="dashboard__item header-dashboard__menu-item header-dashboard__menu-item--drop">
+                                    <div class="dashboard__item-header">
+                                        <img src="img/icons/dashboard/delivery-truck.svg" alt="">
+                                        <div class="dashboard__item-title header-dashboard__item-title">
+                                            Транспорт
+                                        </div>
+                                    </div>
+                                    <ul class="dashboard__submenu header-dashboard__submenu">
+                                        <li class="dashboard__submenu-item header-dashboard__submenu-item">
+                                            <a class="dashboard__submenu-link header-dashboard__submenu-link" href="#">
                                                 Мой транспорт
                                             </a>
                                         </li>
-                                        <li class="dashboard__sublist-item header-dashboard__sublist-item">
-                                            <a class="header-dashboard__sublist-link" href="#">
+                                        <li class="dashboard__submenu-item header-dashboard__submenu-item">
+                                            <a class="dashboard__submenu-link header-dashboard__submenu-link" href="#">
                                                 Не подтверждённые
                                             </a>
                                         </li>
-                                        <li class="dashboard__sublist-item header-dashboard__sublist-item">
-                                            <a class="header-dashboard__sublist-link" href="#">
+                                        <li class="dashboard__submenu-item header-dashboard__submenu-item">
+                                            <a class="dashboard__submenu-link header-dashboard__submenu-link" href="#">
                                                 В работе
                                             </a>
                                         </li>
-                                        <li class="dashboard__sublist-item header-dashboard__sublist-item">
-                                            <a class="header-dashboard__sublist-link" href="#">
+                                        <li class="dashboard__submenu-item header-dashboard__submenu-item">
+                                            <a class="dashboard__submenu-link header-dashboard__submenu-link" href="#">
                                                 Скрытые
                                             </a>
                                         </li>
                                     </ul>
-                                </div>
-                            </li>
-                            <li class="dashboard__item header-dashboard__list-item">
-                                <img src="img/icons/dashboard/auction.svg" alt="">
-                                <div class="dashboard__item-title">
-                                    Аукцион
-                                </div>
-                            </li>
-                            <li class="dashboard__item header-dashboard__list-item">
-                                <img src="img/icons/dashboard/building.svg" alt="">
-                                <div class="dashboard__item-title">
-                                    Компания
-                                </div>
-                            </li>
-                            <li class="dashboard__item header-dashboard__list-item">
-                                <img src="img/icons/dashboard/settings.svg" alt="">
-                                <div class="dashboard__item-title">
-                                    Настройки
-                                </div>
-                            </li>
-                            <li class="dashboard__item header-dashboard__list-item">
-                                <img src="img/icons/dashboard/affiliate-marketing.svg" alt="">
-                                <div class="dashboard__item-title">
-                                    Реф. программа
-                                </div>
-                            </li>
-                            <li class="dashboard__item header-dashboard__list-item">
-                                <img src="img/icons/dashboard/discount.svg" alt="">
-                                <div class="dashboard__item-title">
-                                    Ваша скидка
-                                </div>
-                            </li>
-                            <li class="dashboard__item header-dashboard__list-item">
-                                <img src="img/icons/dashboard/megaphone.svg" alt="">
-                                <div class="dashboard__item-title">
-                                    Реклама
-                                </div>
-                            </li>
-                        </ul>
-                        <button id="exit" class="button dashboard__btn header-dashboard__btn button--transparent">
+                                </li>
+                                <li
+                                    class="dashboard__item header-dashboard__menu-item header-dashboard__menu-item--drop">
+                                    <div class="dashboard__item-header">
+                                        <img src="img/icons/dashboard/auction.svg" alt="">
+                                        <div class="dashboard__item-title header-dashboard__item-title">
+                                            Аукцион
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="dashboard__item header-dashboard__menu-item">
+                                    <div class="dashboard__item-header">
+                                        <img src="img/icons/dashboard/building.svg" alt="">
+                                        <div class="dashboard__item-title">
+                                            Компания
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="dashboard__item header-dashboard__menu-item">
+                                    <div class="dashboard__item-header">
+                                        <img src="img/icons/dashboard/settings.svg" alt="">
+                                        <div class="dashboard__item-title">
+                                            Настройки
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="dashboard__item header-dashboard__menu-item">
+                                    <div class="dashboard__item-header">
+                                        <img src="img/icons/dashboard/affiliate-marketing.svg" alt="">
+                                        <div class="dashboard__item-title">
+                                            Реф. программа
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="dashboard__item header-dashboard__menu-item">
+                                    <div class="dashboard__item-header">
+                                        <img src="img/icons/dashboard/discount.svg" alt="">
+                                        <div class="dashboard__item-title">
+                                            Ваша скидка
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="dashboard__item header-dashboard__menu-item">
+                                    <div class="dashboard__item-header">
+                                        <img src="img/icons/dashboard/megaphone.svg" alt="">
+                                        <div class="dashboard__item-title">
+                                            Реклама
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <button id="exit"
+                            class="button dashboard-btn dashboard__btn header-dashboard__btn button--transparent">
                             Выйти
                         </button>
                     </div>

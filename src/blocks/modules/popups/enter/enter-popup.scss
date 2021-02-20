@@ -1,4 +1,7 @@
 .enter-popup {
+    display: none;
+    min-height: 422px;
+
     &__title {
         margin-bottom: 40px;
     }
@@ -8,6 +11,8 @@
     }
 
     &__forgot-password {
+        display: block;
+        margin-top: 15px;
         text-align: center;
     }
 }
