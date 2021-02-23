@@ -1,5 +1,5 @@
 .overlay {
-    display: none;
+    //display: none;
     position: absolute;
     top: 0;
     right: 0;
@@ -52,39 +52,11 @@
 
     &__form-item {
         width: 100%;
-        background: #f5f9ff;
-        border: 1px solid rgba(35, 110, 255, 0.15);
-        border-radius: 6px;
         padding: 11px 20px;
         margin-bottom: 20px;
-
-        select {
-            position: relative;
-            padding-left: 25px;
-            background-image: url('../img/icons/belarus.png');
-            background-position: 0 center;
-            background-size: contain;
-            background-repeat: no-repeat;
-
-            /* &:before {
-                content: '';
-                @include centerY;
-                left: 0;
-                z-index: 10;
-                display: block;
-                width: 20px;
-                height: 20px;
-                background-image: url('../img/icons/belarus.png');
-            } */
-        }
     }
 
-    &__form-label {
-        display: block;
-        line-height: 12px;
-        opacity: 0.5;
-        margin-bottom: 3px;
-    }
+    &__form-label {}
 
     &__form-input {
         background-color: transparent;
@@ -107,6 +79,9 @@
         background-color: transparent;
         line-height: 18px;
         color: $blue;
+        display: block;
+        margin: -10px 0 20px;
+        cursor: pointer;
 
         span {
             border-bottom: 1px solid $blue;

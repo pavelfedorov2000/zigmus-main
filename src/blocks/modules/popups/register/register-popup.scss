@@ -30,10 +30,7 @@
 
     // .register-popup__email-link
 
-    &__link {
-        display: block;
-        margin: -10px 0 20px;
-    }
+    &__link {}
 
     // .register-popup__btn
 
@@ -133,43 +130,3 @@
         margin-top: 10px;
     }
 }
-
-.jq-checkbox {
-    @include center;
-    width: 10px;
-    height: 10px;
-    border: 1px solid rgba($blue, 0.6);
-    border-radius: 2px;
-    background: #fff;
-    box-shadow: none;
-    vertical-align: -2px;
-    //margin-right: 8px;
-}
-
-.jq-checkbox.checked {
-    background: transparent;
-    border: 1px solid rgba($blue, 0.6);
-}
-
-.jq-checkbox.checked .jq-checkbox {
-    &__div {
-        width: 8px;
-        height: 6px;
-        margin: 0;
-        border-bottom: none;
-        border-left: none;
-        transform: rotate(0deg);
-        background-image: url('../img/icons/checkbox.svg');
-    }
-}
-
-/* .jq-radio.checked .jq-radio {
-    &__div {
-        width: 0px;
-        height: 0px;
-        margin: 0;
-        border-radius: 0;
-        background: transparent;
-        box-shadow: none;
-    }
-} */

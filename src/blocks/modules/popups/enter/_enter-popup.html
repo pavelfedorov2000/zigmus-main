@@ -1,19 +1,30 @@
 <div id="enter-popup" class="popup enter-popup popup--mini">
     <form action="#" class="popup__form enter-popup__form">
         <h4 class="popup__title enter-popup__title">Войти</h4>
-        <div class="popup__form-item enter-popup__form-item">
-            <label class="popup__form-label enter-popup__form-label" for="phone">
+        <div class="field phone-field popup__form-item enter-popup__form-item enter-popup__phone-enter">
+            <label class="label popup__form-label enter-popup__form-label" for="phone">
                 Ваш номер телефона?
             </label>
-            <select name="country" id="country">
-                <option value="BY">BY</option>
-                <option value="Ru">RU</option>
+            <select class="filter-style" name="country">
+                <option value="by">BY</option>
+                <option value="ru">RU</option>
+                <option value="ua">UA</option>
             </select>
-            <input class="popup__form-input enter-popup__form-input" type="tel" name="phone" />
+            <input class="popup__form-input enter-popup__form-input" type="tel" name="phone"
+                placeholder="+375 (_ _) _ _ _-_ _-_ _">
         </div>
-        <div class="popup__form-item enter-popup__form-item">
-            <label class="popup__form-label enter-popup__form-label" for="password">Пароль?</label>
-            <input class="popup__form-input enter-popup__form-input" type="password" name="password" />
+        <div class="field popup__form-item enter-popup__form-item enter-popup__email-enter">
+            <label class="label popup__form-label enter-popup__form-label" for="password">Ваш email?</label>
+            <input class="popup__form-input enter-popup__form-input" type="email" name="email"
+                placeholder="e.p.kravtsov@yandex.ru">
+        </div>
+        <div id="email-enter" class="popup__link enter-popup__link">
+            <span>Войти через e-mail</span>
+        </div>
+        <div class="field popup__form-item enter-popup__form-item">
+            <label class="label popup__form-label enter-popup__form-label" for="password">Пароль?</label>
+            <input class="popup__form-input enter-popup__form-input" type="password" name="password"
+                placeholder="*****************" maxlength="17">
         </div>
         <button class="button popup__form-btn enter-popup__btn">
             Войти

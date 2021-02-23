@@ -1,5 +1,5 @@
 .enter-popup {
-    display: none;
+    //display: none;
     min-height: 422px;
 
     &__title {
@@ -14,5 +14,9 @@
         display: block;
         margin-top: 15px;
         text-align: center;
+    }
+
+    &__email-enter {
+        display: none;
     }
 }

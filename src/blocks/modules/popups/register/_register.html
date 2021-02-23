@@ -4,28 +4,32 @@
             Введите свои данные
             для регистрации
         </h4>
-        <div class="popup__form-item register-popup__form-item">
-            <label class="popup__form-label register-popup__form-label" for="phone">
+        <div class="field phone-field popup__form-item register-popup__form-item">
+            <label class="label popup__form-label register-popup__form-label" for="phone">
                 Ваш номер телефона?
             </label>
-            <select name="country" id="country">
-                <option value="BY">BY</option>
-                <option value="Ru">RU</option>
+            <select class="filter-style" name="country">
+                <option value="by">BY</option>
+                <option value="ru">RU</option>
+                <option value="ua">UA</option>
             </select>
-            <input class="popup__form-input register-popup__form-input" type="tel" name="phone" />
+            <input class="popup__form-input register-popup__form-input" type="tel" name="phone"
+                placeholder="+375 (_ _) _ _ _-_ _-_ _">
         </div>
-        <button id="email-reg" class="popup__link register-popup__link">
+        <div id="email-reg" class="popup__link register-popup__link">
             <span>Зарегестрироваться по e-mail</span>
-        </button>
-        <div class="popup__form-item register-popup__form-item">
-            <label class="popup__form-label register-popup__form-label" for="password">Пароль</label>
-            <input class="popup__form-input register-popup__form-input" type="password" name="password" />
         </div>
-        <div class="popup__form-item register-popup__form-item">
-            <label class="popup__form-label register-popup__form-label" for="repeat-password">
+        <div class="field popup__form-item register-popup__form-item">
+            <label class="label popup__form-label register-popup__form-label" for="password">Пароль</label>
+            <input class="popup__form-input register-popup__form-input" type="password" name="password"
+                placeholder="*****************" maxlength="17">
+        </div>
+        <div class="field popup__form-item register-popup__form-item">
+            <label class="label popup__form-label register-popup__form-label" for="repeat-password">
                 Повторите пароль
             </label>
-            <input class="popup__form-input register-popup__form-input" type="password" name="repeat-password" />
+            <input class="popup__form-input register-popup__form-input" type="password" name="repeat-password"
+                placeholder="*****************" maxlength="17">
         </div>
         <button id="register" class="button popup__form-btn register-popup__form-btn" type="submit">
             Зарегестрироваться и получить бонус

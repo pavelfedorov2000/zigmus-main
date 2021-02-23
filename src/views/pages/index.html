@@ -176,140 +176,496 @@
                                 </li>
                             </ol>
                             <div id="step-1">
-                                <h3 class="title section-title p-profile__title">
+                                <!-- <ol class="p-profile__steps">
+                                    <li class="p-profile__step p-profile__step--active">
+                                        Ваш профиль
+                                    </li>
+                                    <li class="p-profile__step">
+                                        Профиль компании
+                                    </li>
+                                    <li class="p-profile__step">
+                                        Верефикация
+                                    </li>
+                                </ol> -->
+                                <h3 class="title section-title p-profile__head p-profile__title">
                                     Вы зарегестрировались! Заполните свой профиль, чтобы начать работу
                                 </h3>
                                 <form action="#" class="profile__info">
-                                    <h6 class="title profile__info-title">Общая инфрмация</h6>
-                                    <div class="profile__fields">
-                                        <div class="profile__fields-cols flex">
+                                    <div class="profile__item">
+                                        <h5 class="title profile__item-title">Общая инфрмация</h5>
+                                        <div class="profile__item-inner profile__item-inner--border">
+                                            <div class="profile__fields flex">
+                                                <div class="profile__fields-col">
+                                                    <div class="field profile__field">
+                                                        <div class="profile__field-inner">
+                                                            <label class="label">Ваше имя и фамилия</label>
+                                                            <div class="field__value flex">
+                                                                Кравцов Егор
+                                                                <button class="reset-filter-btn" type="reset"></button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="field profile__field">
+                                                        <div class="profile__field-inner">
+                                                            <label class="label">Вы?</label>
+                                                            <div class="field__value flex">
+                                                                Перевозчик, владелец
+                                                                <button class="reset-filter-btn" type="reset"></button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="field phone-field profile__field">
+                                                        <div class="profile__field-inner">
+                                                            <label class="label" for="phone">
+                                                                Ваш номер телефона?
+                                                            </label>
+                                                            <select class="filter-style" name="country">
+                                                                <option value="by">BY</option>
+                                                                <option value="ru">RU</option>
+                                                                <option value="ua">UA</option>
+                                                            </select>
+                                                            <input type="tel" name="phone"
+                                                                placeholder="+375 (_ _) _ _ _-_ _-_ _">
+                                                        </div>
+                                                    </div>
+                                                    <button class="plus-btn profile__plus-btn add-phone">
+                                                        Добавить еще телефон
+                                                    </button>
+                                                </div>
+                                                <div class="profile__fields-col">
+                                                    <div class="field profile__field">
+                                                        <div class="profile__field-inner">
+                                                            <label class="label">Ваш e-mail</label>
+                                                            <div class="field__value flex">
+                                                                e.p.kravtsov@yandex.ru
+                                                                <button class="reset-filter-btn" type="reset"></button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="field profile__field profile__img-choice flex">
+                                                        <div class="profile__field-file">
+                                                            <label class="plus-btn">
+                                                                Добавить свое фото
+                                                                <input class="filter-style" type="file" name="avatar"
+                                                                    id="avatar">
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="profile__field">
+                                                        <p class="profile__messangers-descr">
+                                                            По этому телефону есть
+                                                        </p>
+                                                        <div class="profile__messangers flex">
+                                                            <label>
+                                                                <input type="checkbox" name="viber"
+                                                                    class="filter-style">
+                                                                Viber
+                                                            </label>
+                                                            <label>
+                                                                <input type="checkbox" name="whatsup"
+                                                                    class="filter-style">
+                                                                WhatsApp
+                                                            </label>
+                                                            <label>
+                                                                <input type="checkbox" name="telegram"
+                                                                    class="filter-style">
+                                                                Telegram
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <label class="profile__email-choice flex">
+                                        Вам присылать уведомления на почту
+                                        <div class="switch">
+                                            <input type="checkbox" name="email" id="email" checked>
+                                            <span></span>
+                                        </div>
+                                    </label>
+                                </form>
+                            </div>
+                            <div id="step-2">
+                                <!-- <ol class="p-profile__steps">
+                                    <li class="p-profile__step">
+                                        Ваш профиль
+                                    </li>
+                                    <li class="p-profile__step p-profile__step--active">
+                                        Профиль компании
+                                    </li>
+                                    <li class="p-profile__step">
+                                        Верефикация
+                                    </li>
+                                </ol> -->
+                                <h3 class="title section-title p-profile__head p-profile__title">
+                                    Отлично Егор! Заполните профиль вашей компании
+                                </h3>
+                                <div class="profile__item">
+                                    <h5 class="title profile__item-title">Информация о компании</h5>
+                                    <div class="profile__fields grid profile__item-inner">
+                                        <div class="field profile__field">
+                                            <div class="profile__field-inner">
+                                                <label class="label">Вы?</label>
+                                                <div class="field__value">
+                                                    Перевозчик
+                                                    <button class="reset-filter-btn" type="reset"></button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="field profile__field">
+                                            <div class="profile__field-inner">
+                                                <label class="label">
+                                                    Название вашей компании?
+                                                </label>
+                                                <div class="field__value">
+                                                    (ООО) «АККОМ ТЛ»
+                                                    <button class="reset-filter-btn" type="reset"></button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="field profile__field-file profile__img-choice">
+                                            <label class="plus-btn">
+                                                Добавить логотип
+                                                <input class="filter-style" type="file" name="logo" id="logo">
+                                            </label>
+                                        </div>
+                                        <div class="field profile__field">
+                                            <div class="profile__field-inner">
+                                                <label class="label">
+                                                    Размер автопарка?
+                                                </label>
+                                                <div class="field__value">
+                                                    10-20 машин
+                                                    <button class="reset-filter-btn"></button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="field profile__field">
+                                            <div class="profile__field-inner">
+                                                <label class="label">
+                                                    Главный офис компании?
+                                                </label>
+                                                <div class="field__value">
+                                                    Беларусь, Минск
+                                                    <button class="reset-filter-btn"></button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="field profile__field">
+                                            <div class="profile__field-inner">
+                                                <label class="label">
+                                                    Всего офисов?
+                                                </label>
+                                                <div class="field__value">
+                                                    2
+                                                    <button class="reset-filter-btn"></button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="profile__item">
+                                    <h5 class="title profile__item-title">Информация о компании</h5>
+                                    <div class="profile__fields profile__item-inner">
+                                        <div class="field profile__field">
+                                            <div class="profile__field-inner">
+                                                <label class="label">Страна?</label>
+                                                <div class="field__value">
+                                                    Беларусь
+                                                    <button class="reset-filter-btn" type="reset"></button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="field profile__field">
+                                            <div class="profile__field-inner">
+                                                <label class="label">
+                                                    Юр.лицо?
+                                                </label>
+                                                <div class="field__value">
+                                                    ООО «Аккомтранс Логистикс»;
+                                                    <button class="reset-filter-btn" type="reset"></button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="field profile__field">
+                                            <div class="profile__field-inner">
+                                                <label class="label">
+                                                    Юр. адрес?
+                                                </label>
+                                                <div class="field__value">
+                                                    г. Минск, ул. Мельникайте, д.4/2, офис 510Б;
+                                                    <button class="reset-filter-btn"></button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="field profile__field">
+                                            <div class="profile__field-inner">
+                                                <label class="label">
+                                                    УНП?
+                                                </label>
+                                                <div class="field__value">
+                                                    193948300
+                                                    <button class="reset-filter-btn"></button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="field flex profile__field profile__bills">
+                                            <div class="profile__field-inner">
+                                                <label class="label">
+                                                    Расчетный счет?
+                                                </label>
+                                                <div class="field__value">
+                                                    BY17ALFA30122253450040270000
+                                                    <button class="reset-filter-btn"></button>
+                                                </div>
+                                            </div>
+                                            <div class="profile__field-inner">
+                                                <label class="label">
+                                                    Валюта?
+                                                </label>
+                                                <div class="field__value">
+                                                    BYN
+                                                    <button class="reset-filter-btn"></button>
+                                                </div>
+                                            </div>
+                                            <div class="profile__field-inner">
+                                                <label class="label">
+                                                    Название банка
+                                                </label>
+                                                <div class="field__value">
+                                                    Альфа банк
+                                                    <button class="reset-filter-btn"></button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <button id="add-bill" class="plus-btn profile__plus-btn add-bill">Добавить еще
+                                            счет</button>
+                                        <div class="field profile__field">
+                                            <div class="profile__field-inner">
+                                                <label class="label">
+                                                    SWIFT?
+                                                </label>
+                                                <div class="field__value">
+                                                    ALFABY2X
+                                                    <button class="reset-filter-btn"></button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="profile__field-wrap">
+                                            <div class="field profile__field-file">
+                                                <label class="plus-btn">
+                                                    Добавить свидетельство о регистрации
+                                                    <input class="filter-style" type="file" name="reg-doc" id="">
+                                                </label>
+                                            </div>
+                                            <p class="label profile__field-descr" for="">По нему ваши реквизиты
+                                                будут подтверждены
+                                                и вы получите верефикацию</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="profile__item">
+                                    <h5 class="title profile__item-title">Контакты</h5>
+                                    <div class="profile__fields profile__item-inner">
+                                        <div class="profile__field-item grid">
                                             <div class="profile__fields-col">
-                                                <div class="field profile__field">
-                                                    <label class="label">Ваше имя и фамилия</label>
-                                                    <div class="field__value flex">
-                                                        Кравцов Егор
-                                                        <button type="reset"></button>
+                                                <div class="field phone-field profile__field">
+                                                    <div class="profile__field-inner">
+                                                        <label class="label" for="phone">
+                                                            Ваш номер телефона?
+                                                        </label>
+                                                        <select class="filter-style" name="country">
+                                                            <option value="by">BY</option>
+                                                            <option value="ru">RU</option>
+                                                            <option value="ua">UA</option>
+                                                        </select>
+                                                        <input type="tel" name="phone"
+                                                            placeholder="+375 (_ _) _ _ _-_ _-_ _">
                                                     </div>
                                                 </div>
-                                                <div class="field profile__field">
-                                                    <label class="label">Вы?</label>
-                                                    <div class="field__value flex">
-                                                        Перевозчик, владелец
-                                                        <button type="reset"></button>
-                                                    </div>
-                                                </div>
-                                                <div class="field profile__field">
-                                                    <label class="label">Номер телефона</label>
-                                                </div>
-                                                <button id="more-phone" class="profile__phone-btn">
+                                                <button class="plus-btn profile__plus-btn add-phone">
                                                     Добавить еще телефон
                                                 </button>
                                             </div>
                                             <div class="profile__fields-col">
-                                                <div class="field profile__field">
-                                                    <label class="label">Ваш e-mail</label>
-                                                    <div class="field__value flex">
-                                                        e.p.kravtsov@yandex.ru
-                                                        <button type="reset"></button>
-                                                    </div>
-                                                </div>
-                                                <div class="field profile__field profile__img-choice">
-                                                    <label>
-                                                        <input type="file" name="avatar" id="avatar">
-                                                    </label>
-                                                </div>
                                                 <div class="profile__field">
                                                     <p class="profile__messangers-descr">
                                                         По этому телефону есть
                                                     </p>
                                                     <div class="profile__messangers flex">
                                                         <label>
-                                                            <input type="checkbox" name="viber" id="viber"
-                                                                class="filter-style">
+                                                            <input type="checkbox" name="viber" class="filter-style">
                                                             Viber
                                                         </label>
                                                         <label>
-                                                            <input type="checkbox" name="whatsup" id="whatsup"
-                                                                class="filter-style">
+                                                            <input type="checkbox" name="whatsup" class="filter-style">
                                                             WhatsApp
                                                         </label>
                                                         <label>
-                                                            <input type="checkbox" name="telegram" id="telegram"
-                                                                class="filter-style">
+                                                            <input type="checkbox" name="telegram" class="filter-style">
                                                             Telegram
                                                         </label>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
-                                        <label class="profile__email-choice flex">
-                                            Вам присылать уведомления на почту
-                                            <div class="switch">
-                                                <input type="checkbox" name="email" id="email" checked>
-                                                <span></span>
+                                        <div class="field profile__field profile__field-item profile__fields-col">
+                                            <div class="profile__field-inner">
+                                                <label class="label">Ваш e-mail</label>
+                                                <div class="field__value flex">
+                                                    e.p.kravtsov@yandex.ru
+                                                    <button class="reset-filter-btn" type="reset"></button>
+                                                </div>
                                             </div>
-                                        </label>
+                                        </div>
+                                        <button class="plus-btn profile__plus-btn add-email">
+                                            Добавить еще e-mail
+                                        </button>
                                     </div>
-                                </form>
+                                </div>
                             </div>
-                            <div id="step-2">
-                                <h3 class="p-profile__title">
-                                    Отлично Егор! Заполните профиль вашей компании
-                                </h3>
-                                <h6 class="title profile__info-title">Информация о компании</h6>
-                                <div class="profile__fields grid">
-                                    <div class="field profile__field">
-                                        <label class="label">Вы?</label>
-                                        <div class="field__value">
-                                            Перевозчик
-                                            <button type="reset"></button>
+                            <div id="step-3">
+                                <!-- <ol class="p-profile__steps">
+                                    <li class="p-profile__step">
+                                        Ваш профиль
+                                    </li>
+                                    <li class="p-profile__step">
+                                        Профиль компании
+                                    </li>
+                                    <li class="p-profile__step p-profile__step--active">
+                                        Верефикация
+                                    </li>
+                                </ol> -->
+                                <div class="p-profile__head">
+                                    <h3 class="title section-title p-profile__title">
+                                        Ваша компания зарегестрирована, пройдите верефикацию
+                                    </h3>
+                                    <p class="p-profile__subtitle">
+                                        чтобы получить галочку и больше доверия от партнеров и откликов
+                                    </p>
+                                </div>
+                                <div class="profile__item">
+                                    <div class="title profile__item-title flex">
+                                        <h5>Подтвердите платежи со счёта</h5>
+                                        <p>*Обязательно для начала работы</p>
+                                    </div>
+                                    <div class="flex profile__item-inner">
+                                        <div class="verification-item__left verification-item__content">
+                                            <p class="verification-item__instruction">
+                                                Перевидите на наш счет 5 евро
+                                            </p>
+                                            <p class="verification-item__instruction-descr">
+                                                После перевода, на ваш баланс поступят средства
+                                            </p>
+                                        </div>
+                                        <button id="bill-request" class="button verification-item__btn">
+                                            Запросить счет на оплату
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="profile__item verification-item">
+                                    <h5 class="title profile__item-title">Подтвердить Юр.лицо</h5>
+                                    <div
+                                        class="flex verification-item__inner profile__item-inner profile__item-inner--border">
+                                        <div class="verification-item__left verification-item__info">
+                                            ООО «Аккомтранс Логистикс»; г. Минск, ул. Мельникайте, д.4/2, офис 510Б;
+                                            УНП 193948300; BY17ALFA30122253450040270000(BYN)
+                                            BY62ALFA30122253450010270000(RUB)<br>
+                                            BY47ALFA30122253450020270000(USD)<br>
+                                            BY32ALFA30122253450030270000(EUR)<br>
+                                            ЗАО Альфа-Банк SWIFT: ALFABY2X
+                                            <img class="verification-item__img" src="img/office.jpg"
+                                                alt="Здание офиса компании">
+                                        </div>
+                                        <div class="verification-item__right">
+                                            <div class="verification-item__status-label">Проверка</div>
+                                            <p class="verification-item__instruction verification-item__right-text">
+                                                Наш модератор, получил ваше свидетельство о регистрации
+                                                и проводит проверку
+                                            </p>
+                                            <button class="button verification-item__btn">
+                                                Отправить на проверку
+                                            </button>
                                         </div>
                                     </div>
-                                    <div class="field profile__field">
-                                        <label class="label">
-                                            Название вашей компании?
-                                        </label>
-                                        <div class="field__value">
-                                            (ООО) «АККОМ ТЛ»
-                                            <button type="reset"></button>
+                                </div>
+                                <div class="profile__item">
+                                    <div class="flex profile__item-inner verification-item__inner">
+                                        <div class="verification-item__left verification-item__info">
+                                            ООО «Аккомтранс Логистикс»; г. Минск, ул. Мельникайте, д.4/2, офис 510Б;
+                                            УНП 193948300; BY17ALFA30122253450040270000(BYN)
+                                            BY62ALFA30122253450010270000(RUB)<br>
+                                            BY47ALFA30122253450020270000(USD)<br>
+                                            BY32ALFA30122253450030270000(EUR)<br>
+                                            ЗАО Альфа-Банк SWIFT: ALFABY2X
+                                        </div>
+                                        <div class="verification-item__right">
+                                            <div class="verification-item__status-label">Не проверен</div>
+                                            <p class="verification-item__instruction verification-item__right-text">
+                                                Загрузите фото или скан. свидетельства о регистрации
+                                                и оправьте на проверку
+                                            </p>
+                                            <div
+                                                class="field profile__field-file profile__img-choice verification-item__field">
+                                                <label class="plus-btn">
+                                                    Добавить фото или скан
+                                                    <input class="filter-style" type="file" name="" id="">
+                                                </label>
+                                            </div>
+                                            <button class="button verification-item__btn">
+                                                Отправить на проверку
+                                            </button>
                                         </div>
                                     </div>
-                                    <div class="field profile__field">
-                                        <label class="label">
-                                            Добавить логотип
-                                            <input type="file" name="logo" id="">
-                                        </label>
-                                    </div>
-                                    <div class="field profile__field">
-                                        <label class="label">
-                                            Размер автопарка?
-                                        </label>
-                                        <div class="field__value">
-                                            10-20 машин
-                                            <button type="reset"></button>
+                                </div>
+                                <div class="profile__item verification-item">
+                                    <h5 class="title profile__item-title">Подтвердить офис</h5>
+                                    <div class="flex profile__item-inner verification-item__inner">
+                                        <div class="verification-item__left verification-item__content">
+                                            <p class="verification-item__instruction">
+                                                Добавьте фото или видео вашего офиса, чтобы подтвердитье его наличие
+                                            </p>
+                                            <p class="verification-item__instruction-descr">
+                                                На фото должен быть открыт сайт ZIGMUS.COM
+                                            </p>
+                                        </div>
+                                        <div class="verification-item__right verification-item__buttons">
+                                            <div
+                                                class="field profile__field-file profile__img-choice verification-item__field">
+                                                <label class="plus-btn">
+                                                    Добавить фото или скан
+                                                    <input class="filter-style" type="file" name="" id="">
+                                                </label>
+                                            </div>
+                                            <button class="button verification-item__btn">
+                                                Отправить на проверку
+                                            </button>
                                         </div>
                                     </div>
-                                    <div class="field profile__field">
-                                        <label class="label">
-                                            Главный офис компании?
-                                        </label>
-                                        <div class="field__value">
-                                            Беларусь, Минск
-                                            <button type="reset"></button>
+                                </div>
+                                <div class="profile__item verification-item contact-verification">
+                                    <h5 class="title profile__item-title">Подтвердите контакты</h5>
+                                    <div class="profile__item-inner">
+                                        <div class="contact-verification__item">
+                                            <div class="field phone-field contact-verification__item-field">
+                                                <label class="label">Номер телефона</label>
+                                                <input type="tel" name="" id="">
+                                            </div>
+                                            <p class="contact-verification__item-status">Подтвержден</p>
                                         </div>
-                                    </div>
-                                    <div class="field profile__field">
-                                        <label class="label">
-                                            Всего офисов?
-                                        </label>
-                                        <div class="field__value">
-                                            2
-                                            <button type="reset"></button>
+                                        <div class="contact-verification__item">
+                                            <div class="field phone-field contact-verification__item-field">
+                                                <label class="label">Номер телефона</label>
+                                                <input type="tel" name="" id="">
+                                            </div>
+                                            <button class="button verification-item__btn" id="send-sms">
+                                                Выслать SMS
+                                            </button>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div id="step-3"></div>
                         </div>
                         <aside class="p-profile__aside">
                             <div class="p-profile__add p-profile__aside-item">
@@ -324,11 +680,13 @@
                                 <button id="add-profile" class="button p-profile__aside-btn">
                                     Добавить профиль
                                 </button>
+                                <button id="skip-second-step" class="p-profile__aside-blue-btn flex">Пропустить
+                                    шаг</button>
                             </div>
                             <div class="p-profile__aside-item p-profile__skip-step">
                                 <p class="p-profile__aside-item-text p-profile__skip-step-text">Вы можете, пропустить
                                     этот шаг, начать работу и заполнить позже</p>
-                                <button class="button p-profile__aside-btn">
+                                <button id="skip-third-step" class="button p-profile__aside-btn">
                                     Пропустить шаг
                                 </button>
                             </div>
@@ -341,9 +699,7 @@
 
         @@include('../../blocks/modules/footer/_footer.html')
 
-        <div class="overlay">
-            @@include('../../blocks/modules/popups/_popups.html')
-        </div>
+        @@include('../../blocks/modules/popups/_popups.html')
     </div>
 
     @@include('../_js.html')
