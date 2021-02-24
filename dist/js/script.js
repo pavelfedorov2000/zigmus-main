@@ -67,5 +67,10 @@ $(function () {
     $("html, body").animate({scrollTop: $(href).offset().top+"px"}); // плавный скролл по ссылкам
     return false;
 }); */
-
+    $('[name=password]').change(function(){
+    console.log(this.value)
 });
+$('[name=repeat-password]').change(function(){
+    console.log(this.value)
+});
+})

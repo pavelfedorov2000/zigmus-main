@@ -53,5 +53,5 @@ $(function () {
     /* @@include('tabs.js') */
 
     /* @@include('scroll.js') */
-
-});
+    @@include('validate.js')
+})
