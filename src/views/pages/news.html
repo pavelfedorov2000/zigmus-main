@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('../_head.html')
+
+<body>
+
+    <div class="wrapper">
+        @@include('../../blocks/modules/header/_header.html')
+
+        <div class="top-page news-page__header">
+            <div class="container">
+                <nav class="breadcrumbs">
+                    Хлебные крошки
+                </nav>
+                <h1 class="title top-page__title title--white">
+                    Новости от ZIGMUS
+                </h1>
+            </div>
+        </div>
+
+        <section class="news">
+            <div class="container">
+                <div class="card news__topics flex">
+                    <h3 class="title section-title news__topics-title">Темы</h3>
+                    <ul class="news__topics-list">
+                        <li class="category news__topics-item">
+                            Грузовладельцы
+                        </li>
+                        <li class="category news__topics-item">
+                            Перевозчики
+                        </li>
+                        <li class="category news__topics-item">
+                            Горячие новости
+                        </li>
+                        <li class="category news__topics-item">
+                            Обновления
+                        </li>
+                    </ul>
+                </div>
+
+                <article class="grid news__cards">
+                    @@include('../../blocks/modules/news-card/_news-card.html')
+                    @@include('../../blocks/modules/news-card/_news-card.html')
+                    @@include('../../blocks/modules/news-card/_news-card.html')
+                    @@include('../../blocks/modules/news-card/_news-card.html')
+                    @@include('../../blocks/modules/news-card/_news-card.html')
+                    @@include('../../blocks/modules/news-card/_news-card.html')
+                    @@include('../../blocks/modules/news-card/_news-card.html')
+                    @@include('../../blocks/modules/news-card/_news-card.html')
+                    @@include('../../blocks/modules/news-card/_news-card.html')
+                    @@include('../../blocks/modules/news-card/_news-card.html')
+                    @@include('../../blocks/modules/news-card/_news-card.html')
+                    @@include('../../blocks/modules/news-card/_news-card.html')
+                </article>
+
+                <button class="button news__more-link" href="#">
+                    Показать еще
+                </button>
+            </div>
+        </section>
+
+        @@include('../../blocks/modules/footer/_footer.html')
+    </div>
+
+    @@include('../_js.html')
+
+</body>
+
+</html>

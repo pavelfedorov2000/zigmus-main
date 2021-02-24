@@ -1,0 +1,24 @@
+.sms-popup {
+    display: none;
+    min-height: 331px;
+
+    &__title {
+        margin-bottom: 5px;
+    }
+
+    &__info {
+        font-weight: 500;
+        font-size: 12px;
+        opacity: .4;
+        margin-bottom: 20px;
+
+        button {
+            background-color: transparent;
+            color: $blue;
+
+            span {
+                border-bottom: 1px solid rgba($blue, .4);
+            }
+        }
+    }
+}

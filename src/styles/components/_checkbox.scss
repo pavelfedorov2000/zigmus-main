@@ -1,0 +1,154 @@
+.jq-checkbox {
+    @include center;
+    width: 10px;
+    height: 10px;
+    border: 1px solid rgba($blue, 0.6);
+    border-radius: 2px;
+    background: #fff;
+    box-shadow: none;
+    vertical-align: 0px;
+    //margin-right: 8px;
+}
+
+.jq-checkbox.checked {
+    background: transparent;
+    border: 1px solid rgba($blue, 0.6);
+}
+
+.jq-checkbox.checked .jq-checkbox {
+    &__div {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        border-bottom: none;
+        border-left: none;
+        transform: rotate(0deg);
+        background-image: url('../img/icons/checkbox.svg');
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+}
+
+.jq-radio.checked .jq-radio {
+    &__div {
+        width: 0px;
+        height: 0px;
+        margin: 0;
+        border-radius: 0;
+        background: transparent;
+        box-shadow: none;
+    }
+}
+
+.jq-file {
+    position: absolute;
+    @include centerXY;
+    width: 120%;
+    height: 59px;
+    border-radius: 0px;
+    box-shadow: none;
+
+    input {}
+
+    &__name {
+        font-size: 0px;
+        width: 100%;
+        height: 100%;
+        padding: 0;
+        //border-bottom-color: #B3B3B3;
+        border: none;
+        border-radius: 0px;
+        background: transparent;
+        box-shadow: none;
+    }
+}
+
+.jq-file__browse {
+    display: none;
+}
+
+.jq-selectbox {
+    &__select {
+        height: 20px;
+        padding: 0 9px 0 0;
+        border-bottom-color: transparent;
+        border-radius: 0;
+        background: transparent;
+        color: $dark;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 17px;
+        box-shadow: none;
+        text-shadow: none;
+        border: none;
+        padding-left: 25px;
+        position: relative;
+
+        &:before {
+            content: '';
+            position: absolute;
+            top: -2px;
+            left: 0;
+            width: 20px;
+            height: 20px;
+            background-image: url('../img/icons/belarus.png');
+            background-position: 0 center;
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+
+        &:hover {
+            background: transparent;
+        }
+
+        &:active {
+            background: transparent;
+            box-shadow: none;
+        }
+    }
+
+    &__trigger {
+        position: absolute;
+        top: 6px;
+        right: 0;
+        width: 6px;
+        height: 4px;
+        background-image: url('../img/icons/arrows/select-drop.svg');
+        transform: rotate(0deg);
+
+        border-left: none;
+    }
+
+    &__trigger-arrow {
+        position: absolute;
+        top: 14px;
+        right: 12px;
+        width: 0;
+        height: 0;
+        border: none;
+    }
+
+    li {
+        color: rgba(0, 0, 0, 0.6);
+
+        &:hover {
+            background: rgba(107, 126, 172, 0.05);
+            color: rgba(0, 0, 0, 0.6);
+        }
+    }
+
+    li.selected {
+        background-color: transparent;
+        color: rgba(0, 0, 0, 0.6);
+    }
+
+    &__dropdown {
+        border-radius: 0;
+        padding-top: 15px;
+    }
+}
+
+.jq-selectbox.focused .jq-selectbox__select {
+    border: none;
+}

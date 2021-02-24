@@ -1,0 +1,58 @@
+.container {
+    max-width: $container + 30px * 2;
+    padding: 0 30px;
+    margin: 0 auto;
+}
+
+.wrapper {
+    position: relative;
+    overflow-x: hidden;
+}
+
+.flex {
+    display: flex;
+}
+
+.grid {
+    display: grid;
+}
+
+.card {
+    background: #FFFFFF;
+    border-radius: 10px;
+}
+
+.category {
+    background: $light-blue-bg;
+    border-radius: 20px;
+    font-size: 500px;
+    font-size: 12px;
+    line-height: 12px;
+
+    &--blue-bg {
+        background: linear-gradient(180deg, #B5E0FF 0%, #B2DFFF 100%);
+    }
+}
+
+.icon-wrap {
+    @include center;
+    border-radius: 50%;
+    background-color: $blue;
+}
+
+/* .buttons {
+    display: flex;
+    align-items: center;
+} */
+
+@import '../components/top-page';
+@import '../components/breadcrumbs';
+@import '../components/titles';
+@import '../components/buttons';
+@import '../components/slick';
+@import '../components/logo';
+@import '../components/list';
+@import '../components/tabs';
+@import '../components/field';
+//@import '../components/checkbox';
+@import '../components/video-player';
