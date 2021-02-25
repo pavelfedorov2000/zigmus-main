@@ -160,6 +160,37 @@ $(function () {
                 break;
         }
     }
+<<<<<<< HEAD
     maskPhone();
 
 });
+=======
+    maskPhone(); */
+
+    /*  */
+
+    /* $('.tab').on('click', function(e){
+    e.preventDefault(); // отмена стандартного поведения браузера
+
+    $($(this).siblings()).removeClass('tab--active');
+    $('.tabs__content').removeClass('tabs__content--active');
+
+    $(this).addClass('tab--active');
+    $($(this).attr('href')).addClass('tabs__content--active');
+
+    //$('.').slick('setPosition'); // Инициализация слайдера
+}); */
+
+    /* $("a[href^='#']").click(function(){
+    const href = $(this).attr("href");
+    $("html, body").animate({scrollTop: $(href).offset().top+"px"}); // плавный скролл по ссылкам
+    return false;
+}); */
+    $('[name=password]').change(function(){
+    console.log(this.value)
+});
+$('[name=repeat-password]').change(function(){
+    console.log(this.value)
+});
+})
+>>>>>>> dfff71b8346c3ff47422372b2e25bbbc89db27af
