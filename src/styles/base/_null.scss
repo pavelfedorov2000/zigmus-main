@@ -14,7 +14,6 @@ html {
 body {
     margin: 0;
     padding: 0;
-    //overflow-x: hidden;
     min-width: 320px;
     font-family: 'Gilroy', sans-serif;
     font-style: normal;
@@ -49,7 +48,10 @@ button {
     @include btn;
 }
 
-input {
+input,
+textarea {
+    background-color: transparent;
+    border: none;
     outline: none;
 }
 

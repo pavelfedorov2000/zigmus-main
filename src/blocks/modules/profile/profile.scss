@@ -56,6 +56,7 @@
         &:before {
             content: counter(step);
             counter-increment: step;
+            position: absolute;
             @include centerY;
             left: 0;
             width: 32px;
@@ -256,6 +257,20 @@
         flex-direction: column;
         justify-content: center;
         height: 59px;
+
+        /* .reset-filter-btn {
+            display: none;
+        } */
+
+        input[type="text"] {
+            //width: fit-content;
+        }
+
+        /* select {
+            width: 100%;
+            padding: 0;
+            background-color: transparent;
+        } */
     }
 
     &__bills {
@@ -297,6 +312,10 @@
     &__field-file {
         font-size: 12px;
         padding: 20px 10px;
+
+        &--certificate {
+            width: 272px;
+        }
     }
 
     &__plus-btn {
@@ -477,6 +496,16 @@
     }
 }
 
+.confirm-payment {
+    &__inner {
+        align-items: center;
+    }
+
+    &__title {
+        max-width: 170px;
+    }
+}
+
 .contact-verification {
 
     &__item {
@@ -499,3 +528,31 @@
         line-height: 24px;
     }
 }
+
+.input {
+
+    //width: 65px;
+    //min-width: 65px;
+
+    &::placeholder {
+        color: rgba($dark, .5);
+    }
+
+    &--changed {
+        position: relative;
+        padding-right: 13px;
+
+        &:after {
+            content: '';
+            @include reset-btn;
+        }
+    }
+}
+
+/* .input-buffer {
+    position: absolute;
+    top: -1000px;
+    left: -1000px;
+    visibility: hidden;
+    white-space: nowrap;
+} */

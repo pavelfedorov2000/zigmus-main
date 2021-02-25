@@ -1,0 +1,252 @@
+.shame-board {
+
+    // .shame-board__wrapper
+
+    &__wrapper {
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 30px;
+    }
+
+    // .shame-board__header
+
+    &__header {
+        @include flex;
+        align-items: center;
+        padding: 30px 30px 30px 35px;
+    }
+
+    // .shame-board__block
+
+    &__block {
+
+        background: #FFFFFF;
+        box-shadow: 0px 10px 40px rgba(0, 4, 41, 0.05);
+        border-radius: 8px;
+
+        &:nth-child(1),
+        &:nth-child(2) {
+            grid-column: 1 / 4;
+        }
+    }
+
+    // .shame-board__categories
+
+    &__categories {}
+
+    // .shame-board__category
+
+    &__category {
+        display: inline-block;
+        padding: 8px 15px;
+    }
+
+    &__category+&__category {
+        margin-left: 15px;
+    }
+
+    // .shame-board__btn
+
+    &__btn {
+        width: 212px;
+        height: 54px;
+        padding: 10px 24px;
+    }
+
+    // .shame-board__main
+
+    &__main {
+        @include flex;
+        padding: 12px 67px 0 30px;
+    }
+
+    // .shame-board__main-content
+
+    &__main-content {
+        max-width: 641px;
+        padding-top: 103px;
+    }
+
+    // .shame-board__text
+
+    &__text {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 15px;
+        margin-top: 30px;
+    }
+
+    // .shame-board__img
+
+    &__main-img {
+        width: 366px;
+        max-width: 100%;
+        height: auto;
+    }
+
+    // .shame-board__card
+
+    &__card {
+        min-height: 357px;
+    }
+}
+
+.shame-card {
+
+    // .shame-card__header
+
+    &__header {
+        padding: 20px;
+    }
+
+    // .shame-card__logo
+
+    &__logo {
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+    }
+
+    // .shame-card__header-info
+
+    &__header-info {
+        margin-left: 15px;
+    }
+
+    // .shame-card__name
+
+    &__name {
+        font-size: 14px;
+        line-height: 25px;
+    }
+
+    &__header-descr {
+        font-weight: 500;
+        font-size: 10px;
+        line-height: 20px;
+        opacity: .5;
+    }
+
+    // .shame-card__category
+
+    &__category {
+        margin-bottom: 2px;
+    }
+
+    // .shame-card__properties
+
+    &__properties {
+        color: $blue;
+
+        span {
+            border-bottom: 1px solid rgba($blue, .5);
+        }
+    }
+
+    // .shame-card__item
+
+    &__item {
+        padding: 15px 20px;
+    }
+
+    &__item+&__item {
+        border-top: 1px solid rgba($blue, .3);
+    }
+
+    // .shame-card__reason
+
+    &__reason {}
+
+    // .shame-card__item-title
+
+    &__item-title {
+        font-size: 15px;
+        line-height: 20px;
+        margin-bottom: 10px;
+    }
+
+    // .shame-card__item-text
+
+    &__item-text {
+        font-size: 14px;
+        line-height: 17px;
+    }
+
+    // .shame-card__reason-text
+
+    &__reason-text {
+        max-width: 242px;
+        color: rgba(52, 52, 52, 0.5);
+    }
+
+    &__from {
+        font-weight: 500;
+        line-height: 15px;
+    }
+
+    // .shame-card__from
+
+    &__from-id {
+        position: relative;
+        font-size: 12px;
+        padding-left: 21px;
+        margin-bottom: 10px;
+
+        &:before,
+        &:after {
+            content: '';
+            position: absolute;
+            left: 0;
+        }
+
+        &:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 13px;
+            height: 13px;
+            border-radius: 50%;
+            background-color: $blue;
+        }
+
+        &:after {
+            @include centerY;
+            left: 3px;
+            width: 9px;
+            height: 7px;
+            background-image: url('../img/icons/check-id.svg'); // фиг пойми, что с галочкой когда вырезаешь из фигмы
+        }
+
+        span {
+            color: rgba(52, 52, 52, 0.5);
+        }
+    }
+
+    &__from-info {
+        font-size: 10px;
+        opacity: .5;
+    }
+
+    // .shame-card__footer
+
+    &__footer {
+        @include flex;
+        align-items: center;
+        font-weight: 500;
+        line-height: 24px;
+    }
+
+    // .shame-card__footer-nums
+
+    &__footer-nums {
+        font-size: 10px;
+        opacity: .5;
+    }
+
+    // .shame-card__add-complaint
+
+    &__add-complaint {
+        font-size: 14px;
+        color: $blue;
+    }
+}
