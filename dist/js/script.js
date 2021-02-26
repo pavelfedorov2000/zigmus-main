@@ -193,7 +193,7 @@ $(function () {
     document.styleSheets[0].addRule('.register-popup__form-item.warning', 'border-color: #ff6118');
     document.styleSheets[0].addRule('.register-popup__form-item.success', 'border-color: #236eff');
     document.styleSheets[0].addRule('.form-message.success', 'color: #236eff');
-    document.styleSheets[0].addRule('.filter-style .jq-selectbox__select::before', 'border-radius: 10px; background-size: auto;');
+    document.styleSheets[0].addRule('.filter-style .jq-selectbox__select::before', 'border-radius: 10px; background-size: auto!important;');
 
     function checkpass() {
         let pass = this.find('[name=password]');
@@ -237,7 +237,7 @@ $(function () {
         }
         return -1;
     }
-    $('.phone-field .filter-style[name=country]').change(function () {
+    $('.filter-style[name=country]').change(function () {
         let code = {
             "ru": "+7",
             "by": "+375",
@@ -248,16 +248,18 @@ $(function () {
             "by": "belarus.png",
             "ua": "ua.png",
         };
-        let input = $(this.parentElement.parentElement).find(".popup__form-input");
+        let input = $(this.parentElement.parentElement).find("[name=phone]");
         let placeHolder = input.attr('placeholder');
         placeHolder = placeHolder.replace(/\+\d{1,3}/, code[this.value]);
         input.attr('placeholder', placeHolder);
         input.mask(code[this.value] + "(999) 999-99-99");
-        let index = getCssIndex('.jq-selectbox__select::before');
+        let index = getCssIndex('.jq-selectbox__select.flag::before');
         if (index >= 0) {
             document.styleSheets[0].removeRule(index);
         }
-        document.styleSheets[0].addRule('.jq-selectbox__select::before', 'background-image: url(../img/icons/' + flags[this.value] + ')!important');
+        $('.jq-selectbox__select').removeClass('flag');
+        $(this).next().addClass('flag');
+        document.styleSheets[0].addRule('.jq-selectbox__select.flag::before', 'background-image: url(../img/icons/' + flags[this.value] + ')!important');
     });
 
 });

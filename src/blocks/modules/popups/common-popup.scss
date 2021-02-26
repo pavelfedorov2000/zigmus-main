@@ -1,5 +1,5 @@
 .overlay {
-    display: none;
+    //display: none;
     position: absolute;
     top: 0;
     right: 0;
@@ -11,7 +11,7 @@
 }
 
 .popup {
-    position: fixed;
+    position: absolute;
     @include centerX;
     top: 184px;
     background: #ffffff;

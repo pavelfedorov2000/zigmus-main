@@ -21,19 +21,15 @@
         // .register-popup__title--white
     }
 
-    &__form-item {
-    }
+    &__form-item {}
 
-    &__form-label {
-    }
+    &__form-label {}
 
-    &__form-input {
-    }
+    &__form-input {}
 
     // .register-popup__email-link
 
-    &__link {
-    }
+    &__link {}
 
     // .register-popup__btn
 
@@ -129,7 +125,7 @@
         }
     }
 
-    &__benefits-item + &__benefits-item {
+    &__benefits-item+&__benefits-item {
         margin-top: 10px;
     }
 }
