@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('../_head.html')
+
+<body>
+
+    <div class="wrapper">
+        @@include('../../blocks/modules/header/_header.html')
+
+        <div class="order-process">
+            <div class="container">
+                <nav class="breadcrumbs">
+                    <a href="index.html">Хлебные крошки</a>
+                    <span></span>
+                </nav>
+
+                <div class="order-process__inner">
+                    <main class="order-process__main main-process">
+                        <img class="main-process__header-img" src="img/order-process.png" alt="">
+                        <!-- style="background-image: url(img/order-process.jpg);" -->
+                        <div class="main-process__body">
+                            <div class="main-process__info-box title">
+                                Здесь информация о адересе и времени, загрузки и разгрузки, если будем выводить
+                            </div>
+                            <div class="main-process__additional-agreement additional-agreement">
+                                <h6 class="title main-process__title additional-agreement__title">
+                                    Дополнительные договоренности
+                                </h6>
+                                <form action="#" id="additional-agreement" class="additional-agreement__form">
+                                    <fieldset class="additional-agreement__checkboxes grid">
+                                        <label class="additional-agreement__label">
+                                            <input type="checkbox" class="filter-style">
+                                            <span>Подача:</span> В тот же день
+                                        </label>
+                                        <label class="additional-agreement__label">
+                                            <input type="checkbox" class="filter-style">
+                                            Дам скидку на 2-й заказ
+                                        </label>
+                                        <label class="additional-agreement__label">
+                                            <input type="checkbox" class="filter-style" checked>
+                                            <span>Коммиссия ZIGMUS:</span> Всю на себя
+                                        </label>
+                                        <label class="additional-agreement__label">
+                                            <input type="checkbox" class="filter-style">
+                                            Доставлю быстрее
+                                        </label>
+                                    </fieldset>
+                                    <button class="button additional-agreement__btn button--transparent" type="submit">
+                                        Подтвердить
+                                    </button>
+                                </form>
+                            </div>
+                            <div class="main-process__chat-benefits">
+                                Текст в преимуществами и советами, почему стоит вести диалог через ZIGMUS + иконки,
+                                которые
+                                описывают быстрые преимущества
+                            </div>
+                            <div class="main-process__chat chat">
+                                <div class="chat__day">
+                                    <div class="chat__item chat-item">
+                                        <time class="chat-item__blue-text chat-item__date" datetime="2020-12-16">16
+                                            декабря
+                                            2020</time>
+                                        <div class="chat-item__inner flex">
+                                            <div class="chat-item__main flex">
+                                                <div class="chat-item__persone">
+                                                    <div
+                                                        class="avatar chat-item__avatar chat-item__avatar--online avatar--woman">
+                                                    </div>
+                                                    <div class="title chat-item__persone-name">Настя</div>
+                                                </div>
+                                                <div class="chat-item__content">
+                                                    <p class="chat-item__text">
+                                                        Здравствуйте! Начинаю оформлять документы. Все документы
+                                                        прикреплю в
+                                                        вкладку.
+                                                        И сброшу подтверждение. Как проверите кликните
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="chat-item__descr">
+                                                <time class="chat-item__blue-text chat-item__send-time">10:25</time>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="main-process__blue-block chat__status">
+                                        <div class="chat__status-left flex">
+                                            <span class="chat__status-icon">
+                                                <img src="img/icons/contract.svg" alt="">
+                                            </span>
+                                            <p class="title chat__status-text">Документы оформлены</p>
+                                        </div>
+                                        <div class="chat__status__buttons">
+                                            <button id="confirm-docs"
+                                                class="button chat__status-btn">Подтвердить</button>
+                                            <button id="reject-docs" class="button chat__status-btn chat__status-label
+                                            button--transparent button--white-border">Отклонить</button>
+                                        </div>
+                                    </div>
+                                    <div class="chat__item chat-item">
+                                        <div class="chat-item__inner flex">
+                                            <div class="chat-item__main flex">
+                                                <div class="chat-item__persone">
+                                                    <div
+                                                        class="avatar chat-item__avatar chat-item__avatar--active avatar--man">
+                                                    </div>
+                                                    <div class="title chat-item__persone-name">Егор</div>
+                                                </div>
+                                                <div class="chat-item__content">
+                                                    <p class="chat-item__text">
+                                                        Все отлично! 17 в 8 утра буду на месте. Спасибо
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="chat-item__descr">
+                                                <time class="chat-item__blue-text chat-item__send-time">10:25</time>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="chat__day">
+                                    <div class="main-process__chat chat">
+                                        <div class="chat__item chat-item">
+                                            <time class="chat-item__blue-text chat-item__date" datetime="2020-12-17">17
+                                                декабря 2020</time>
+                                            <div class="chat-item__inner flex">
+                                                <div class="chat-item__main flex">
+                                                    <div class="chat-item__persone">
+                                                        <div
+                                                            class="avatar chat-item__avatar chat-item__avatar--active avatar--man">
+                                                        </div>
+                                                        <div class="title chat-item__persone-name">Егор</div>
+                                                    </div>
+                                                    <div class="chat-item__content">
+                                                        <figure>
+                                                            <figcaption class="chat-item__text">
+                                                                Добрый день, груз принял, загрузка прошла. Фото прилагаю
+                                                            </figcaption>
+                                                            <img class="chat-item__img" src="img/chat-img.jpg" alt="">
+                                                        </figure>
+                                                    </div>
+                                                </div>
+                                                <div class="chat-item__descr">
+                                                    <time class="chat-item__blue-text chat-item__send-time">10:25</time>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="chat__item chat-item">
+                                            <time class="chat-item__blue-text chat-item__date" datetime="2020-12-16">16
+                                                декабря 2020</time>
+                                            <div class="chat-item__inner flex">
+                                                <div class="chat-item__main flex">
+                                                    <div class="chat-item__persone">
+                                                        <div
+                                                            class="avatar chat-item__avatar chat-item__avatar--active avatar--woman">
+                                                        </div>
+                                                        <div class="title chat-item__persone-name">Настя</div>
+                                                    </div>
+                                                    <div class="chat-item__content">
+                                                        <p class="chat-item__text">
+                                                            Здравствуйте! Все поняла, ждем на разгрузке. Хорошей дороги!
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <div class="chat-item__descr">
+                                                    <time class="chat-item__blue-text chat-item__send-time">10:25</time>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="main-process__blue-block chat__status">
+                                            <div class="chat__status-left flex">
+                                                <span class="chat__status-icon">
+                                                    <img src="img/icons/truck.svg" alt="">
+                                                </span>
+                                                <p class="title chat__status-text">В пути</p>
+                                            </div>
+
+                                            <div class="chat__status__buttons">
+                                                <div id="awaiting-confirmation" class="button chat__status-btn chat__status-label
+                                                    chat__status-label--awaiting-confirmation button--transparent
+                                                    button--white-border">
+                                                    Ждет подтверждения
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="chat__item chat-item">
+                                            <time class="chat-item__blue-text chat-item__date" datetime="2020-12-17">17
+                                                декабря 2020</time>
+                                            <div class="chat-item__inner flex">
+                                                <div class="chat-item__main flex">
+                                                    <div class="chat-item__persone">
+                                                        <div
+                                                            class="avatar chat-item__avatar chat-item__avatar--active avatar--man">
+                                                        </div>
+                                                        <div class="title chat-item__persone-name">Егор</div>
+                                                    </div>
+                                                    <div class="chat-item__content">
+                                                        <p class="chat-item__text">
+                                                            Настя! Подтвердите пожалуйста статус.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <div class="chat-item__descr">
+                                                    <time class="chat-item__blue-text chat-item__send-time">10:25</time>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <form action="#" class="main-process__blue-block main-process__review-form review-form">
+                                <legend class="title review-form__title title--white">Оставьте отзыв</legend>
+                                <div class="review-form__inner">
+                                    <textarea name="review-text" id=""
+                                        class="white-input review-form__text-field"></textarea>
+                                    <div class="review-form__right">
+                                        <div class="review-form__rating flex">
+                                            Ваша оценка:
+                                            <div class="review-form__rate-yo" data-rateyo-rating="4"></div>
+                                        </div>
+                                        <button class="button review-form__btn" type="submit">Оставить отзыв</button>
+                                        <a class="review-form__why-link" href="#"><span>Зачем оставлять
+                                                отзыв?</span></a>
+                                    </div>
+                                </div>
+                            </form>
+                            <div class="order-process__why-review review-why">
+                                <div class="review-why__content">
+                                    <h6 class="title review-why__title">Зачем нужно оставлять отзыв</h6>
+                                    <ul class="review-why__list">
+                                        <li class="review-why__list-item">
+                                            Вы повышаете свои метрики, что позволяет вам быстрее найти партнера
+                                        </li>
+                                        <li class="review-why__list-item">
+                                            Вы помогаете выбрать другим пользователям партнера
+                                        </li>
+                                        <li class="review-why__list-item">
+                                            Еще выгода
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="review-why__discount">
+                                    Оставьте отзыв и получите <br>
+                                    скидку 30% на следующий заказ
+                                </div>
+                            </div>
+                            <p class="main-process__change">
+                                Перевести заказ в этап <span>в пути</span>
+                            </p>
+                        </div>
+                    </main>
+                    <aside class="order-process__aside aside-process">
+                        <div class="aside-process__item aside-process__contact">
+                            <h6 class="aside-process__item-title aside-process__contact-title">
+                                Контакты
+                                <svg width="10" height="6" viewBox="0 0 10 6" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M5.00003 0.151279C5.17925 0.15128 5.35845 0.21971 5.49508 0.356283L9.79486 4.6561C10.0684 4.92962 10.0684 5.37309 9.79486 5.6465C9.52145 5.91992 9.07807 5.91992 8.80452 5.6465L5.00003 1.84179L1.19551 5.64637C0.921987 5.91978 0.478651 5.91978 0.205261 5.64637C-0.0683927 5.37296 -0.0683927 4.92949 0.205261 4.65597L4.50497 0.35615C4.64168 0.219554 4.82087 0.151279 5.00003 0.151279Z"
+                                        fill="#236EFF" />
+                                </svg>
+                            </h6>
+                            <div class="aside-process__contact-items">
+                                <div class="contact-item aside-process__contact-item flex">
+                                    <img class="aside-process__contact-logo contact-item__img"
+                                        src="img/logo/sta-logo.png" alt="Логотип компании СТА Логистик">
+                                    <div class="aside-process__contact-item-info contact-item__info">
+                                        <div class="title contact-item__title">(ООО) «СТА
+                                            Логистик»
+                                        </div>
+                                        <p class="contact-item__descr aside-process__contact-item-descr">
+                                            Логистическая компания</p>
+                                        <a class="contact-item__descr aside-process__contact-item-descr contact-item__properties"
+                                            href="#"><span>Реквизиты</span></a>
+                                    </div>
+                                </div>
+                                <div
+                                    class="contact-item contact-manager aside-process__contact-item aside-process__contact-manager flex">
+                                    <div class="avatar contact-item__img contact-manager__avatar"></div>
+                                    <div class="contact-item__info">
+                                        <div class="title contact-item__title">Настя</div>
+                                        <p class="contact-item__descr">С вами работает</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <ul class="contact-item__list aside-process__contact-list">
+                                <li class="contact-item__list-item aside-process__contact-list-item">
+                                    <div class="aside-process__item-text aside-process__contact-item-title">Телефоны
+                                    </div>
+                                    <a class="title aside-process__contact-link" href="tel:+375172704979">
+                                        +375 17 270 49 79
+                                    </a>
+                                    <a class="title aside-process__contact-link" href="tel:+375172704979">
+                                        +375 17 270 49 79
+                                    </a>
+                                </li>
+                                <li class="contact-item__list-item aside-process__contact-list-item">
+                                    <div class="aside-process__item-text aside-process__contact-item-title">E-mail</div>
+                                    <a href="mailto:19+@stalogistic.com" class="title aside-process__contact-link">
+                                        19+@stalogistic.com
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="aside-process__item aside-process__payment">
+                            <h6 class="aside-process__item-title">
+                                Оплата
+                                <svg width="10" height="6" viewBox="0 0 10 6" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M5.00003 0.151279C5.17925 0.15128 5.35845 0.21971 5.49508 0.356283L9.79486 4.6561C10.0684 4.92962 10.0684 5.37309 9.79486 5.6465C9.52145 5.91992 9.07807 5.91992 8.80452 5.6465L5.00003 1.84179L1.19551 5.64637C0.921987 5.91978 0.478651 5.91978 0.205261 5.64637C-0.0683927 5.37296 -0.0683927 4.92949 0.205261 4.65597L4.50497 0.35615C4.64168 0.219554 4.82087 0.151279 5.00003 0.151279Z"
+                                        fill="#236EFF" />
+                                </svg>
+                            </h6>
+                            <p class="aside-process__item-text aside-process__item-subtitle">Предоплата 30%</p>
+                            <ul class="aside-process__payment-process payment-process">
+                                <li class="payment-process__item payment-process__item--done">Заказ подтвержден</li>
+                                <li class="payment-process__item">Документы оформлены</li>
+                                <li class="payment-process__item">Груз загружен</li>
+                                <li class="payment-process__item">Догруз (Если есть)</li>
+                                <li class="payment-process__item">В пути</li>
+                                <li class="payment-process__item">Доставлен, разружен</li>
+                            </ul>
+                            <button class="aside-process__payment-cancel">
+                                Отменить заказ
+                            </button>
+                        </div>
+                        <div class="aside-process__item aside-process__docs">
+                            <h6 class="aside-process__item-title">
+                                Документы (Фактуры)
+                                <svg width="10" height="6" viewBox="0 0 10 6" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M5.00003 0.151279C5.17925 0.15128 5.35845 0.21971 5.49508 0.356283L9.79486 4.6561C10.0684 4.92962 10.0684 5.37309 9.79486 5.6465C9.52145 5.91992 9.07807 5.91992 8.80452 5.6465L5.00003 1.84179L1.19551 5.64637C0.921987 5.91978 0.478651 5.91978 0.205261 5.64637C-0.0683927 5.37296 -0.0683927 4.92949 0.205261 4.65597L4.50497 0.35615C4.64168 0.219554 4.82087 0.151279 5.00003 0.151279Z"
+                                        fill="#236EFF" />
+                                </svg>
+                            </h6>
+                            <ul class="aside-process__docs-list">
+                                <li class="aside-process__docs-item">
+                                    <a href="#" class="aside-process__docs-link">Договор (0,53 мб.)</a>
+                                </li>
+                                <li class="aside-process__docs-item">
+                                    <a href="#" class="aside-process__docs-link">ТТН (0,53 мб.)</a>
+                                </li>
+                                <li class="aside-process__docs-item">
+                                    <a href="#" class="aside-process__docs-link">Счет-фактура (0,53 мб.)</a>
+                                </li>
+                                <li class="aside-process__docs-item">
+                                    <a href="#" class="aside-process__docs-link">Акт-приема (0,53 мб.)</a>
+                                </li>
+                                <li class="aside-process__docs-item">
+                                    <a href="#" class="aside-process__docs-link">Пропуск</a>
+                                </li>
+                            </ul>
+                            <a class="plus-btn aside-process__docs-add" href="#">Добавить</a>
+                        </div>
+                        <div class="aside-process__item aside-process__auto auto">
+                            <h6 class="aside-process__item-title aside-process__auto-title">
+                                Ваше авто
+                                <svg width="10" height="6" viewBox="0 0 10 6" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M5.00003 0.151279C5.17925 0.15128 5.35845 0.21971 5.49508 0.356283L9.79486 4.6561C10.0684 4.92962 10.0684 5.37309 9.79486 5.6465C9.52145 5.91992 9.07807 5.91992 8.80452 5.6465L5.00003 1.84179L1.19551 5.64637C0.921987 5.91978 0.478651 5.91978 0.205261 5.64637C-0.0683927 5.37296 -0.0683927 4.92949 0.205261 4.65597L4.50497 0.35615C4.64168 0.219554 4.82087 0.151279 5.00003 0.151279Z"
+                                        fill="#236EFF" />
+                                </svg>
+                            </h6>
+                            <div class="contact-item auto__inner flex">
+                                <img src="img/logo/sta-logo.png" alt="" class="contact-item__img">
+                                <div class="contact-item__info auto__info info-auto">
+                                    <div class="title contact-item__title info-auto__name">MAN 535 (AA1691-7)</div>
+                                    <ul class="contact-item__list info-auto__item">
+                                        <li class="contact-item__list-item">
+                                            <p class="contact-item__descr info-auto__item-title">
+                                                Водитель:
+                                            </p>
+                                            <p class="title info-auto__item-descr">
+                                                Егор Кравцов
+                                            </p>
+                                        </li>
+                                        <li class="contact-item__list-item">
+                                            <p class="contact-item__descr info-auto__item-title">
+                                                Телефон:
+                                            </p>
+                                            <a class="title info-auto__item-descr" href="tel:+375293604577">
+                                                +375 29 360 - 45 -77
+                                            </a>
+                                        </li>
+                                    </ul>
+                                    <a class="info-auto__follow-link" href="#">
+                                        <span>Ссылка на отслеживание</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </aside>
+                </div>
+            </div>
+
+            @@include('../../blocks/modules/footer/_footer.html')
+
+            <div class="overlay">
+                @@include('../../blocks/modules/popups/_popups.html')
+
+                <!-- Aside modals -->
+
+                <div id="add-document" class="popup aside-process__modal">
+                    <div class="popup__close-btn aside-process__modal-close">
+                        <img src="img/icons/popup-close.svg" alt="">
+                    </div>
+                    <h6 class="aside-process__modal-title">Добавить документ</h6>
+                    <form action="#" class="aside-process__modal-buttons flex">
+                        <label class="aside-process__modal-btnitem aside-process__modal-label">
+                            <input class="button aside-process__modal-btn filter-style" type="file"></input>
+                        </label>
+                        <a class="aside-process__modal-btnitem aside-process__modal-link" href="#">Через сервис
+                            фактуровня</a>
+                    </form>
+                </div>
+
+                <div id="cancel-order" class="popup aside-process__modal">
+                    <div class="popup__close-btn aside-process__modal-close">
+                        <img src="img/icons/popup-close.svg" alt="">
+                    </div>
+                    <h6 class="aside-process__modal-title">Вы уверены, что хотите отменить заказ?</h6>
+                    <form action="#" class="aside-process__modal-buttons flex">
+                        <button class="button aside-process__modal-btnitem aside-process__modal-btn"
+                            data-agree="yes">Да</button>
+                        <button
+                            class="button aside-process__modal-btnitem aside-process__modal-btn button--transparent button--blue-border"
+                            data-agree="no">Нет</button>
+                    </form>
+                    <p class="aside-process__modal-text">
+                        Если отмена будет по вашей вине, то мы не вернем вам коммисиию и вы <a href="#"><span>получите
+                                штраф</span></a>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        @@include('../_js.html')
+
+</body>
+
+</html>
