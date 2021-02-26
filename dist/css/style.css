@@ -1248,7 +1248,6 @@ address {
 }
 
 .overlay {
-  display: none;
   position: absolute;
   top: 0;
   right: 0;
@@ -1260,7 +1259,7 @@ address {
 }
 
 .popup {
-  position: fixed;
+  position: absolute;
   left: 50%;
   -webkit-transform: translateX(-50%);
       -ms-transform: translateX(-50%);

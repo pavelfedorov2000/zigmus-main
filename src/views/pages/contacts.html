@@ -108,7 +108,9 @@
 
         @@include('../../blocks/modules/footer/_footer.html')
 
-        @@include('../../blocks/modules/popups/_popups.html')
+        <div class="overlay">
+            @@include('../../blocks/modules/popups/_popups.html')
+        </div>
     </div>
 
     @@include('../_js.html')
