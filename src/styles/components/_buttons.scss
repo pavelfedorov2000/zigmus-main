@@ -62,11 +62,11 @@
         position: absolute;
         @include centerY;
         left: 0;
-        width: 14px;
-        height: 14px;
+        box-sizing: content-box;
+        width: 15px;
+        height: 15px;
         border: 0.8px solid $blue;
         border-radius: 50%;
-        @include center;
         text-align: center;
         font-size: 14px;
         line-height: 14px;

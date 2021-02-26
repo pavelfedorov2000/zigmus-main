@@ -845,19 +845,12 @@ address {
       -ms-transform: translateY(-50%);
           transform: translateY(-50%);
   left: 0;
-  width: 14px;
-  height: 14px;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  width: 15px;
+  height: 15px;
   border: 0.8px solid #236EFF;
   border-radius: 50%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   text-align: center;
   font-size: 14px;
   line-height: 14px;
@@ -3419,24 +3412,16 @@ address {
   margin-left: 10px;
 }
 
-.plus {
-  width: 14px;
-  height: 14px;
-  border-radius: 50%;
-  border: 0.8px solid #236EFF;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  font-size: 14px;
-  line-height: 14px;
-  color: #236EFF;
-}
+/* .plus {
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    border: 0.8px solid $blue;
+    @include center;
+    font-size: 14px;
+    line-height: 14px;
+    color: $blue;
+} */
 
 .about {
   padding-bottom: 70px;
