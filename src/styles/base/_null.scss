@@ -55,6 +55,10 @@ textarea {
     outline: none;
 }
 
+input[type="file"] {
+    cursor: pointer;
+}
+
 textarea {
     resize: none;
 }

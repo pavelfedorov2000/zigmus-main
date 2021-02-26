@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('../_head.html')
+
+<body>
+
+    <div class="wrapper">
+        @@include('../../blocks/modules/header/_header.html')
+
+        <section class="top-page">
+            <div class="container">
+                <h1 class="title top-page__title title--white">
+                    Доска позора
+                </h1>
+            </div>
+        </section>
+
+        <section class="section shame-board section--blue">
+            <div class="container">
+                <div class="shame-board__wrapper grid">
+                    <div class="shame-board__header shame-board__block">
+                        <ul class="shame-board__categories">
+                            <li class="category shame-board__category">
+                                Грузовладельцы
+                            </li>
+                            <li class="category shame-board__category">
+                                Перевозчики
+                            </li>
+                        </ul>
+                        <button class="button shame-board__btn">
+                            Добавить компанию
+                        </button>
+                    </div>
+                    <div class="shame-board__main shame-board__block">
+                        <div class="shame-board__main-content">
+                            <h2 class="title section__title">
+                                Здесь собраны не добросовестные компании и мошенники
+                            </h2>
+                            <p class="shame-board__text">
+                                Которые проявили себя на платформе ZIGMUS и других ресурсах
+                            </p>
+                        </div>
+                        <img class="shame-board__main-img" src="img/cut-phone.png" alt="">
+                    </div>
+                    @@include('../../blocks/modules/shame-board/_shame-board-card.html')
+                    @@include('../../blocks/modules/shame-board/_shame-board-card.html')
+                    @@include('../../blocks/modules/shame-board/_shame-board-card.html')
+                </div>
+            </div>
+        </section>
+
+        @@include('../../blocks/modules/footer/_footer.html')
+    </div>
+
+    @@include('../_js.html')
+
+</body>
+
+</html>
