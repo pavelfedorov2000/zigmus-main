@@ -3737,6 +3737,7 @@ address {
 }
 
 .enter-popup {
+  display: none;
   min-height: 422px;
 }
 
@@ -3759,7 +3760,6 @@ address {
 }
 
 .register-popup {
-  display: none;
   width: 750px;
   min-height: 630px;
 }
