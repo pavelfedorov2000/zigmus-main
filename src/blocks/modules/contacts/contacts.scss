@@ -1,25 +1,13 @@
-.section-top {
-
-    background: linear-gradient(239.5deg, rgba(255, 255, 255, 0.45) -0.02%, rgba(255, 255, 255, 0) 68.53%), $blue;
-    border-radius: 0px 0px 20px 20px;
-
-    // .section-top__title
-
-    &__title {
-        font-size: 40px;
-        line-height: 50px;
-    }
-}
-
 .contacts-consultation {
 
-    padding: 120px 0 80px;
+    padding-bottom: 80px;
 
-    // .contacts-consultation__inner
+    &__item {
+        width: 165px;
+    }
 
-    &__inner {
-        @include flex;
-        align-items: center;
+    &__item+&__item {
+        margin-left: 80px;
     }
 }
 
@@ -31,9 +19,15 @@
         margin-bottom: 60px;
     }
 
+    &__inner {
+        @include flex;
+        align-items: center;
+    }
+
     // .contacts__form
 
     &__form {
+        width: 662px;
         min-height: 391px;
         background: linear-gradient(239.5deg, rgba(255, 255, 255, 0.35) -0.02%, rgba(255, 255, 255, 0) 68.53%), $blue;
         border-radius: 10px;
@@ -61,6 +55,7 @@
         &--column {
             flex-direction: column;
             text-align: center;
+
             .contacts__item-icon {
                 margin-bottom: 20px;
             }
@@ -78,6 +73,18 @@
     &__item-icon {
         width: 80px;
         height: 80px;
+        background-image: url('../img/icons/contact/email.svg');
+        background-position: center;
+        background-size: 34px 34px;
+        background-repeat: no-repeat;
+
+        &--phone {
+            background-image: url('../img/icons/contact/phone.svg');
+        }
+
+        &--doc {
+            background-image: url('../img/icons/contact/docs.svg');
+        }
     }
 
     // .contacts__item-content
@@ -98,34 +105,38 @@
         opacity: .8;
     }
 
-    // .contacts__item-icon--phone
-
-    &__item-icon--phone {
-        background-image: url('../img/icons/contact/phone.svg');
-    }
-
     &__license {
         position: relative;
     }
 
     &__license-title {
         position: absolute;
-        top: 0;
-        left: 0;
+        top: -10px;
+        left: -14px;
+        z-index: 100;
         width: 156px;
+        background-color: $blue;
         border-radius: 10px;
         padding: 9px 20px;
         font-size: 18px;
         line-height: 28px;
+        text-align: center;
+
         &:after {
             content: '';
             position: absolute;
-            bottom: 0;
-            left: 0;
-            width: 12px;
-            height: 24px;
-            background: linear-gradient(180deg, $blue 0%, #0C3A93 100%);
+            bottom: -13px;
+            left: 2px;
+            z-index: 99; // не хочет прятаться
+            width: 19px;
+            height: 22px;
+            background-image: url('../img/icons/license-title-after.svg');
         }
+    }
+
+    &__license-img {
+        max-width: 100%;
+        height: auto;
     }
 }
 
@@ -136,18 +147,21 @@
     &__title {
         font-size: 24px;
         line-height: 29px;
+        margin-bottom: 20px;
     }
 
     // .letter-form__textarea
 
     &__textarea {
+        min-height: 198px;
         padding-right: 20px;
+        margin-bottom: 20px;
     }
 
     // .letter-form__input
 
     &__input {
-        position: relative;
+        width: 100%;
         background: #FFFFFF;
         border-radius: 10px;
         padding: 20px;
@@ -156,6 +170,14 @@
         font-size: 14px;
         line-height: 24px;
         color: rgba($dark, .6);
+
+        &::placeholder {
+            color: rgba($dark, .6);
+        }
+    }
+
+    &__input-wrap {
+        position: relative;
     }
 
     // .letter-form__btn
@@ -167,23 +189,33 @@
         bottom: 0;
         width: 195px;
         height: 100%;
-        padding: 10px 30px;
-        font-weight: 600;
+        padding: 0px 30px;
         font-size: 16px;
         line-height: 50px;
     }
 }
 
 .address {
-    background-color: $light-blue-bg;
     padding: 64px 0 73px;
-    &__inner {
-        @include flex;
-        align-items: center;
+
+    &__inner {}
+
+    &__item+&__item {
+        margin-top: 60px;
     }
 }
 
 .documents {
+    padding-top: 80px;
+
+    &__title {
+        margin-bottom: 50px;
+    }
+
+    &__item {
+        width: 165px;
+    }
+
     &__item-link span {
         border-bottom: 1px solid $dark;
     }

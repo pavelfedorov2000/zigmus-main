@@ -1,4 +1,5 @@
 .reset-filter-btn {
+    display: none;
     width: 10px;
     height: 10px;
     border-radius: 50%;
@@ -7,6 +8,10 @@
     background-position: center;
     background-size: 4px 4px;
     background-repeat: no-repeat;
+
+    &--input-changed {
+        display: inline-block;
+    }
 }
 
 .top-filters {

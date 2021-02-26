@@ -1,7 +1,11 @@
 .button {
+    display: flex;
+    align-items: center;
+    height: 68px;
     @include center;
     background: $accent;
     border-radius: 8px;
+    font-weight: 600;
     color: #fff;
     text-align: center;
     transition: .3s ease;

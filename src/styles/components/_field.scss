@@ -26,21 +26,9 @@
     margin-bottom: 3px;
 }
 
-.phone-field {
-
-    input {
-        background-color: transparent;
-        border: none;
-        font-weight: 500;
-        font-size: 14px;
-        line-height: 24px;
-
-        &::placeholder {
-            color: $dark;
-        }
-    }
-}
-
-input[type="password"] {
-    //-webkit-text-security: square;
+.white-input {
+    background: #FFFFFF;
+    border-radius: 6px;
+    font-size: 12px;
+    line-height: 20px;
 }

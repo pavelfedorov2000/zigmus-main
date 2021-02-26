@@ -4,6 +4,7 @@ document.styleSheets[0].addRule('.register-popup__form-item.warning', 'border-co
 document.styleSheets[0].addRule('.register-popup__form-item.success', 'border-color: #236eff');
 document.styleSheets[0].addRule('.form-message.success', 'color: #236eff');
 document.styleSheets[0].addRule('.filter-style .jq-selectbox__select::before', 'border-radius: 10px; background-size: auto;');
+
 function checkpass() {
     let pass = this.find('[name=password]');
     let rep = this.find('[name=repeat-password]');

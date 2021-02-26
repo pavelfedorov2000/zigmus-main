@@ -1,0 +1,29 @@
+.orders-tape {
+
+    padding: 100px 0;
+
+    // .orders-tape__title
+
+    &__title {}
+
+    // .orders-tape__tabs
+
+    &__tabs {
+        max-width: 789px;
+        margin: 0 auto 60px;
+    }
+
+    // .orders-tape__tab
+
+    &__tab {
+        width: 389px / 789px * 100%;
+    }
+
+    // .orders-tape__tabs-content
+
+    &__tabs-content {}
+
+    // .orders-tape__card
+
+    &__card {}
+}

@@ -1,5 +1,5 @@
 .overlay {
-    //display: none;
+    display: none;
     position: absolute;
     top: 0;
     right: 0;
@@ -11,11 +11,11 @@
 }
 
 .popup {
-    position: absolute;
+    position: fixed;
     @include centerX;
     top: 184px;
     background: #ffffff;
-    //box-shadow: 0px 10px 40px rgba(0, 4, 41, 0.05);
+    box-shadow: 0px 10px 40px rgba(0, 4, 41, 0.05);
     border-radius: 10px;
 
     &--mini {
@@ -87,4 +87,15 @@
             border-bottom: 1px solid $blue;
         }
     }
+
+    /* .error {
+        border: 1px solid red;
+    }
+
+    label.error {
+        color: #ffffff;
+        border: none;
+        text-align: center;
+        margin-bottom: 15px;
+    } */
 }

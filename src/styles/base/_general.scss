@@ -9,6 +9,32 @@
     overflow-x: hidden;
 }
 
+.section {
+    padding: 120px 0;
+
+    &--blue {
+        background-color: $light-blue-bg;
+    }
+
+    &__title {
+        font-size: 36px;
+        line-height: 43px;
+
+        &--center {
+            text-align: center;
+        }
+    }
+
+    &__big-title {
+        margin-bottom: 80px;
+    }
+
+    &__text {
+        font-size: 16px;
+        line-height: 26px;
+    }
+}
+
 .flex {
     display: flex;
 }
@@ -54,5 +80,6 @@
 @import '../components/list';
 @import '../components/tabs';
 @import '../components/field';
+@import '../components/avatar';
 //@import '../components/checkbox';
 @import '../components/video-player';

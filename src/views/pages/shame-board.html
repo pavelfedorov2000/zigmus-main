@@ -7,74 +7,44 @@
     <div class="wrapper">
         @@include('../../blocks/modules/header/_header.html')
 
-        <section class="section-top">
+        <section class="top-page">
             <div class="container">
-                <h1 class="title section-top__title title--white">
+                <h1 class="title top-page__title title--white">
                     Доска позора
                 </h1>
             </div>
         </section>
 
-        <section class="section shame-board">
+        <section class="section shame-board section--blue">
             <div class="container">
-                <div class="shame-board__wrapper">
+                <div class="shame-board__wrapper grid">
                     <div class="shame-board__header shame-board__block">
-                        <div class="shame-board__categories">
-                            <div class="shame-board__category">
+                        <ul class="shame-board__categories">
+                            <li class="category shame-board__category">
                                 Грузовладельцы
-                            </div>
-                            <div class="shame-board__category">
+                            </li>
+                            <li class="category shame-board__category">
                                 Перевозчики
-                            </div>
-                        </div>
+                            </li>
+                        </ul>
                         <button class="button shame-board__btn">
                             Добавить компанию
                         </button>
                     </div>
                     <div class="shame-board__main shame-board__block">
                         <div class="shame-board__main-content">
-                            <h1 class="title section__title">
+                            <h2 class="title section__title">
                                 Здесь собраны не добросовестные компании и мошенники
-                            </h1>
+                            </h2>
                             <p class="shame-board__text">
                                 Которые проявили себя на платформе ZIGMUS и других ресурсах
                             </p>
                         </div>
-                        <img src="" alt="" class="shame-board__img">
+                        <img class="shame-board__main-img" src="img/cut-phone.png" alt="">
                     </div>
-                    <div class="shame-board__cards shame-board__block">
-                        <div class="shame-board__card shame-card">
-                            <div class="shame-card__item shame-card__header">
-                                <img src="" alt="" class="shame-card__logo">
-                                <div class="shame-card__header-info">
-                                    <div class="title shame-card__name">
-                                        (ООО) «СТА Логистик»
-                                    </div>
-                                    <p class="shame-card__category">
-                                        Частный перевозчик
-                                    </p>
-                                    <a class="shame-card__properties" href="#">
-                                        Реквизиты
-                                    </a>
-                                </div>
-                            </div>
-                            <dl class="shame-card__item shame-card__reason">
-                                <dt class="shame-card__item-title">
-                                    Причина:
-                                </dt>
-                                <dd class="shame-card__item-text shame-card__reason-text">
-                                    Не выплатил перевозчику 50% стоимость от заказа и пропал
-                                </dd>
-                            </dl>
-                            <div class="shame-card__item shame-card__from">
-
-                            </div>
-                            <div class="shame-card__item shame-card__footer">
-                                <p class="shame-card__footer-nums"></p>
-                                <a href="" class="shame-card__add-complaint"></a>
-                            </div>
-                        </div>
-                    </div>
+                    @@include('../../blocks/modules/shame-board/_shame-board-card.html')
+                    @@include('../../blocks/modules/shame-board/_shame-board-card.html')
+                    @@include('../../blocks/modules/shame-board/_shame-board-card.html')
                 </div>
             </div>
         </section>
@@ -85,4 +55,5 @@
     @@include('../_js.html')
 
 </body>
+
 </html>
