@@ -27,7 +27,7 @@
     // .header__menu
 
     &__menu {
-        display: none;
+        //display: none;
     }
 
     // .header__menu-list
@@ -225,9 +225,79 @@
     // .header__select
 
     &__select {
-        font-weight: 500;
+        /* font-weight: 500;
         font-size: 14px;
-        line-height: 16px;
+        line-height: 16px; */
+
+        .jq-selectbox {
+
+            &__select {
+                font-family: 'Gilroy', sans-serif;
+                font-weight: 500;
+                line-height: 16px;
+                padding-right: 0px;
+                //padding-right: 15px;
+            }
+
+            &__select-text {
+                padding-right: 0;
+
+                &:after {
+                    display: none;
+                }
+            }
+
+            &__trigger {
+                top: 5px;
+                width: 9px;
+                height: 7px;
+                background-image: url('../img/icons/arrows/header-select.svg');
+            }
+
+            &__dropdown {
+                width: 185px;
+                min-height: 192px;
+                padding: 22px 10px;
+                background: #FFFFFF;
+
+                ul {
+                    padding-top: 40px;
+
+                    &:before {
+                        content: 'Валюта на сайте';
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        font-weight: 600;
+                        font-size: 16px;
+                        line-height: 19px;
+                        color: $dark;
+                    }
+                }
+            }
+
+            li {
+                position: relative;
+                font-size: 14px;
+                line-height: 16px;
+                color: $dark;
+                padding: 0;
+                padding-left: 23px;
+
+                &:before {
+                    content: '';
+                    position: absolute;
+                    width: 16px;
+                    height: 16px;
+                    border-radius: 50%;
+                    border: 1px solid rgba($dark, .4);
+                }
+            }
+
+            li+li {
+                margin-top: 15px;
+            }
+        }
     }
 
     &__select+&__select {
