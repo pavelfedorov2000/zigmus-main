@@ -7,6 +7,7 @@
     <div class="wrapper">
         @@include('../../blocks/modules/header/_header.html')
 
+
         <div class="p-profile">
             <div class="container">
                 <div class="p-profile__wrapper">
@@ -161,136 +162,128 @@
                             Выйти
                         </button>
                     </div>
-                    <div class="p-profile__content flex">
-                        <div class="p-profile__body">
-                            <h3 class="title section-title p-profile__head p-profile__title">
-                                Добавить сотрудника
-                            </h3>
-                            <form action="#" id="employee-info" class="profile__info">
-                                <h5 class="title profile__item-title">Общая информация</h5>
-                                <div class="profile__item-inner">
-                                    <div class="profile__fields grid">
-                                        <div class="profile__fields-item">
-                                            <div class="field profile__field">
-                                                <div class="profile__field-inner">
-                                                    <label class="label">Имя и фамилия</label>
-                                                    <div class="field__value flex">
-                                                        <input class="input field__value" type="text">
-                                                        <button class="reset-filter-btn" type="reset"></button>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="profile__fields-item">
-                                            <div class="field phone-field profile__field">
-                                                <div class="profile__field-inner">
-                                                    <label class="label" for="phone">
-                                                        Номер телефона
-                                                    </label>
-                                                    <select class="filter-style" name="country">
-                                                        <option value="by">BY</option>
-                                                        <option value="ru">RU</option>
-                                                        <option value="ua">UA</option>
-                                                    </select>
-                                                    <input type="tel" name="phone"
-                                                        placeholder="+375 (_ _) _ _ _-_ _-_ _">
-                                                </div>
-                                            </div>
-                                            <button class="plus-btn profile__plus-btn add-phone">
-                                                Добавить еще телефон
-                                            </button>
-                                        </div>
-                                        <div class="profile__fields-item">
-                                            <div class="field profile__field">
-                                                <div class="profile__field-inner">
-                                                    <label class="label">Дата рождения</label>
-                                                    <div class="field__value flex">
-                                                        <input class="input field__value" type="text" autofocus>
-                                                        <button class="reset-filter-btn" type="reset"></button>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="profile__fields-item">
-                                            <div class="field profile__field profile__img-choice flex">
-                                                <div class="profile__field-file">
-                                                    <label class="plus-btn">
-                                                        Добавить фото сотрудника
-                                                        <input class="filter-style" type="file" name="avatar"
-                                                            id="avatar">
-                                                    </label>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="profile__fields-item profile__fields-item--w100">
-                                            <div class="field profile__field">
-                                                <div class="profile__field-inner">
-                                                    <label class="label">Email</label>
-                                                    <div class="field__value flex">
-                                                        <input class="input field__value" type="email" autofocus>
-                                                        <button class="reset-filter-btn" type="reset"></button>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="profile__fields-item">
-                                            <div class="field profile__field">
-                                                <div class="profile__field-inner">
-                                                    <label class="label">Логин</label>
-                                                    <div class="field__value flex">
-                                                        <input class="input field__value" type="text" autofocus>
-                                                        <button class="reset-filter-btn" type="reset"></button>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="profile__fields-item">
-                                            <div class="field profile__field">
-                                                <div class="profile__field-inner">
-                                                    <label class="label">Пароль</label>
-                                                    <div class="field__value flex">
-                                                        <input class="input field__value" type="text" autofocus>
-                                                        <button class="reset-filter-btn" type="reset"></button>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </form>
+
+                    <div class="employees">
+                        <div class="employees__header">
+                            <h3 class="title section-title employees__title">Мои сотрудники</h3>
+                            <button id="add-empoyee-btn" class="button employees__btn">Добавить сотрудника</button>
                         </div>
-                        <aside class="p-profile__aside">
-                            <div class="p-profile__add p-profile__aside-item">
-                                <div class="p-profile__fullness flex">
-                                    <div class="p-profile__fullness-percent">
-                                        87%
+                        <div class="employees__cards grid">
+                            <div class="employees__card employee-card">
+                                <div class="employee-card__inner">
+                                    <div class="employee-card__info">
+                                        <div class="avatar employee-card__avatar avatar--man"></div>
+                                        <div class="employee-card__info-content">
+                                            <div class="employee-card__name-age">
+                                                <div class="employee-card__name">Никита Сардаров</div>
+                                                <div class="employee-card__age">32 года</div>
+                                            </div>
+                                            <div class="employee-card__id"></div>
+                                            <div class="employee-card__rate" data-rateyo-rating="5"></div>
+                                        </div>
                                     </div>
-                                    <div class="p-profile__aside-item-text p-profile__fullness-text">
-                                        Чтобы опубликовать транспорт заполните на 100%
+                                    <div class="employee-card__btn">
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
                                     </div>
                                 </div>
-                                <select name="" id="" class="p-profile__aside-select select">
-                                    <option value="">Бесплатное, меньше отликов</option>
-                                </select>
-                                <button id="add-transport" class="button p-profile__aside-btn">
-                                    Добавить транспорт
-                                </button>
-                                <button class="p-profile__aside-blue-btn flex">Отменить</button>
+                                <div class="employee-card__tels">
+                                    <p class="employee-card__tels-title">Телефоны</p>
+                                    <a href="tel:+375172704979" class="title employee-card__tel">+375 17 270 49 79</a>
+                                    <a href="tel:+375172704979" class="title employee-card__tel">+375 17 270 49 79</a>
+                                </div>
                             </div>
-                        </aside>
+                            <div class="employees__card employee-card">
+                                <div class="employee-card__inner">
+                                    <div class="employee-card__info">
+                                        <div class="avatar employee-card__avatar avatar--man"></div>
+                                        <div class="employee-card__info-content">
+                                            <div class="employee-card__name-age">
+                                                <div class="employee-card__name">Никита Сардаров</div>
+                                                <div class="employee-card__age">32 года</div>
+                                            </div>
+                                            <div class="employee-card__id"></div>
+                                            <div class="employee-card__rate" data-rateyo-rating="5"></div>
+                                        </div>
+                                    </div>
+                                    <div class="employee-card__btn">
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                    </div>
+                                </div>
+                                <div class="employee-card__tels">
+                                    <p class="employee-card__tels-title">Телефоны</p>
+                                    <a href="tel:+375172704979" class="title employee-card__tel">+375 17 270 49 79</a>
+                                    <a href="tel:+375172704979" class="title employee-card__tel">+375 17 270 49 79</a>
+                                </div>
+                            </div>
+                            <div class="employees__card employee-card">
+                                <div class="employee-card__inner">
+                                    <div class="employee-card__info">
+                                        <div class="avatar employee-card__avatar avatar--man"></div>
+                                        <div class="employee-card__info-content">
+                                            <div class="employee-card__name-age">
+                                                <div class="employee-card__name">Никита Сардаров</div>
+                                                <div class="employee-card__age">32 года</div>
+                                            </div>
+                                            <div class="employee-card__id"></div>
+                                            <div class="employee-card__rate" data-rateyo-rating="5"></div>
+                                        </div>
+                                    </div>
+                                    <div class="employee-card__btn">
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                    </div>
+                                </div>
+                                <div class="employee-card__tels">
+                                    <p class="employee-card__tels-title">Телефоны</p>
+                                    <a href="tel:+375172704979" class="title employee-card__tel">+375 17 270 49 79</a>
+                                    <a href="tel:+375172704979" class="title employee-card__tel">+375 17 270 49 79</a>
+                                </div>
+                            </div>
+                            <div class="employees__card employee-card">
+                                <div class="employee-card__inner">
+                                    <div class="employee-card__info">
+                                        <div class="avatar employee-card__avatar avatar--man"></div>
+                                        <div class="employee-card__info-content">
+                                            <div class="employee-card__name-age">
+                                                <div class="employee-card__name">Никита Сардаров</div>
+                                                <div class="employee-card__age">32 года</div>
+                                            </div>
+                                            <div class="employee-card__id"></div>
+                                            <div class="employee-card__rate" data-rateyo-rating="5"></div>
+                                        </div>
+                                    </div>
+                                    <div class="employee-card__btn">
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                    </div>
+                                </div>
+                                <div class="employee-card__tels">
+                                    <p class="employee-card__tels-title">Телефоны</p>
+                                    <a href="tel:+375172704979" class="title employee-card__tel">+375 17 270 49 79</a>
+                                    <a href="tel:+375172704979" class="title employee-card__tel">+375 17 270 49 79</a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-
-
-            @@include('../../blocks/modules/footer/_footer.html')
-
-            <div class="overlay">
-                @@include('../../blocks/modules/popups/_popups.html')
-            </div>
         </div>
 
-        @@include('../_js.html')
+
+        @@include('../../blocks/modules/footer/_footer.html')
+
+        <div class="overlay">
+            @@include('../../blocks/modules/popups/_popups.html')
+        </div>
+    </div>
+
+    @@include('../_js.html')
 
 </body>
 
