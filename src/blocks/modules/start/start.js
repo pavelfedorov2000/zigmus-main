@@ -12,13 +12,5 @@ $('.slider-start').slick({
             vertical: false,
             verticalSwiping: false,
         }
-    }, ]
+    },]
 });
-
-/* @@include('../blocks/modules/clients/clients.js') */
-
-/* @@include('../blocks/modules/start/start.js') */
-
-/* @@include('tabs.js') */
-
-/* @@include('scroll.js') */
