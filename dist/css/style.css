@@ -1970,59 +1970,107 @@ address {
 }
 
 .header__select {
-  /* font-weight: 500;
-        font-size: 14px;
-        line-height: 16px; */
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  z-index: 102;
 }
 
-.header__select .jq-selectbox__select {
-  font-family: "Gilroy", sans-serif;
+.header__select[data-state="active"] .header__select-value {
+  color: #236EFF;
+}
+
+.header__select[data-state="active"] .header__select-value svg {
+  -webkit-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.header__select[data-state="active"] .header__select-value svg path {
+  fill: #236EFF;
+}
+
+.header__select[data-state="active"] .header__select-content {
+  opacity: 1;
+}
+
+.header__select-value {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
   font-weight: 500;
+  font-size: 14px;
   line-height: 16px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
   padding-right: 15px;
+  cursor: pointer;
+  /* &:after {
+            content: "";
+            position: absolute;
+            top: 5px;
+            right: 0;
+            width: 9px;
+            height: 7px;
+            background-image: url("../img/icons/arrows/header-select.svg");
+            transition: 0.3s all;
+        } */
 }
 
-.header__select .jq-selectbox__select-text {
-  padding-right: 0;
-}
-
-.header__select .jq-selectbox__select-text:after {
-  display: none;
-}
-
-.header__select .jq-selectbox__trigger {
-  top: 5px;
-  width: 9px;
-  height: 7px;
-  background-image: url("../img/icons/arrows/header-select.svg");
+.header__select-value svg {
   -webkit-transition: 0.3s all;
   -o-transition: 0.3s all;
   transition: 0.3s all;
+  margin-left: 6px;
 }
 
-.header__select .jq-selectbox__dropdown {
+.header__select-content {
+  position: absolute;
+  top: calc(100% + 12px);
+  left: 0;
   width: 185px;
   min-height: 192px;
   padding: 22px 10px;
   background: #ffffff;
+  opacity: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
-.header__select .jq-selectbox__dropdown ul {
-  padding-top: 40px;
-}
-
-.header__select .jq-selectbox__dropdown ul:before {
-  content: "Валюта на сайте";
-  position: absolute;
-  top: 0;
-  left: 0;
+.header__select-title {
   font-weight: 600;
   font-size: 16px;
   line-height: 19px;
-  color: #343434;
+  margin-bottom: 20px;
 }
 
-.header__select .jq-selectbox li {
+.header__select-input {
+  display: none;
+}
+
+.header__select-input:checked + label:before {
+  border-color: #FF6118;
+}
+
+.header__select-input:checked + label:after {
+  display: block;
+}
+
+.header__select-label {
   position: relative;
   font-size: 14px;
   line-height: 16px;
@@ -2031,27 +2079,35 @@ address {
   padding-left: 23px;
 }
 
-.header__select .jq-selectbox li:before {
+.header__select-label:before,
+.header__select-label:after {
   content: "";
   position: absolute;
+  border-radius: 50%;
+  border-width: 1px;
+  border-style: solid;
+}
+
+.header__select-label:before {
+  top: 0;
+  left: 0;
   width: 16px;
   height: 16px;
-  border-radius: 50%;
-  border: 1px solid rgba(52, 52, 52, 0.4);
+  border-color: rgba(52, 52, 52, 0.4);
 }
 
-.header__select .jq-selectbox li + li {
+.header__select-label:after {
+  display: none;
+  top: 4px;
+  left: 4px;
+  width: 8px;
+  height: 8px;
+  background-color: #FF6118;
+  border-color: #FF6118;
+}
+
+.header__select-label + .header__select-input + .header__select-label {
   margin-top: 15px;
-}
-
-.header__select .jq-selectbox.changed.dropdown.focused.opened .jq-selectbox__select {
-  border: none;
-}
-
-.header__select .jq-selectbox.changed.dropdown.focused.opened .jq-selectbox__trigger {
-  -webkit-transform: rotate(180deg);
-      -ms-transform: rotate(180deg);
-          transform: rotate(180deg);
 }
 
 .header__select + .header__select {

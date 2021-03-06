@@ -1,3 +1,5 @@
+// ========================= MENU-DROP ===================== //
+
 $('.header__menu-item').on('click', function () {
     $(this).siblings().removeClass('header__menu-item--active');
     $(this).siblings().find('ul').slideUp();
@@ -10,6 +12,9 @@ $('.header__user-name').on('click', function () {
     $(this).parent().find('div.header__dashboard').toggleClass('header__dashboard--active');
 });
 
+
+// ========================= DASHBOARD ======================= //
+
 $('.header-dashboard__item-title').on('click', function () {
     $(this).parent().find('ul').slideToggle('300');
     $(this).parent().parent().toggleClass('header-dashboard__menu-item--active');
@@ -18,6 +23,9 @@ $('.header-dashboard__item-title').on('click', function () {
 $('.dashboard__item-header').on('click', function () {
     $(this).parent().find('ul').slideToggle('300');
 });
+
+
+// ======================== NOTIFICATIONS ======================= //
 
 $('.header__notify').on('click', function () {
     $(this).toggleClass('header__notify--active');
@@ -29,6 +37,9 @@ $('.header__notify').on('click', function () {
 $('.notifications__item--new').on('click', function () {
     $(this).removeClass('notifications__item--new');
 });
+
+
+// ==================== SEARCH-FORM ================ //
 
 $('.header__search-input').on('focus', function () {
     $(this).parent().addClass('header__search-form--active');
@@ -53,3 +64,54 @@ $(document).mouseup(function (e) {
         $('.header__menu').show('300');
     }
 });
+
+// ========================= SELECTS =========================== //
+
+const selectCurrency = document.getElementById('currency-choice');
+const selectCurrencyTitle = selectCurrency.querySelector('.header__select-value');
+const selectCurrencyLabels = selectCurrency.querySelectorAll('.header__select-label');
+
+// Toggle menu
+selectCurrencyTitle.addEventListener('click', () => {
+    if ('active' === selectCurrency.getAttribute('data-state')) {
+        selectCurrency.setAttribute('data-state', '');
+    } else {
+        selectCurrency.setAttribute('data-state', 'active');
+    }
+    if (selectLang.getAttribute('data-state') === 'active') {
+        selectLang.setAttribute('data-state', '');
+    }
+});
+
+// Close when click to option
+for (let i = 0; i < selectCurrencyLabels.length; i++) {
+    selectCurrencyLabels[i].addEventListener('click', (event) => {
+        selectCurrencyTitle.textContent = event.target.textContent;
+        selectCurrency.setAttribute('data-state', '');
+    });
+}
+
+const selectLang = document.getElementById('language-choice');
+const selectLangTitle = selectLang.querySelector('.header__select-value');
+const selectLangLabels = selectLang.querySelectorAll('.header__select-label');
+
+// Toggle menu
+selectLangTitle.addEventListener('click', () => {
+    if ('active' === selectLang.getAttribute('data-state')) {
+        selectLang.setAttribute('data-state', '');
+    } else {
+        selectLang.setAttribute('data-state', 'active');
+    }
+    if (selectCurrency.getAttribute('data-state') === 'active') {
+        selectCurrency.setAttribute('data-state', '');
+    }
+});
+
+// Close when click to option
+for (let i = 0; i < selectLangLabels.length; i++) {
+    const langs = ['Ру', 'Англ', 'Пол', 'Бел'];
+    selectLangLabels[i].addEventListener('click', () => {
+        selectLangTitle.textContent = langs[i];
+        selectLang.setAttribute('data-state', '');
+    });
+}
