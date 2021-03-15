@@ -68,7 +68,8 @@ $(document).mouseup(function (e) {
 // ========================= SELECTS =========================== //
 
 const selectCurrency = document.getElementById('currency-choice');
-const selectCurrencyTitle = selectCurrency.querySelector('.header__select-value');
+const selectCurrencyTitle = selectCurrency.querySelector('.header__select-title');
+const selectCurrencyValue = selectCurrency.querySelector('.header__select-value');
 const selectCurrencyLabels = selectCurrency.querySelectorAll('.header__select-label');
 
 // Toggle menu
@@ -86,13 +87,14 @@ selectCurrencyTitle.addEventListener('click', () => {
 // Close when click to option
 for (let i = 0; i < selectCurrencyLabels.length; i++) {
     selectCurrencyLabels[i].addEventListener('click', (event) => {
-        selectCurrencyTitle.textContent = event.target.textContent;
+        selectCurrencyValue.textContent = event.target.textContent;
         selectCurrency.setAttribute('data-state', '');
     });
 }
 
 const selectLang = document.getElementById('language-choice');
-const selectLangTitle = selectLang.querySelector('.header__select-value');
+const selectLangTitle = selectLang.querySelector('.header__select-title');
+const selectLangValue = selectLang.querySelector('.header__select-value');
 const selectLangLabels = selectLang.querySelectorAll('.header__select-label');
 
 // Toggle menu
@@ -111,7 +113,7 @@ selectLangTitle.addEventListener('click', () => {
 for (let i = 0; i < selectLangLabels.length; i++) {
     const langs = ['Ру', 'Англ', 'Пол', 'Бел'];
     selectLangLabels[i].addEventListener('click', () => {
-        selectLangTitle.textContent = langs[i];
+        selectLangValue.textContent = langs[i];
         selectLang.setAttribute('data-state', '');
     });
 }

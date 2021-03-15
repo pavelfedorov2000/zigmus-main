@@ -109,9 +109,9 @@
                     </div>
                     <div class="header__selects">
                         <form id="currency-choice" action="#" class="header__select" data-state="">
-                            <div class="header__select-value" data-default="EUR">
-                                EUR
-                                <svg width="9" height="7" viewBox="0 0 9 7" fill="none"
+                            <div class="header__select-title" data-default="EUR">
+                                <span class="header__select-value">EUR</span>
+                                <svg width=" 9" height="7" viewBox="0 0 9 7" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
                                     <path
                                         d="M4.50022 6.06507C4.33892 6.06507 4.17764 6.00348 4.05467 5.88057L0.184871 2.01073C-0.0612983 1.76456 -0.0612983 1.36544 0.184871 1.11937C0.430941 0.873297 0.829984 0.873297 1.07617 1.11937L4.50022 4.54361L7.92429 1.11949C8.17046 0.873417 8.56946 0.873417 8.81551 1.11949C9.0618 1.36556 9.0618 1.76468 8.81551 2.01085L4.94577 5.88069C4.82274 6.00362 4.66146 6.06507 4.50022 6.06507Z"
@@ -119,7 +119,7 @@
                                 </svg>
                             </div>
                             <div class="header__select-content">
-                                <div class="header__select-title">Валюта на сайте</div>
+                                <div class="header__select-droptitle">Валюта на сайте</div>
                                 <input id="currency0" class="header__select-input" type="radio" name="currency" checked>
                                 <label for="currency0" class="header__select-label">EUR</label>
                                 <input id="currency1" class="header__select-input" type="radio" name="currency">
@@ -131,9 +131,9 @@
                             </div>
                         </form>
                         <form id="language-choice" action="#" class="header__select" data-state="">
-                            <div class="header__select-value" data-default="EUR">
-                                Ру
-                                <svg width="9" height="7" viewBox="0 0 9 7" fill="none"
+                            <div class="header__select-title" data-default="EUR">
+                                <span class="header__select-value">Ру</span>
+                                <svg width=" 9" height="7" viewBox="0 0 9 7" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
                                     <path
                                         d="M4.50022 6.06507C4.33892 6.06507 4.17764 6.00348 4.05467 5.88057L0.184871 2.01073C-0.0612983 1.76456 -0.0612983 1.36544 0.184871 1.11937C0.430941 0.873297 0.829984 0.873297 1.07617 1.11937L4.50022 4.54361L7.92429 1.11949C8.17046 0.873417 8.56946 0.873417 8.81551 1.11949C9.0618 1.36556 9.0618 1.76468 8.81551 2.01085L4.94577 5.88069C4.82274 6.00362 4.66146 6.06507 4.50022 6.06507Z"
@@ -141,7 +141,7 @@
                                 </svg>
                             </div>
                             <div class="header__select-content">
-                                <div class="header__select-title">Язык</div>
+                                <div class="header__select-droptitle">Язык</div>
                                 <input id="lang0" class="header__select-input" type="radio" name="lang" checked>
                                 <label for="lang0" class="header__select-label">Русский</label>
                                 <input id="lang1" class="header__select-input" type="radio" name="lang">
@@ -207,6 +207,11 @@
                             </li>
                         </ul>
                     </div>
+                </div>
+                <div class="header__user-item header__buttons">
+                    <button class="button header__btn header__register-btn">Регистрация</button>
+                    <button
+                        class="button header__btn header__enter-btn button--transparent button--blue-border">Вход</button>
                 </div>
                 <div class="header__user-item header__avatar">
                     <div class="header__avatar-img"></div>

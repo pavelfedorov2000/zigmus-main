@@ -1,4 +1,5 @@
-.jq-checkbox {
+.jq-checkbox,
+.jq-radio {
     @include center;
     width: 10px;
     height: 10px;
@@ -10,7 +11,8 @@
     //margin-right: 8px;
 }
 
-.jq-checkbox.checked {
+.jq-checkbox.checked,
+.jq-radio.checked {
     background: transparent;
     border: 1px solid rgba($blue, 0.6);
 }
@@ -32,11 +34,17 @@
 
 .jq-radio.checked .jq-radio {
     &__div {
-        width: 0px;
-        height: 0px;
+        width: 100%;
+        height: 100%;
         margin: 0;
-        border-radius: 0;
-        background: transparent;
+        border-bottom: none;
+        border-left: none;
+        transform: rotate(0deg);
+        background-image: url('../img/icons/checkbox.svg');
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-color: transparent;
         box-shadow: none;
     }
 }
@@ -75,7 +83,7 @@
     width: 100%;
 
     &__select {
-        height: 20px;
+        height: auto;
         padding: 0 9px 0 0;
         border-bottom-color: transparent;
         border-radius: 0;
@@ -152,7 +160,6 @@
 }
 
 .phone-field {
-
     input {
         background-color: transparent;
         border: none;
@@ -207,7 +214,6 @@
 
 .mini-select {
     .jq-selectbox {
-
         &__select {
             position: relative;
             padding-right: 11px;
@@ -220,5 +226,78 @@
             height: 6px;
             background-image: url('../img/icons/arrows/drop-select.svg');
         }
+    }
+}
+
+select option span {
+    opacity: 0.5;
+}
+
+// ======================== Datepicker ======================= //
+
+input:-internal-autofill-selected {
+    appearance: none;
+    background-color: transparent !important;
+    color: rgba($dark, 0.5) !important;
+}
+
+.datepicker {
+    background: #fff;
+    border: none;
+    box-shadow: none;
+    border-radius: 0px;
+    box-sizing: border-box;
+    font-family: 'Gilroy', sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 18px;
+    color: $dark;
+    width: 202px;
+
+    &--pointer {
+        display: none;
+    }
+
+    &--nav {
+        padding: 5px;
+        justify-content: center;
+        background-color: $light-blue-bg;
+    }
+
+    &--nav-title {
+        font-size: 13px;
+        i {
+            color: $dark;
+        }
+    }
+
+    &--nav-action {
+        svg {
+            path {
+                stroke: $blue;
+            }
+        }
+    }
+
+    &--cell {
+        width: 20px;
+        height: 18px;
+        &.-selected- {
+            background-color: $blue;
+            border-radius: 50%;
+            width: 18px;
+        }
+    }
+
+    &--content {
+        padding: 10px;
+    }
+
+    &--days-names {
+        margin: 0 0 5px 0;
+    }
+
+    &--day-name {
+        color: rgba($dark, 0.6);
     }
 }

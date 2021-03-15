@@ -8,8 +8,19 @@
             <a href="#orders-tape-tab-2" class="tab orders-tape__tab">Транспорт</a>
         </div>
 
-        <div class="tabs__content orders-tape__tabs-content grid">
-            <div class="order-card orders-tape__card"></div>
+        <div id="orders-tape-tab-1" class="tabs__content orders-tape__content grid tabs__content--active">
+            @@include('../order-card/_order-card.html')
+            @@include('../order-card/_order-card.html')
+            @@include('../order-card/_order-card.html')
+            @@include('../order-card/_order-card.html')
         </div>
+        <div id="orders-tape-tab-2" class="tabs__content orders-tape__content grid">
+            @@include('../order-card/_order-card.html')
+            @@include('../order-card/_order-card.html')
+            @@include('../order-card/_order-card.html')
+            @@include('../order-card/_order-card.html')
+        </div>
+
+        <a href="#" class="button section-btn orders-tape__btn">Все грузы</a>
     </div>
 </section>

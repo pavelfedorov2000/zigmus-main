@@ -1,14 +1,12 @@
 .button {
     display: flex;
     align-items: center;
-    height: 68px;
     @include center;
     background: $accent;
     border-radius: 8px;
-    font-weight: 600;
     color: #fff;
     text-align: center;
-    transition: .3s ease;
+    transition: 0.3s ease;
 
     /* @media(max-width: 575px) {
         width: 260px;
@@ -34,13 +32,19 @@
 
     &--white-border {
         border-color: #fff;
-        color: #fff
+        color: #fff;
     }
 
     &--blue-border {
         border-color: $blue;
         color: $blue;
     }
+}
+
+.section-btn {
+    height: 68px;
+    font-weight: 600;
+    font-size: 16px;
 }
 
 .dashboard-btn {
@@ -70,5 +74,32 @@
         text-align: center;
         font-size: 14px;
         line-height: 14px;
+    }
+}
+
+.settings-btn {
+    @include center;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 1px solid #f2f2f2;
+    cursor: pointer;
+    span {
+        display: inline-block;
+        width: 2px;
+        height: 2px;
+        border-radius: 50%;
+        background: rgba(#343434, 0.3);
+        margin: 0 1px;
+        @media (max-width: 575px) {
+            width: 1.37px;
+            height: 1.37px;
+            margin: 0 0.68px;
+        }
+    }
+    @media (max-width: 575px) {
+        width: 14px;
+        height: 14px;
+        border-width: 0.682513px;
     }
 }

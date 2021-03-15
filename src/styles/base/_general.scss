@@ -16,6 +16,12 @@
         background-color: $light-blue-bg;
     }
 
+    &__head {
+        &--center {
+            text-align: center;
+        }
+    }
+
     &__title {
         font-size: 36px;
         line-height: 43px;
@@ -43,10 +49,10 @@
     display: grid;
 }
 
-.card {
+/* .card {
     background: #FFFFFF;
     border-radius: 10px;
-}
+} */
 
 .category {
     background: $light-blue-bg;
@@ -56,7 +62,7 @@
     line-height: 12px;
 
     &--blue-bg {
-        background: linear-gradient(180deg, #B5E0FF 0%, #B2DFFF 100%);
+        background: linear-gradient(180deg, #b5e0ff 0%, #b2dfff 100%);
     }
 }
 

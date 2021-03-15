@@ -15,14 +15,6 @@
     flex-direction: column;
 }
 
-// buttons, links
-@mixin btn {
-    border: none;
-    outline: none;
-    padding: 0;
-    cursor: pointer;
-}
-
 // positioning
 @mixin centerX {
     left: 50%;

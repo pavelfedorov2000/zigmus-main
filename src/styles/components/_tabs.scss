@@ -11,7 +11,22 @@
         border-radius: 10px;
     }
 
-    @media(max-width: 575px) {
+    &--blue {
+        background: #e3eeff;
+        padding-left: 10px;
+        padding-right: 10px;
+        .tab {
+            //width: 945px / 4;
+            color: #343434;
+            padding: 0 18px;
+            &--active {
+                background-color: $blue;
+                color: #fff;
+            }
+        }
+    }
+
+    @media (max-width: 575px) {
         width: 432px;
         overflow-x: scroll;
         border-radius: 0px;
@@ -28,6 +43,9 @@
 
     &__content--active {
         display: block;
+        &.grid {
+            display: grid;
+        }
     }
 }
 
@@ -41,13 +59,15 @@
 }
 
 .tab {
+    @include center;
+    font-weight: 500;
     font-size: 16px;
     line-height: 50px;
     color: rgba(#fff, 0.6);
     text-align: center;
     cursor: pointer;
 
-    @media(max-width: 575px) {
+    @media (max-width: 575px) {
         width: auto;
         padding: 0 6px;
         font-size: 12px;
@@ -60,18 +80,20 @@
         color: rgba(#fff, 1);
         font-weight: 600;
 
-        @media(max-width: 575px) {
+        @media (max-width: 575px) {
             border-radius: 10px;
         }
     }
 
     &--mini {
         font-size: 14px;
+        line-height: 28px;
         color: rgba(#fff, 0.5);
+        padding: 0 15px;
 
         &.tab--active {
             border-radius: 10px;
-            padding: 0 15px;
+            color: #fff;
         }
     }
 }

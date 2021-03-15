@@ -2,6 +2,8 @@ $(function () {
 
     $('.filter-style').styler(); // Стилизация инпутов, чекбоксов, селектов ...
 
+    $('.datepicker-here').datepicker();
+
     @@include('tabs.js')
 
     @@include('input.js')
@@ -13,6 +15,8 @@ $(function () {
     @@include('../blocks/modules/questions/questions.js')
 
     @@include('../blocks/modules/order-process/order-process.js')
+
+    @@include('../blocks/modules/profile/profile.js')
 
     // ===================== POPUPS =======================//
 

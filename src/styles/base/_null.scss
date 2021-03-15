@@ -44,18 +44,22 @@ a {
 }
 
 select,
-button {
-    @include btn;
-}
-
+button,
 input,
 textarea {
     background-color: transparent;
     border: none;
     outline: none;
+    padding: 0;
+    cursor: pointer;
 }
 
-input[type="file"] {
+input,
+textarea {
+    cursor: default;
+}
+
+input[type='file'] {
     cursor: pointer;
 }
 

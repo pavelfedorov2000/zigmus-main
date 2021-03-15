@@ -2,7 +2,9 @@ $(function () {
 
     $('.filter-style').styler(); // Стилизация инпутов, чекбоксов, селектов ...
 
-    $('.tab').on('click', function(e){
+    $('.datepicker-here').datepicker();
+
+    $('.tab').on('click', function (e) {
     e.preventDefault(); // отмена стандартного поведения браузера
 
     $($(this).siblings()).removeClass('tab--active');
@@ -11,16 +13,25 @@ $(function () {
     $(this).addClass('tab--active');
     $($(this).attr('href')).addClass('tabs__content--active');
 
-    //$('.').slick('setPosition'); // Инициализация слайдера
+    $('.start__slider').slick('setPosition'); // Инициализация слайдера
 });
 
     $('.input').on('change', function () {
-    $(this).parent().find('button').addClass('reset-filter-btn--input-changed');
+    $(this).parent().find('button').show();
 });
 
 $('.reset-filter-btn').on('click', function () {
-    $(this).removeClass('reset-filter-btn--input-changed');
+    $(this).hide();
     $(this).parent().find('input').val('');
+});
+
+$('.radio-field__label').on('click', function () {
+    $(this).find('span').toggleClass('checked');
+    $(this).siblings().find('span').toggleClass('checked');
+});
+
+$('.oval-check').on('click', function () {
+    $(this).find('span').toggleClass('checked');
 });
 
     // Star rating
@@ -110,7 +121,8 @@ $(document).mouseup(function (e) {
 // ========================= SELECTS =========================== //
 
 const selectCurrency = document.getElementById('currency-choice');
-const selectCurrencyTitle = selectCurrency.querySelector('.header__select-value');
+const selectCurrencyTitle = selectCurrency.querySelector('.header__select-title');
+const selectCurrencyValue = selectCurrency.querySelector('.header__select-value');
 const selectCurrencyLabels = selectCurrency.querySelectorAll('.header__select-label');
 
 // Toggle menu
@@ -128,13 +140,14 @@ selectCurrencyTitle.addEventListener('click', () => {
 // Close when click to option
 for (let i = 0; i < selectCurrencyLabels.length; i++) {
     selectCurrencyLabels[i].addEventListener('click', (event) => {
-        selectCurrencyTitle.textContent = event.target.textContent;
+        selectCurrencyValue.textContent = event.target.textContent;
         selectCurrency.setAttribute('data-state', '');
     });
 }
 
 const selectLang = document.getElementById('language-choice');
-const selectLangTitle = selectLang.querySelector('.header__select-value');
+const selectLangTitle = selectLang.querySelector('.header__select-title');
+const selectLangValue = selectLang.querySelector('.header__select-value');
 const selectLangLabels = selectLang.querySelectorAll('.header__select-label');
 
 // Toggle menu
@@ -153,7 +166,7 @@ selectLangTitle.addEventListener('click', () => {
 for (let i = 0; i < selectLangLabels.length; i++) {
     const langs = ['Ру', 'Англ', 'Пол', 'Бел'];
     selectLangLabels[i].addEventListener('click', () => {
-        selectLangTitle.textContent = langs[i];
+        selectLangValue.textContent = langs[i];
         selectLang.setAttribute('data-state', '');
     });
 }
@@ -175,9 +188,22 @@ $('.aside-process__item-title').on('click', function () {
     $(this).toggleClass('aside-process__item-title--active');
 });
 
+    $('.profile-card__drop').on('click', function () {
+    $(this).parent().parent().parent().toggleClass('profile-card--active');
+    $(this).parent().parent().siblings().find('.profile-card__offer').slideToggle('300');
+});
+
     // ===================== POPUPS =======================//
 
-    $('.popup__close-btn').on('click', function () {
+    $('.header__register-btn').on('click', function () {
+    $('.overlay, #register-popup').fadeIn('slow');
+});
+
+$('.header__enter-btn').on('click', function () {
+    $('.overlay, #enter-popup').fadeIn('slow');
+});
+
+$('.popup__close-btn').on('click', function () {
     $('.overlay, .popup').fadeOut('slow');
 });
 
@@ -189,9 +215,17 @@ $('#forgot-pass').on('click', function () {
 $('input[name=phone]').mask("+375 (99) 999-99-99");
 
 $("#email-enter").on("click", function () {
-    $(this).children().text($(this).text() == "Войти через email" ? "Войти по номеру телефона" : "Войти через email");
-    $(".enter-popup__phone-enter").toggleClass("enter-popup__phone-enter--hide");
-    $(".enter-popup__email-enter").toggleClass("enter-popup__email-enter--show");
+    $(this).hide();
+    $('#phone-enter').show();
+    $(".enter-popup__phone-enter").hide();
+    $(".enter-popup__email-enter").show();
+});
+
+$("#phone-enter").on("click", function () {
+    $(this).hide();
+    $('#email-enter').show();
+    $(".enter-popup__email-enter").hide();
+    $(".enter-popup__phone-enter").show();
 });
 
     // ===================== SLIDERS ========================/
@@ -247,8 +281,8 @@ $("#email-enter").on("click", function () {
 
     document.styleSheets[0].addRule('.form-message', 'margin-bottom: 20px');
 document.styleSheets[0].addRule('.form-message.warning', 'color: #ff6118');
-document.styleSheets[0].addRule('.register-popup__form-item.warning', 'border-color: #ff6118');
-document.styleSheets[0].addRule('.register-popup__form-item.success', 'border-color: #236eff');
+document.styleSheets[0].addRule('.popup__form-item.warning', 'border-color: #ff6118');
+document.styleSheets[0].addRule('.popup__form-item.success', 'border-color: #236eff');
 document.styleSheets[0].addRule('.form-message.success', 'color: #236eff');
 document.styleSheets[0].addRule('.filter-style .jq-selectbox__select::before', 'border-radius: 10px; background-size: auto!important;');
 

@@ -1,4 +1,4 @@
-$('.tab').on('click', function(e){
+$('.tab').on('click', function (e) {
     e.preventDefault(); // отмена стандартного поведения браузера
 
     $($(this).siblings()).removeClass('tab--active');
@@ -7,5 +7,5 @@ $('.tab').on('click', function(e){
     $(this).addClass('tab--active');
     $($(this).attr('href')).addClass('tabs__content--active');
 
-    //$('.').slick('setPosition'); // Инициализация слайдера
+    $('.start__slider').slick('setPosition'); // Инициализация слайдера
 });
