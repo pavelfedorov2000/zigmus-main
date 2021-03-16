@@ -1,0 +1,893 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('../_head.html')
+
+<body>
+
+    <div class="wrapper">
+        @@include('../../blocks/modules/header/_header.html')
+
+        <div class="p-profile">
+            <div class="container">
+                <div class="p-profile__wrapper">
+                    <aside class="dashboard p-profile__dashboard">
+                        <div class="title dashboard__title">
+                            Ваш кабинет
+                        </div>
+                        <ul class="dashboard__menu">
+                            <li class="dashboard__item dashboard__item--drop">
+                                <div class="dashboard__item-header">
+                                    <img src="img/icons/dashboard/box.svg" alt="">
+                                    <div class="title dashboard__item-title">
+                                        Грузы
+                                        <span>1</span>
+                                    </div>
+                                </div>
+                                <ul class="dashboard__submenu">
+                                    <li class="dashboard__submenu-item">
+                                        <a class="dashboard__submenu-link" href="#">
+                                            Мои грузы
+                                        </a>
+                                    </li>
+                                    <li class="dashboard__submenu-item">
+                                        <a class="dashboard__submenu-link" href="#">
+                                            Не подтверждённые
+                                        </a>
+                                    </li>
+                                    <li class="dashboard__submenu-item">
+                                        <a class="dashboard__submenu-link" href="#">
+                                            В работе
+                                            <span>1</span>
+                                        </a>
+                                    </li>
+                                    <li class="dashboard__submenu-item">
+                                        <a class="dashboard__submenu-link" href="#">
+                                            Скрытые
+                                        </a>
+                                    </li>
+                                    <li class="dashboard__submenu-item">
+                                        <a class="dashboard__submenu-link" href="#">
+                                            Выполненные
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="dashboard__item dashboard__item--drop">
+                                <div class="dashboard__item-header">
+                                    <img src="img/icons/dashboard/delivery-truck.svg" alt="">
+                                    <div class="title dashboard__item-title">
+                                        Транспорт
+                                    </div>
+                                </div>
+                                <ul class="dashboard__submenu">
+                                    <li class="dashboard__submenu-item">
+                                        <a class="dashboard__submenu-link" href="#">
+                                            Мой транспорт
+                                        </a>
+                                    </li>
+                                    <li class="dashboard__submenu-item">
+                                        <a class="dashboard__submenu-link" href="#">
+                                            Не подтверждённые
+                                        </a>
+                                    </li>
+                                    <li class="dashboard__submenu-item">
+                                        <a class="dashboard__submenu-link" href="#">
+                                            В работе
+                                        </a>
+                                    </li>
+                                    <li class="dashboard__submenu-item">
+                                        <a class="dashboard__submenu-link" href="#">
+                                            Скрытые
+                                        </a>
+                                    </li>
+                                    <li class="dashboard__submenu-item">
+                                        <a class="dashboard__submenu-link" href="#">
+                                            Выполненные
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="dashboard__item dashboard__item--drop">
+                                <div class="dashboard__item-header">
+                                    <img src="img/icons/dashboard/auction.svg" alt="">
+                                    <div class="title dashboard__item-title">
+                                        Аукцион грузы
+                                    </div>
+                                </div>
+                                <ul class="dashboard__submenu">
+                                    <li class="dashboard__submenu-item">
+                                        <a class="dashboard__submenu-link" href="#">
+                                            Мои аукционы
+                                        </a>
+                                    </li>
+                                    <li class="dashboard__submenu-item">
+                                        <a class="dashboard__submenu-link" href="#">
+                                            Мои ставки
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="dashboard__item dashboard__item--drop">
+                                <div class="dashboard__item-header dashboard__item-header--start">
+                                    <img src="img/icons/dashboard/auction.svg" alt="">
+                                    <div class="title dashboard__item-title dashboard__item-title--lh17">
+                                        Аукцион <br>
+                                        транспорт
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="dashboard__item dashboard__item--drop">
+                                <div class="dashboard__item-header">
+                                    <img src="img/icons/dashboard/building.svg" alt="">
+                                    <div class="title dashboard__item-title">
+                                        Компания
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="dashboard__item">
+                                <div class="dashboard__item-header">
+                                    <img src="img/icons/dashboard/settings.svg" alt="">
+                                    <a href="#" class="title dashboard__item-title">
+                                        Настройки
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="dashboard__item">
+                                <div class="dashboard__item-header">
+                                    <img src="img/icons/dashboard/affiliate-marketing.svg" alt="">
+                                    <a href="#" class="title dashboard__item-title">
+                                        Реф. программа
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="dashboard__item">
+                                <div class="dashboard__item-header">
+                                    <img src="img/icons/dashboard/discount.svg" alt="">
+                                    <a href="#" class="title dashboard__item-title">
+                                        Ваша скидка
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="dashboard__item">
+                                <div class="dashboard__item-header">
+                                    <img src="img/icons/dashboard/megaphone.svg" alt="">
+                                    <a href="#" class="title dashboard__item-title">
+                                        Реклама
+                                    </a>
+                                </div>
+                            </li>
+                        </ul>
+                        <button id="exit" class="button dashboard-btn dashboard__btn button--transparent">
+                            Выйти
+                        </button>
+                    </aside>
+
+                    <div class="p-profile__content">
+                        <main>
+                            <nav class="breadcrumbs">
+                                <a class="breadcrumbs__item" href="#">
+                                    <svg width="11" height="8" viewBox="0 0 11 8" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M0.646446 3.64645C0.451184 3.84171 0.451184 4.15829 0.646446 4.35355L3.82843 7.53553C4.02369 7.7308 4.34027 7.7308 4.53553 7.53553C4.7308 7.34027 4.7308 7.02369 4.53553 6.82843L1.70711 4L4.53553 1.17157C4.7308 0.976311 4.7308 0.659728 4.53553 0.464466C4.34027 0.269204 4.02369 0.269204 3.82843 0.464466L0.646446 3.64645ZM11 3.5L1 3.5V4.5L11 4.5V3.5Z"
+                                            fill="#343434" />
+                                    </svg>
+                                    Хлебные крошки
+                                </a>
+                            </nav>
+                            <section class="cargo-section">
+                                <div class="p-profile__header">
+                                    <h1 class="title section-title p-profile__title">Грузы</h1>
+                                    <button id="add-transport" class="button p-profile__btn p-profile__add-cargo-btn">
+                                        Добавить груз
+                                    </button>
+                                </div>
+
+                                <div class="tabs p-profile__tabs tabs--blue">
+                                    <a href="#transport-tab-1" class="tab p-profile__tab tab--active">
+                                        Мои грузы
+                                    </a>
+                                    <a href="#transport-tab-2" class="tab p-profile__tab">
+                                        Не подтверждённые
+                                    </a>
+                                    <a href="#transport-tab-3" class="tab p-profile__tab">
+                                        В работе
+                                        <span>1</span>
+                                    </a>
+                                    <a href="#transport-tab-4" class="tab p-profile__tab">Скрытые</a>
+                                    <a href="#transport-tab-5" class="tab p-profile__tab">Выполненные</a>
+                                </div>
+
+                                <div id="transport-tab-1"
+                                    class="tabs__content p-profile__content tabs__content--active">
+                                    <div class="cargo-empty">
+                                        <div class="cargo-empty__img">
+                                            <img src="img/icons/add.svg" alt="Добавить груз">
+                                        </div>
+                                        <p class="cargo-empty__text">
+                                            Здесь пока нету грузов! Но вы можете создать и получит первые отлики
+                                            от проверенных перевозчико, по актуальной цене уже через 15 минут
+                                        </p>
+                                        <button class="button cargo-empty__btn">
+                                            Добавить груз
+                                        </button>
+                                    </div>
+                                </div>
+
+                                <div id="transport-tab-2" class="tabs__content p-profile__content">
+                                    <div class="p-profile__content-header flex">
+                                        <div class="p-profile__content-header-choice flex">
+                                            <div class="title p-profile__content-title">Вы выбрали <span>3</span></div>
+                                            <button class="p-profile__content-header-btn">(Отменить)</button>
+                                        </div>
+                                        <button
+                                            class="button p-profile__cancel-responses-btn button--transparent button--blue-border">
+                                            Отменить отклики
+                                        </button>
+                                    </div>
+
+                                    <div class="p-profile__cards">
+                                        <div class="p-profile__card order-card profile-card cargo-card">
+                                            <div class="profile-card__offer-items">
+                                                <div class="profile-card__offer-item cargo-card__top">
+                                                    <div class="profile-card__item profile-card__item-info">
+                                                        <div class="title profile-card__item-num">№0001</div>
+                                                        <div class="profile-card__item-id"><span>ID</span> 00001
+                                                        </div>
+                                                        <div class="profile-card__item-date">14.12 размещено</div>
+                                                    </div>
+                                                    <div
+                                                        class="profile-card__item profile-card__path profile-card__offer-path">
+                                                        <div
+                                                            class="profile-card__path-body profile-card__offer-path-body">
+                                                            <div class="profile-card__path-inner flex">
+                                                                <div class="profile-card__path-info flex">
+                                                                    <p class="profile-card__path-distance">
+                                                                        <span>550 км.</span>
+                                                                    </p>
+                                                                    <button
+                                                                        class="profile-card__path-info-btn"></button>
+                                                                </div>
+                                                                <ul class="profile-card__path-items">
+                                                                    <li
+                                                                        class="profile-card__path-item profile-card__offer-path-item">
+                                                                        <div class="profile-card__path-item-top flex">
+                                                                            <img src="img/icons/belarus.png"
+                                                                                alt="Флаг Беларуси">
+                                                                            <div class="profile-card__path-country">
+                                                                                BY, Минск
+                                                                                <p class="profile-card__path-region">
+                                                                                    Минская область
+                                                                                </p>
+                                                                            </div>
+                                                                        </div>
+                                                                    </li>
+                                                                    <li
+                                                                        class="profile-card__path-item profile-card__offer-path-item">
+                                                                        <div class="profile-card__path-item-top flex">
+                                                                            <img src="img/icons/poland.png"
+                                                                                alt="Флаг Польши">
+                                                                            <div class="profile-card__path-country">
+                                                                                PL, Варшава
+                                                                                <p class="profile-card__path-region">
+                                                                                    Какая-то область
+                                                                                </p>
+                                                                            </div>
+                                                                        </div>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="profile-card__item profile-card__dates">
+                                                        <li class="profile-card__date"><span>Загрузка —</span> 17.12
+                                                        </li>
+                                                        <li class="profile-card__date"><span>Разгрузка —</span> 19.12
+                                                        </li>
+                                                    </div>
+                                                    <ul
+                                                        class="profile-card__item profile-card__params profile-card__offer-params">
+                                                        <li>Бытовая техника</li>
+                                                        <li>20 тонн</li>
+                                                        <li>83м3</li>
+                                                        <li>10х2х2</li>
+                                                    </ul>
+                                                    <div class="profile-card__item">
+                                                        <div class="order-card__price">650€</div>
+                                                        <div class="order-card__action-label">Безнал</div>
+                                                    </div>
+
+                                                    <div class="profile-card__item profile-card__details">
+                                                        <button class="profile-card__details-btn">Подробнее</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="title profile-card__title cargo-card__middle-title">
+                                                Вы предложили
+                                            </div>
+                                            <div class="profile-card__top cargo-card__bottom">
+                                                <div class="profile-card__item profile-card__left">
+                                                    <div class="profile-card__top-left-item profile-card__check">
+                                                        <span></span>
+                                                    </div>
+                                                </div>
+                                                <div class="cargo-card__item profile-card__item profile-card__profile">
+                                                    <p class="profile-card__profile-info cargo-card__car-info">
+                                                        MAN 535 (1**1A*-7)
+                                                    </p>
+                                                    <p class="profile-card__profile-descr">Тягач с пролуприцепом</p>
+                                                </div>
+                                                <ul
+                                                    class="flex cargo-card__item profile-card__item profile-card__params cargo-card__params">
+                                                    <li>Тентовый</li>
+                                                    <li>20 тонн</li>
+                                                    <li>83м3</li>
+                                                    <li>10х2х2</li>
+                                                    <li>Сзади</li>
+                                                </ul>
+                                                <div class="cargo-card__item profile-card__item">
+                                                    <div class="order-card__price">650 €</div>
+                                                    <div class="order-card__action-label profile-card__action-label">
+                                                        Безнал</div>
+                                                    <div class="order-card__action-label profile-card__action-label">
+                                                        Наличными</div>
+                                                </div>
+                                                <ul
+                                                    class="profile-card__item cargo-card__item profile-card__params cargo-card__list">
+                                                    <li class="flex"><span>Подача:</span> В тот же день
+                                                        <button id="edit"></button></li>
+                                                    <li class="flex"><span>Коммиссия ZIGMUS:</span> Всю на себя</li>
+                                                    <li class="flex">Дам скидку на 2-й заказ</li>
+                                                    <li class="flex">Доставлю быстрее</li>
+                                                </ul>
+                                                <div class="profile-card__item cargo-card__item cargo-card__buttons">
+                                                    <p class="profile-card__status cargo-card__status">
+                                                        Ждет отклика (Не промотрен)
+                                                    </p>
+                                                    <button
+                                                        class="button profile-card__btn cargo-card__confirm-btn">Подтвердтить</button>
+                                                    <button class="cargo-card__cancel-btn">
+                                                        Отменить
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="transport-tab-3" class="tabs__content p-profile__content">
+                                    <div class="p-profile__content-header flex">
+                                        <div class="p-profile__content-header-choice flex">
+                                            <div class="title p-profile__content-title">Вы выбрали <span>3</span></div>
+                                            <button class="p-profile__content-header-btn">(Отменить)</button>
+                                        </div>
+                                        <button
+                                            class="button p-profile__cancel-responses-btn button--transparent button--blue-border">
+                                            Отменить отклики
+                                        </button>
+                                    </div>
+                                    <div class="p-profile__cards">
+                                        <div class="p-profile__card order-card profile-card">
+                                            <div class="profile-card__offer-items">
+                                                <div class="profile-card__offer-item">
+                                                    <div class="profile-card__item profile-card__item-info">
+                                                        <div class="title profile-card__item-num">№0001</div>
+                                                        <div class="profile-card__item-id"><span>ID</span> 00001
+                                                        </div>
+                                                        <div class="profile-card__item-date">14.12 размещено</div>
+                                                    </div>
+                                                    <div
+                                                        class="profile-card__item profile-card__path profile-card__offer-path">
+                                                        <div
+                                                            class="profile-card__path-body profile-card__offer-path-body">
+                                                            <div class="profile-card__path-inner flex">
+                                                                <div class="profile-card__path-info flex">
+                                                                    <p class="profile-card__path-distance">
+                                                                        <span>550 км.</span>
+                                                                    </p>
+                                                                    <button
+                                                                        class="profile-card__path-info-btn"></button>
+                                                                </div>
+                                                                <ul class="profile-card__path-items">
+                                                                    <li
+                                                                        class="profile-card__path-item profile-card__offer-path-item">
+                                                                        <div class="profile-card__path-item-top flex">
+                                                                            <img src="img/icons/belarus.png"
+                                                                                alt="Флаг Беларуси">
+                                                                            <div class="profile-card__path-country">
+                                                                                BY, Минск
+                                                                                <p class="profile-card__path-region">
+                                                                                    Минская область
+                                                                                </p>
+                                                                            </div>
+                                                                        </div>
+                                                                    </li>
+                                                                    <li
+                                                                        class="profile-card__path-item profile-card__offer-path-item">
+                                                                        <div class="profile-card__path-item-top flex">
+                                                                            <img src="img/icons/poland.png"
+                                                                                alt="Флаг Польши">
+                                                                            <div class="profile-card__path-country">
+                                                                                PL, Варшава
+                                                                                <p class="profile-card__path-region">
+                                                                                    Какая-то область
+                                                                                </p>
+                                                                            </div>
+                                                                        </div>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="profile-card__item profile-card__dates">
+                                                        <li class="profile-card__date"><span>Загрузка —</span> 17.12
+                                                        </li>
+                                                        <li class="profile-card__date"><span>Разгрузка —</span> 19.12
+                                                        </li>
+                                                    </div>
+                                                    <ul
+                                                        class="profile-card__item profile-card__params profile-card__offer-params">
+                                                        <li>Бытовая техника</li>
+                                                        <li>20 тонн</li>
+                                                        <li>83м3</li>
+                                                        <li>10х2х2</li>
+                                                    </ul>
+                                                    <div class="profile-card__item">
+                                                        <div class="order-card__price">650€</div>
+                                                        <div class="order-card__action-label">Безнал</div>
+                                                    </div>
+
+                                                    <div class="profile-card__item profile-card__details">
+                                                        <button class="profile-card__details-btn">Подробнее</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="profile-card__bottom">
+                                                <div
+                                                    class="profile-card__item profile-card__bottom-item profile-card__client-contacts card-contacts">
+                                                    <h6
+                                                        class="profile-card__title profile-card__item-title card-contacts__title">
+                                                        Контакты
+                                                        клиента</h6>
+                                                    <div class="card-contacts__items flex">
+                                                        <div class="card-contacts__item">
+                                                            <span>Компания:</span>
+                                                            (ООО) «АККОМ ТЛ»
+                                                            Реквизиты
+                                                        </div>
+                                                        <div class="card-contacts__item">
+                                                            <span>Телефон:</span>
+                                                            <a href="tel:+375293604577">+375 29 360 - 45 -77</a>
+                                                        </div>
+
+                                                    </div>
+                                                    <a href="#" class="card-contacts__link">Реквизиты</a>
+                                                </div>
+                                                <div
+                                                    class="profile-card__item profile-card__bottom-item profile-card__status-block">
+                                                    <h6
+                                                        class="profile-card__title profile-card__item-title profile-card__status-title">
+                                                        Статус: В пути (Подтвержден)
+                                                    </h6>
+                                                    <ul class="profile-card__status-items">
+                                                        <li class="profile-card__status-item flex">
+                                                            <span>Машина:</span> MAN 535 (1**1A*-7) 2001 г
+                                                        </li>
+                                                        <li class="profile-card__status-item flex">
+                                                            <span>Стоимость:</span> 700€
+                                                        </li>
+                                                    </ul>
+                                                    <a href="#" class="profile-card__follow-link">
+                                                        <span>Ссылка на ослеживание на карте</span>
+                                                    </a>
+                                                </div>
+                                                <div
+                                                    class="profile-card__item profile-card__bottom-item profile-card__order-item">
+                                                    <div class="profile-card__order-buttons flex">
+                                                        <button class="button profile-card__order-btn">
+                                                            Перейти к заказу
+                                                        </button>
+                                                        <a href="#" class="profile-card__order-chat">
+                                                            <span>1</span>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div
+                                                    class="profile-card__item profile-card__status-item profile-card__payment-status">
+                                                    <span>Оплата:</span>
+                                                    Не оплачен
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="p-profile__card order-card profile-card">
+                                            <div class="profile-card__offer-items">
+                                                <div class="profile-card__offer-item">
+                                                    <div class="profile-card__item profile-card__item-info">
+                                                        <div class="title profile-card__item-num">№0001</div>
+                                                        <div class="profile-card__item-id"><span>ID</span> 00001
+                                                        </div>
+                                                        <div class="profile-card__item-date">14.12 размещено</div>
+                                                    </div>
+                                                    <div
+                                                        class="profile-card__item profile-card__path profile-card__offer-path">
+                                                        <div
+                                                            class="profile-card__path-body profile-card__offer-path-body">
+                                                            <div class="profile-card__path-inner flex">
+                                                                <div class="profile-card__path-info flex">
+                                                                    <p class="profile-card__path-distance">
+                                                                        <span>550 км.</span>
+                                                                    </p>
+                                                                    <button
+                                                                        class="profile-card__path-info-btn"></button>
+                                                                </div>
+                                                                <ul class="profile-card__path-items">
+                                                                    <li
+                                                                        class="profile-card__path-item profile-card__offer-path-item">
+                                                                        <div class="profile-card__path-item-top flex">
+                                                                            <img src="img/icons/belarus.png"
+                                                                                alt="Флаг Беларуси">
+                                                                            <div class="profile-card__path-country">
+                                                                                BY, Минск
+                                                                                <p class="profile-card__path-region">
+                                                                                    Минская область
+                                                                                </p>
+                                                                            </div>
+                                                                        </div>
+                                                                    </li>
+                                                                    <li
+                                                                        class="profile-card__path-item profile-card__offer-path-item">
+                                                                        <div class="profile-card__path-item-top flex">
+                                                                            <img src="img/icons/poland.png"
+                                                                                alt="Флаг Польши">
+                                                                            <div class="profile-card__path-country">
+                                                                                PL, Варшава
+                                                                                <p class="profile-card__path-region">
+                                                                                    Какая-то область
+                                                                                </p>
+                                                                            </div>
+                                                                        </div>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="profile-card__item profile-card__dates">
+                                                        <li class="profile-card__date"><span>Загрузка —</span> 17.12
+                                                        </li>
+                                                        <li class="profile-card__date"><span>Разгрузка —</span> 19.12
+                                                        </li>
+                                                    </div>
+                                                    <ul
+                                                        class="profile-card__item profile-card__params profile-card__offer-params">
+                                                        <li>Бытовая техника</li>
+                                                        <li>20 тонн</li>
+                                                        <li>83м3</li>
+                                                        <li>10х2х2</li>
+                                                    </ul>
+                                                    <div class="profile-card__item">
+                                                        <div class="order-card__price">650€</div>
+                                                        <div class="order-card__action-label">Безнал</div>
+                                                    </div>
+
+                                                    <div class="profile-card__item profile-card__details">
+                                                        <button class="profile-card__details-btn">Подробнее</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="profile-card__bottom">
+                                                <div
+                                                    class="profile-card__item profile-card__bottom-item profile-card__client-contacts card-contacts">
+                                                    <h6
+                                                        class="profile-card__title profile-card__item-title card-contacts__title">
+                                                        Контакты
+                                                        клиента</h6>
+                                                    <div class="card-contacts__items flex">
+                                                        <div class="card-contacts__item">
+                                                            <span>Компания:</span>
+                                                            (ООО) «АККОМ ТЛ»
+                                                            Реквизиты
+                                                        </div>
+                                                        <div class="card-contacts__item">
+                                                            <span>Телефон:</span>
+                                                            <a href="tel:+375293604577">+375 29 360 - 45 -77</a>
+                                                        </div>
+
+                                                    </div>
+                                                    <a href="#" class="card-contacts__link">Реквизиты</a>
+                                                </div>
+                                                <div
+                                                    class="profile-card__item profile-card__bottom-item profile-card__status-block">
+                                                    <h6
+                                                        class="profile-card__title profile-card__item-title profile-card__status-title">
+                                                        Статус: В пути (Подтвержден)
+                                                    </h6>
+                                                    <ul class="profile-card__status-items">
+                                                        <li class="profile-card__status-item flex">
+                                                            <span>Машина:</span> MAN 535 (1**1A*-7) 2001 г
+                                                        </li>
+                                                        <li class="profile-card__status-item flex">
+                                                            <span>Стоимость:</span> 700€
+                                                        </li>
+                                                    </ul>
+                                                    <a href="#" class="profile-card__follow-link">
+                                                        <span>Ссылка на ослеживание на карте</span>
+                                                    </a>
+                                                </div>
+                                                <div
+                                                    class="profile-card__item profile-card__bottom-item profile-card__order-item">
+                                                    <div class="profile-card__order-buttons flex">
+                                                        <button class="button profile-card__order-btn">
+                                                            Перейти к заказу
+                                                        </button>
+                                                        <a href="#" class="profile-card__order-chat">
+                                                            <span>1</span>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div
+                                                    class="profile-card__item profile-card__status-item profile-card__payment-status">
+                                                    <span>Оплата:</span>
+                                                    Не оплачен
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="transport-tab-4" class="tabs__content p-profile__content">
+                                    <div class="p-profile__content-header flex">
+                                        <div class="p-profile__content-header-choice flex">
+                                            <div class="title p-profile__content-title">Вы выбрали <span>3</span></div>
+                                            <button class="p-profile__content-header-btn">(Отменить)</button>
+                                        </div>
+                                        <div class="p-profile__content-header-buttons">
+                                            <button id="delete" class="p-profile__content-header-btn">Удалить</button>
+                                            <button id="advertise"
+                                                class="p-profile__content-header-btn">Рекламировать</button>
+                                            <button id="dublicate"
+                                                class="p-profile__content-header-btn">Дублировать</button>
+                                        </div>
+                                    </div>
+
+                                    <div class="p-profile__cards">
+                                        <div class="p-profile__card order-card profile-card profile-card--active">
+                                            <div class="profile-card__top">
+                                                <div class="profile-card__item profile-card__left">
+                                                    <div class="profile-card__top-left-item profile-card__check">
+                                                        <span></span>
+                                                    </div>
+                                                </div>
+                                                <div class="profile-card__item profile-card__profile">
+                                                    <p class="profile-card__profile-info">MAN 535 (1**1A*-7) 2001 г</p>
+                                                    <p class="profile-card__profile-descr">Тягач с пролуприцепом</p>
+                                                    <button class="profile-card__follow-btn">Отследить на карте</button>
+                                                </div>
+                                                <div class="profile-card__item profile-card__contact">
+                                                    <div class="title profile-card__contact-name">Кравцов Егор</div>
+                                                    <a href="tel:+375293604577" class="profile-card__contact-phone">
+                                                        +375 29 360 - 45 -77
+                                                    </a>
+                                                </div>
+                                                <ul class="profile-card__item profile-card__params">
+                                                    <li>Тентовый</li>
+                                                    <li>20 тонн</li>
+                                                    <li>83м3</li>
+                                                    <li>10х2х2</li>
+                                                    <li>Сзади</li>
+                                                </ul>
+                                                <div class="profile-card__item profile-card__path">
+                                                    <div class="profile-card__path-body">
+                                                        <ul class="profile-card__path-items">
+                                                            <li class="profile-card__path-item">
+                                                                <img src="img/icons/belarus.png" alt="Флаг Беларуси">
+                                                                <div class="profile-card__path-country">BY</div>
+                                                            </li>
+                                                            <li class="profile-card__path-item">
+                                                                <img src="img/icons/poland.png" alt="Флаг Польши">
+                                                                <div class="profile-card__path-country">PL</div>
+                                                            </li>
+                                                            <li class="profile-card__path-item">
+                                                                <img src="img/icons/lithuania.png" alt="Флаг Литвы">
+                                                                <span></span>
+                                                            </li>
+                                                        </ul>
+                                                        <a href="#" class="profile-card__full-path">
+                                                            <span>Полный маршрут с городами</span>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="profile-card__item profile-card__dates">
+                                                    <li class="profile-card__date"><span>Отпр. —</span> 17.12</li>
+                                                    <li class="profile-card__date"><span>Приб. —</span> 19.12</li>
+                                                </div>
+                                                <div class="profile-card__item">
+                                                    <div class="order-card__price">20€/Км.</div>
+                                                    <div class="order-card__action-label">Безнал</div>
+                                                </div>
+                                                <div class="profile-card__item profile-card__details">
+                                                    <button class="profile-card__details-btn">Подробнее</button>
+                                                </div>
+                                            </div>
+                                            <div class="profile-card__footer">
+                                                <div class="profile-card__footer-buttons flex">
+                                                    <button class="profile-card__cancel-profile">
+                                                        Отменить транспорт
+                                                    </button>
+                                                    <button class="settings-btn">
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                    </button>
+                                                </div>
+                                                <div class="profile-card__stats profile-card__footer-status">
+                                                    Не размещено
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="p-profile__card order-card profile-card">
+                                            <div class="profile-card__top">
+                                                <div class="profile-card__item profile-card__left">
+                                                    <div class="profile-card__top-left-item profile-card__check">
+                                                        <span></span>
+                                                    </div>
+                                                </div>
+                                                <div class="profile-card__item profile-card__profile">
+                                                    <p class="profile-card__profile-info">MAN 535 (1**1A*-7) 2001 г</p>
+                                                    <p class="profile-card__profile-descr">Тягач с пролуприцепом</p>
+                                                    <button class="profile-card__follow-btn">Отследить на карте</button>
+                                                </div>
+                                                <div class="profile-card__item profile-card__contact">
+                                                    <div class="title profile-card__contact-name">Кравцов Егор</div>
+                                                    <a href="tel:+375293604577" class="profile-card__contact-phone">
+                                                        +375 29 360 - 45 -77
+                                                    </a>
+                                                </div>
+                                                <ul class="profile-card__item profile-card__params">
+                                                    <li>Тентовый</li>
+                                                    <li>20 тонн</li>
+                                                    <li>83м3</li>
+                                                    <li>10х2х2</li>
+                                                    <li>Сзади</li>
+                                                </ul>
+                                                <div class="profile-card__item profile-card__path">
+                                                    <div class="profile-card__path-body">
+                                                        <ul class="profile-card__path-items">
+                                                            <li class="profile-card__path-item">
+                                                                <img src="img/icons/belarus.png" alt="Флаг Беларуси">
+                                                                <div class="profile-card__path-country">BY</div>
+                                                            </li>
+                                                            <li class="profile-card__path-item">
+                                                                <img src="img/icons/poland.png" alt="Флаг Польши">
+                                                                <div class="profile-card__path-country">PL</div>
+                                                            </li>
+                                                            <li class="profile-card__path-item">
+                                                                <img src="img/icons/lithuania.png" alt="Флаг Литвы">
+                                                                <span></span>
+                                                            </li>
+                                                        </ul>
+                                                        <a href="#" class="profile-card__full-path">
+                                                            <span>Полный маршрут с городами</span>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="profile-card__item profile-card__dates">
+                                                    <li class="profile-card__date"><span>Отпр. —</span> 17.12</li>
+                                                    <li class="profile-card__date"><span>Приб. —</span> 19.12</li>
+                                                </div>
+                                                <div class="profile-card__item">
+                                                    <div class="order-card__price">20€/Км.</div>
+                                                    <div class="order-card__action-label">Безнал</div>
+                                                </div>
+                                                <div class="profile-card__item profile-card__details">
+                                                    <button class="profile-card__details-btn">Подробнее</button>
+                                                </div>
+                                            </div>
+                                            <div class="profile-card__footer">
+                                                <div class="profile-card__footer-buttons flex">
+                                                    <button class="profile-card__cancel-profile">
+                                                        Отменить транспорт
+                                                    </button>
+                                                    <button class="settings-btn">
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                    </button>
+                                                </div>
+                                                <div class="profile-card__stats profile-card__footer-status">
+                                                    Не размещено
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="p-profile__card order-card profile-card">
+                                            <div class="profile-card__top">
+                                                <div class="profile-card__item profile-card__left">
+                                                    <div class="profile-card__top-left-item profile-card__check">
+                                                        <span></span>
+                                                    </div>
+                                                </div>
+                                                <div class="profile-card__item profile-card__profile">
+                                                    <p class="profile-card__profile-info">MAN 535 (1**1A*-7) 2001 г</p>
+                                                    <p class="profile-card__profile-descr">Тягач с пролуприцепом</p>
+                                                    <button class="profile-card__follow-btn">Отследить на карте</button>
+                                                </div>
+                                                <div class="profile-card__item profile-card__contact">
+                                                    <div class="title profile-card__contact-name">Кравцов Егор</div>
+                                                    <a href="tel:+375293604577" class="profile-card__contact-phone">
+                                                        +375 29 360 - 45 -77
+                                                    </a>
+                                                </div>
+                                                <ul class="profile-card__item profile-card__params">
+                                                    <li>Тентовый</li>
+                                                    <li>20 тонн</li>
+                                                    <li>83м3</li>
+                                                    <li>10х2х2</li>
+                                                    <li>Сзади</li>
+                                                </ul>
+                                                <div class="profile-card__item profile-card__path">
+                                                    <div class="profile-card__path-body">
+                                                        <ul class="profile-card__path-items">
+                                                            <li class="profile-card__path-item">
+                                                                <img src="img/icons/belarus.png" alt="Флаг Беларуси">
+                                                                <div class="profile-card__path-country">BY</div>
+                                                            </li>
+                                                            <li class="profile-card__path-item">
+                                                                <img src="img/icons/poland.png" alt="Флаг Польши">
+                                                                <div class="profile-card__path-country">PL</div>
+                                                            </li>
+                                                            <li class="profile-card__path-item">
+                                                                <img src="img/icons/lithuania.png" alt="Флаг Литвы">
+                                                                <span></span>
+                                                            </li>
+                                                        </ul>
+                                                        <a href="#" class="profile-card__full-path">
+                                                            <span>Полный маршрут с городами</span>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="profile-card__item profile-card__dates">
+                                                    <li class="profile-card__date"><span>Отпр. —</span> 17.12</li>
+                                                    <li class="profile-card__date"><span>Приб. —</span> 19.12</li>
+                                                </div>
+                                                <div class="profile-card__item">
+                                                    <div class="order-card__price">20€/Км.</div>
+                                                    <div class="order-card__action-label">Безнал</div>
+                                                </div>
+                                                <div class="profile-card__item profile-card__details">
+                                                    <button class="profile-card__details-btn">Подробнее</button>
+                                                </div>
+                                            </div>
+                                            <div class="profile-card__footer">
+                                                <div class="profile-card__footer-buttons flex">
+                                                    <button class="profile-card__cancel-profile">
+                                                        Отменить транспорт
+                                                    </button>
+                                                    <button class="settings-btn">
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                    </button>
+                                                </div>
+                                                <div class="profile-card__stats profile-card__footer-status">
+                                                    Не размещено
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                        </main>
+                    </div>
+                </div>
+            </div>
+
+
+            @@include('../../blocks/modules/footer/_footer.html')
+
+            <div class="overlay">
+                @@include('../../blocks/modules/popups/_popups.html')
+            </div>
+        </div>
+
+        @@include('../_js.html')
+
+</body>
+
+</html>
