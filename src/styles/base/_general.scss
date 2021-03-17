@@ -49,11 +49,6 @@
     display: grid;
 }
 
-/* .card {
-    background: #FFFFFF;
-    border-radius: 10px;
-} */
-
 .category {
     background: $light-blue-bg;
     border-radius: 20px;
@@ -71,11 +66,6 @@
     border-radius: 50%;
     background-color: $blue;
 }
-
-/* .buttons {
-    display: flex;
-    align-items: center;
-} */
 
 @import '../components/top-page';
 @import '../components/breadcrumbs';

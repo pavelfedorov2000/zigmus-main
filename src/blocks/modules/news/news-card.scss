@@ -1,31 +1,40 @@
 .news {
-    //background-color: $light-blue-bg;
-    //padding: 150px 0 120px;
-
     &__topics {
+        background: #ffffff;
+        border-radius: 10px;
         align-items: center;
         padding: 30px 20px;
         margin-bottom: 80px;
     }
 
-    &__topics-list {
+    &__tabs {
+        background-color: transparent;
+        padding: 0;
         margin-left: 20px;
     }
 
-    &__topics-item {
+    &__tab {
         display: inline-block;
+        background: #f5f9ff;
+        border-radius: 20px;
         padding: 8px 15px;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 12px;
+        color: $dark;
     }
 
-    &__topics-item + &__topics-item {
+    &__tab + &__tab {
         margin-left: 15px;
     }
 
     &__cards {
         grid-template-columns: repeat(3, 1fr);
-        //grid-template-rows: repeat(4, 1fr);
         grid-column-gap: 32px;
         grid-row-gap: 30px;
+        &.tabs__content--active {
+            display: grid;
+        }
     }
 
     &__card {

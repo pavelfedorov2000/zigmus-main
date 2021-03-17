@@ -1,15 +1,14 @@
 .breadcrumbs {
-    padding: 40px 0 64px;
     opacity: 0.5;
 
     a {
+        //position: relative;
         display: flex;
         align-items: center;
-        //position: relative;
         font-weight: 500;
         font-size: 14px;
         line-height: 16px;
-        padding-left: 21px;
+        //padding-left: 21px;
 
         /* &:before {
             content: '';
