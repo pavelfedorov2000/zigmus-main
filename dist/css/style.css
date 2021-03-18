@@ -704,11 +704,7 @@ address {
   background: -o-linear-gradient(210.5deg, rgba(255, 255, 255, 0.45) -0.02%, rgba(255, 255, 255, 0) 68.53%), #236EFF;
   background: linear-gradient(239.5deg, rgba(255, 255, 255, 0.45) -0.02%, rgba(255, 255, 255, 0) 68.53%), #236EFF;
   border-radius: 0px 0px 20px 20px;
-  padding: 40px 0 120px;
-}
-
-.top-page__title {
-  margin-top: 64px;
+  padding-bottom: 120px;
 }
 
 .top-page__filters {
@@ -721,6 +717,7 @@ address {
 }
 
 .breadcrumbs {
+  padding: 40px 0 64px;
   opacity: 0.5;
 }
 
@@ -2892,10 +2889,6 @@ address {
   display: none;
 }
 
-.header #currency-choice {
-  display: none;
-}
-
 .header__buttons {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -3844,17 +3837,6 @@ address {
   margin-top: 20px;
 }
 
-.profile {
-  /* &__field-file {
-        font-size: 12px;
-        padding: 20px 10px;
-
-        &--certificate {
-            width: 272px;
-        }
-    } */
-}
-
 .profile__item--border {
   padding-bottom: 30px;
   border-bottom: 1px solid rgba(35, 110, 255, 0.3);
@@ -3973,10 +3955,6 @@ address {
   margin-left: 20px;
 }
 
-.profile__field + .profile__field {
-  margin-top: 20px;
-}
-
 .profile__field {
   padding: 10px 20px;
   -webkit-box-orient: vertical;
@@ -4083,6 +4061,15 @@ address {
   margin-left: 4px;
 }
 
+.profile__field-file {
+  font-size: 12px;
+  padding: 20px 10px;
+}
+
+.profile__field-file--certificate {
+  width: 272px;
+}
+
 .profile__plus-btn {
   margin-top: 15px;
   /* &.add-bill {
@@ -4162,10 +4149,6 @@ address {
 
 .profile__price-checkboxes {
   margin-top: 10px;
-}
-
-.profile__messangers {
-  padding: 0;
 }
 
 .profile__messangers label {
