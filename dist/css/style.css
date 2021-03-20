@@ -2920,7 +2920,6 @@ address {
 }
 
 .header__avatar {
-  display: none;
   cursor: pointer;
 }
 
