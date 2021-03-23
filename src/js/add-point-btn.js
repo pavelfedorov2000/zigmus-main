@@ -4,15 +4,3 @@ $('.add-point').on('click', function () {
     cur_id += 1;
     console.log(cur_id);
 });
-
-
-
-
-
-$('.from-input').on('change', function () {
-    $('.from-content').addClass('valid');
-});
-
-$('.where-input').on('change', function () {
-    $('.from-content').addClass('valid');
-});
