@@ -297,17 +297,17 @@ $("#phone-enter").on("click", function () {
 
 $('.from-label').on('click', function () {
     $('.overlay, #map-popup').fadeIn('slow');
-    $("body").addClass('body__overflow--hidden');
+    // $("body").addClass('body__overflow--hidden');
 });
 
 $('.where-label').on('click', function () {
     $('.overlay, #map-popup').fadeIn('slow');
-    $("body").addClass('body__overflow--hidden');
+    // $("body").addClass('body__overflow--hidden');
 });
 
-$('#map-popup').on('change', function () {
-    $("body").removeClass('body__overflow--hidden');
-});
+// $('#map-popup').on('change', function () {
+//     $("body").removeClass('body__overflow--hidden');
+// });
     
     $('.from-label').on('click', function () {
     $('.overlay, #map-popup').fadeIn('slow');

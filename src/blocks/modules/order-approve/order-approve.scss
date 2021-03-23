@@ -1,0 +1,32 @@
+.order-approve__head {
+    margin: 64px 0 40px;
+}
+
+.order-approve__container {
+    width: 1140px;
+    height: 427px;
+    
+    box-shadow: 0px 10px 40px rgba(0, 4, 41, 0.05);
+    border-radius: 8px;
+
+    background: #fff;
+}
+
+.order-approve__text-container {
+    width: 1140px;
+    height: 142px;
+
+    background: rgba(35, 110, 255, 0.1);
+    
+    border-radius: 10px;
+
+    margin-top: 30px;
+}
+
+.order-approve__text-zigmus {
+    font-family: Gilroy;
+    font-weight: 500;
+    color: #343434;
+    
+    padding: 20px;
+}
