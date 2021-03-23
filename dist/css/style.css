@@ -2488,13 +2488,13 @@ address {
 }
 
 .header__submenu {
+  z-index: 10;
   display: none;
   position: absolute;
   top: 100%;
   left: 0;
   background-color: #fff;
   padding: 15px 45px 15px 10px;
-  z-index: 10;
 }
 
 .header__submenu-item + .header__submenu-item {
@@ -2912,10 +2912,6 @@ address {
   display: none;
 }
 
-.header #currency-choice {
-  display: none;
-}
-
 .header__buttons {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2947,7 +2943,6 @@ address {
 }
 
 .header__avatar {
-  display: none;
   cursor: pointer;
 }
 
