@@ -99,18 +99,6 @@ $('.add-point').on('click', function () {
     console.log(cur_id);
 });
 
-
-
-
-
-$('.from-input').on('change', function () {
-    $('.from-content').addClass('valid');
-});
-
-$('.where-input').on('change', function () {
-    $('.from-content').addClass('valid');
-});
-
     // ========================= MENU-DROP ===================== //
 
 $('.header__menu-item').on('click', function () {
@@ -309,9 +297,17 @@ $("#phone-enter").on("click", function () {
 
 $('.from-label').on('click', function () {
     $('.overlay, #map-popup').fadeIn('slow');
+    $("body").addClass('body__overflow--hidden');
 });
 
+$('.where-label').on('click', function () {
+    $('.overlay, #map-popup').fadeIn('slow');
+    $("body").addClass('body__overflow--hidden');
+});
 
+$('#map-popup').on('change', function () {
+    $("body").removeClass('body__overflow--hidden');
+});
     
     $('.from-label').on('click', function () {
     $('.overlay, #map-popup').fadeIn('slow');
@@ -319,9 +315,20 @@ $('.from-label').on('click', function () {
 
 $('.where-label').on('click', function () {
     $('.overlay, #map-popup').fadeIn('slow');
+    $("body").addClass('body__overflow--hidden');
 });
 
+$('.from-input').on('change', function () {
+    $('.from-content').addClass('valid');
+});
 
+$('.where-input').on('change', function () {
+    $('.from-content').addClass('valid');
+});
+
+$('#map-popup').on('change', function () {
+    $("body").removeClass('body__overflow--hidden');
+});
 
     // ===================== SLIDERS ========================/
 

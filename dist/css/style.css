@@ -1432,6 +1432,10 @@ address {
   border-bottom: 1px solid #236EFF;
 }
 
+.body__overflow--hidden {
+  overflow: hidden;
+}
+
 .enter-popup {
   display: none;
   min-height: 422px;
