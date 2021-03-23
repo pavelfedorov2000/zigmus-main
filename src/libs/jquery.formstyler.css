@@ -62,7 +62,7 @@
 	white-space: nowrap;
 }
 .jq-selectbox {
-	z-index: 10;
+	z-index: 11;
 }
 .jq-selectbox__select {
 	position: relative;
@@ -92,6 +92,7 @@
 	overflow-x: hidden;
 	list-style: none;
 	-webkit-overflow-scrolling: touch;
+	z-index: 100;
 }
 .jq-select-multiple ul {
 	position: relative;

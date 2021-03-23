@@ -60,28 +60,20 @@ $('.gabarits__plus-btn').on('click', function (e) {
 });
 
 $('.add-driver').on('click', function () {
-    $(this).before('<div class="field profile__field profile__field-item"><label class="label">Имя и Фамилия</laabel><input type="text" class="input field__value"><button class="reset-filter- btn"></button></div>');
+    $(this).before('<div class="field profile__field"><label class="label">Имя и Фамилия</laabel><input type="text" class="input field__value"><button class="reset-filter- btn"></button></div>');
 });
 
 $('.add-phone').on('click', function () {
-    $(this).before('<div class="profile__field-item flex"><div class="field phone-field profile__field profile__fields-col"><label class="label" for="phone">Ваш номер телефона?</label><select class="filter-style" name="country"><option value="by">BY</option><option value="ru">RU</option><option value="ua">UA</option></select><input type="tel" name="phone" placeholder="+375 (_ _) _ _ _-_ _-_ _"></div><div class="profile__fields-col profile__messangers"><p class="profile__messangers-descr">По этому телефону есть</p><div class="profile__messangers-line flex"><label><input type="checkbox" name="viber" class="filter-style">Viber</label><label><input type="checkbox" name="whatsup" class="filter-style">WhatsApp</label><label><input type="checkbox" name="telegram" class="filter-style">Telegram</label></div></div></div>');
-});
-
-$('.add-phone--col').on('click', function () {
-    $(this).before('<div class="profile__field-item"><div class="field phone-field profile__field profile__fields-col"><label class="label" for="phone">Ваш номер телефона?</label><select class="filter-style" name="country"><option value="by">BY</option><option value="ru">RU</option><option value="ua">UA</option></select><input type="tel" name="phone" placeholder="+375 (_ _) _ _ _-_ _-_ _"></div></div><div class="profile__field-item profile__messangers"><p class="profile__messangers-descr">По этому телефону есть</p><div class="profile__messangers-line flex"><label><input type="checkbox" name="viber" class="filter-style">Viber</label><label><input type="checkbox" name="whatsup" class="filter-style">WhatsApp</label><label><input type="checkbox" name="telegram" class="filter-style">Telegram</label></div></div>');
+    $(this).before('<div class="field phone-field profile__field"><label class= "label" for="phone">Номер телефона</label><div class="jq-selectbox jqselect filter-style"><select class="filter-style" name="country"><option value="by">BY</option><option value="ru">RU</option><option value="ua">UA</option></select><div class="jq-selectbox__select"><div class="jq-selectbox__select-text">BY</div><div class="jq-selectbox__trigger"><div class="jq-selectbox__trigger-arrow"></div></div></div><div class="jq-selectbox__dropdown" style="height: auto; bottom: auto; top: 20px; display: none;"><ul style="max-height:319px;"><li class="selected sel" style>BY</li><li style>RU</li><li style>UA</li></ul></div></div><input type="tel" name="phone"placeholder="+375 (_ _) _ _ _-_ _-_ _"></div>');
 });
 
 $('.add-email').on('click', function () {
     $(this).before('<div class= "field profile__field profile__field-item profile__fields-col"><label class="label">Ваш e-mail</label><input type="email" class="input field__value"><button class="reset-filter-btn"></button></div>');
 });
 
-$('#add-bill').on('click', function () {
-    $(this).before('<div class="field flex profile__field profile__field-item profile__bills-field"><div class="profile__field-inner"><label class="label">Расчетный счет?</label><input class="input field__value" placeholder="BY17ALFA30122253450040270000"><button class="reset-filter-btn"></button></div><div class="profile__field-inner mini-select"><label class="label">Валюта?</label><select name="currency" class="filter-style"><option class="field__value" value="">BYN</option><option class="field__value" value="">ZL</option><option class="field__value" value="">USD</option><option class="field__value" value="">EUR</option></select></div><div class="profile__field-inner mini-select"><label class="label">Название банка</label><select name="bank" class="filter-style"><option class="field__value" value="">Альфа банк</option><option class="field__value" value="">Альфа банк</option><option class="field__value" value="">Альфа банк</option></select></div></div>');
-});
-
-$('#add-requisites').on('click', function () {
-    $(this).before('<form action="#" class="profile__form profile__item profile__item--border"><div class= "field profile__field profile__field-item"><label class="label">Страна?</label><select class="filter-style" name="" id=""><option value="belarus" class="field__value">Беларусь</option><option value="russia" class="field__value">Россия</option><option value="poland" class="field__value">Польша</option></select></div><div class="field profile__field profile__field-item"><label class="label">Юр.лицо?</label><input class="input field__value" type="text"><button class="reset-filter-btn"></button></div><div class="field profile__field profile__field-item"><label class="label">Юр. адрес?</label><input class="input field__value" type="text"><button class="reset-filter-btn"></button></div><div class="field profile__field profile__field-item"><label class="label">УНП?</label><input class="input field__value"><button class="reset-filter-btn"></button></div><div class="profile__bills"><div class="field flex profile__field profile__field-item profile__bills-field"><div class="profile__field-inner"><label class="label">Расчетный счет?</label><input class="input field__value" placeholder="BY17ALFA30122253450040270000"><button class="reset-filter-btn"></button></div><div class="profile__field-inner mini-select"><label class="label">Валюта?</label><select name="currency" class="filter-style"><option class="field__value" value="">BYN</option><option class="field__value" value="">ZL</option><option class="field__value" value="">USD</option><option class="field__value" value="">EUR</option></select></div><div class="profile__field-inner mini-select"><label class="label">Название банка</label><select name="bank" class="filter-style"><option class="field__value" value="">Альфа банк</option><option class="field__value" value="">Альфа банк</option><option class="field__value" value="">Альфа банк</option></select></div></div><div id="add-bill" class="plus-btn profile__plus-btn profile__add-btn">Добавить еще счет</div></div><div class="field profile__field"><label class="label">SWIFT?</label><input class="input field__value" placeholder="ALFABY2X"><button class="reset-filter-btn"></button></div><div class="profile__field-wrap"><div class="field profile__field-file profile__field-file--certificate"><label class="plus-btn">Добавить свидетельство о регистрации<input class="filter-style" type="file" name="reg-doc" id=""></label></div><p class="label profile__field-descr">По нему ваши реквизиты будут подтверждены и вы получите верефикацию</p></div></form>');
-});
+/* $('#add-bill').on('click', function () {
+    $(this).before('');
+}); */
 
     // Star rating
 $(".review-form__rate-yo").rateYo({
@@ -98,6 +90,25 @@ $(".employee-card__rate").rateYo({
     spacing: "5px",
     //ratedFill: "#FFB800",
     //normalFill: "#FFFFFF",
+});
+
+    var cur_id = 1
+$('.add-point').on('click', function () {
+    $(this).before(`<div class="field profile__field field--transparent where-label field--flex added-point"><div class="from__container"><div class="from-icon"><img src="img/b-svg.svg" alt="where-logo"></div><div class="from-content"><label for="where" class="where-label">Добавить пункт<div class="plus filter-item__plus add__plus">+</div></label><input type="text" name="where" class="from-input" id="added-point${cur_id}" required></div></div></div>`);
+    cur_id += 1;
+    console.log(cur_id);
+});
+
+
+
+
+
+$('.from-input').on('change', function () {
+    $('.from-content').addClass('valid');
+});
+
+$('.where-input').on('change', function () {
+    $('.from-content').addClass('valid');
 });
 
     // ========================= MENU-DROP ===================== //
@@ -244,7 +255,8 @@ $('.aside-process__item-title').on('click', function () {
 
     // ===================== POPUPS =======================//
 
-    $('.header__register-btn').on('click', function () {
+    
+$('.header__register-btn').on('click', function () {
     $('.overlay, #register-popup').fadeIn('slow');
 });
 
@@ -259,6 +271,24 @@ $('.popup__close-btn').on('click', function () {
 $('#forgot-pass').on('click', function () {
     $('#enter-popup').fadeOut('slow');
     $('#forgot-password').fadeIn('slow');
+});
+
+$('#email-reset').on('click', function () {
+    $(this).hide();
+    $('#phone-reset').show();
+    $('.reset-popup__phone-reset').hide();
+    $('.get-new-password-phone__btn').hide();
+    $('.reset-popup__email-reset').show();
+    $('.get-new-password-email__btn').show();
+});
+
+$('#phone-reset').on('click', function () {
+    $(this).hide();
+    $('#email-reset').show();
+    $(".reset-popup__email-reset").hide();
+    $(".get-new-password-email__btn").hide();
+    $(".reset-popup__phone-reset").show();
+    $(".get-new-password-phone__btn").show();
 });
 
 $('input[name=phone]').mask("+375 (99) 999-99-99");
@@ -276,6 +306,22 @@ $("#phone-enter").on("click", function () {
     $(".enter-popup__email-enter").hide();
     $(".enter-popup__phone-enter").show();
 });
+
+$('.from-label').on('click', function () {
+    $('.overlay, #map-popup').fadeIn('slow');
+});
+
+
+    
+    $('.from-label').on('click', function () {
+    $('.overlay, #map-popup').fadeIn('slow');
+});
+
+$('.where-label').on('click', function () {
+    $('.overlay, #map-popup').fadeIn('slow');
+});
+
+
 
     // ===================== SLIDERS ========================/
 
