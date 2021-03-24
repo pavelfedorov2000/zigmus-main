@@ -8882,6 +8882,12 @@ address {
   margin-top: 0;
 }
 
+.profile__fields {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .field--flex {
   height: 68px;
 }

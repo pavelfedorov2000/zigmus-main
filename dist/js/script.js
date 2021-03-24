@@ -311,11 +311,11 @@ $('.where-label').on('click', function () {
     $('.overlay, #map-popup').fadeIn('slow');
 });
 
-$('.from-input').on('change', function () {
+$('.from-input').on('input', function () {
     $('.from-content').addClass('valid');
 });
 
-$('.where-input').on('change', function () {
+$('.where-input').on('input', function () {
     $('.from-content').addClass('valid');
 });
 
