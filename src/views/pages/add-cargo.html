@@ -79,19 +79,26 @@
 
                                         </div>
                                     </div>
-                                    <div class="profile__fields-col">
-                                        <div class="field profile__field ">
-                                            
-                                            <div class="field__value flex">
-                                                <input class="input field__value input--height" type="text" placeholder="Адрес пункта разгрузки?">
-                                                <button class="reset-filter-btn"></button>
+                                    <div class="fields-column__wrapper">
+                                        <div class="profile__fields-col">
+                                            <div class="field profile__field ">
+                                                    <div class="field__value flex">
+                                                        <input class="input field__value input--height" type="text" placeholder="Адрес пункта разгрузки?">
+                                                        <button class="reset-filter-btn"></button>
+                                                    </div>
                                             </div>
-
+                                            
+                                        </div>
+                                        <div class="profile__checkboxes flex profile__checkboxes--column fields-checkboxes">
+                                            <label>
+                                                <input type="radio" name="payment-choice" class="filter-style">
+                                                Постоянный, ежедневный
+                                            </label>
                                         </div>
 
                                     </div>
                                 </div>
-                                <div class="plus-btn profile__plus-btn add-point">
+                                <div class="plus-btn profile__plus-btn add-point add-point--margin">
                                     Добавить еще пункт (если сборный груз)
                                 </div>
                             </form>
@@ -99,36 +106,53 @@
                                 <div class="profile__form-header flex">
                                 </div>
                                 <div class="profile__field-item profile__fields fields--aline-item">
-                                    <div class="profile__fields-col">
-
-                                        <div class="field profile__field field--transparent where-label field--flex">
-
-                                            <div class="from__container">
-                                                <div class="from-icon">
-                                                    <img src="img/b-svg.svg" alt="where-logo">
+                                    
+                                        <div class="profile__fields-col">
+    
+                                            <div class="field profile__field field--transparent where-label field--flex">
+    
+                                                <div class="from__container">
+                                                    <div class="from-icon">
+                                                        <img src="img/b-svg.svg" alt="where-logo">
+                                                    </div>
+                                                    <div class="from-content">
+                                                        <label for="where" class="where-label">
+                                                            Куда?
+                                                            <div class="plus filter-item__plus add__plus">+</div>
+                                                        </label>
+                                                        <input type="text" name="where" class="from-input" id="where" required>
+                                                    </div>               
+    
                                                 </div>
-                                                <div class="from-content">
-                                                    <label for="where" class="where-label">
-                                                        Куда?
-                                                        <div class="plus filter-item__plus add__plus">+</div>
-                                                    </label>
-                                                    <input type="text" name="where" class="from-input" id="where" required>
-                                                </div>               
+    
+                                            </div>
+                                        </div>
 
+                                        <div class="fields-column__wrapper">
+                                            <div class="profile__fields-col">
+                                                <div class="field profile__field ">
+                                                        <div class="field__value flex">
+                                                            <input class="input field__value input--height" type="text" placeholder="Адрес пункта разгрузки?">
+                                                            <button class="reset-filter-btn"></button>
+                                                        </div>
+                                                </div>
+                                                
+                                            </div>
+                                            <div class="profile__checkboxes profile__payment-checkboxes flex fields-checkboxes">
+                                                <label>
+                                                    <input type="radio" name="payment-choice" class="filter-style">
+                                                    Догруз
+                                                </label>
+                                                <label>
+                                                    <input type="radio" name="payment-choice" class="filter-style">
+                                                    Загрузка
+                                                </label>
                                             </div>
 
                                         </div>
 
-                                       
-                                    </div>
-                                    <div class="profile__fields-col">
-                                        <div class="field profile__field ">
-                                                <div class="field__value flex">
-                                                    <input class="input field__value input--height" type="text" placeholder="Адрес пункта разгрузки?">
-                                                    <button class="reset-filter-btn"></button>
-                                                </div>
-                                        </div>
-                                    </div>
+                                    
+
                                 </div>
                             </form>
                         </div>

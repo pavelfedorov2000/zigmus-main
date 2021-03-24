@@ -8857,7 +8857,8 @@ address {
 
 .added-point {
   width: 275px;
-  margin-top: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 .template__field {
@@ -8865,6 +8866,20 @@ address {
   border-radius: 6px;
   width: 240px;
   height: 54px;
+}
+
+.fields-column__wrapper {
+  padding-left: 20px;
+  padding-top: 25px;
+}
+
+.fields-checkboxes {
+  padding-top: 10px;
+  margin-left: 0;
+}
+
+.add-point--margin {
+  margin-top: 0;
 }
 
 .field--flex {
