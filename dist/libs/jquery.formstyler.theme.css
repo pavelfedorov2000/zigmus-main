@@ -234,6 +234,9 @@
 	height: 100%;
 	border-left: 1px solid #CCC;
 }
+.template__field .jq-selectbox__trigger {
+	top: 13px;
+}
 .jq-selectbox__trigger-arrow {
 	position: absolute;
 	top: 14px;
