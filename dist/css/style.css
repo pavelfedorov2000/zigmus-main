@@ -9019,6 +9019,11 @@ address {
   padding-top: 5px;
 }
 
+.tab-mini--sizes {
+  height: 28px;
+  padding: 0 22px;
+}
+
 .order-approve__tabs {
   max-width: 229px;
   width: 100%;
