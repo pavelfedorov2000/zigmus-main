@@ -302,7 +302,6 @@ $('.from-label').on('click', function () {
 $('.where-label').on('click', function () {
     $('.overlay, #map-popup').fadeIn('slow');
 });
-
     
     $('.from-label').on('click', function () {
     $('.overlay, #map-popup').fadeIn('slow');
@@ -310,7 +309,6 @@ $('.where-label').on('click', function () {
 
 $('.where-label').on('click', function () {
     $('.overlay, #map-popup').fadeIn('slow');
-    $("body").addClass('body__overflow--hidden');
 });
 
 $('.from-input').on('change', function () {
@@ -321,11 +319,7 @@ $('.where-input').on('change', function () {
     $('.from-content').addClass('valid');
 });
 
-$("#map-popup").on("show", function () {
-    $("body").addClass("body__overflow--hidden");
-  }).on("hidden", function () {
-    $("body").removeClass("body__overflow--hidden")
-  });
+
 
     // ===================== SLIDERS ========================/
 
