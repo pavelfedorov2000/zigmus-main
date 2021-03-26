@@ -24,6 +24,8 @@ $(function () {
 
     @@include('rate.js')
 
+    @@include('add-point-btn.js')
+
     @@include('../blocks/modules/header/header.js')
 
     @@include('../blocks/modules/questions/questions.js')
@@ -35,6 +37,8 @@ $(function () {
     // ===================== POPUPS =======================//
 
     @@include('../blocks/modules/popups/popups.js')
+    
+    @@include('../blocks/modules/popups/map-popup.js')
 
     // ===================== SLIDERS ========================/
 

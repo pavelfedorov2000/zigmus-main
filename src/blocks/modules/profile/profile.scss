@@ -393,6 +393,7 @@
 
     &__fields {
         display: flex;
+        //@include flex;
     }
 
     &__fields-col {
@@ -408,8 +409,11 @@
         margin-left: 20px;
     }
 
+    &__field + &__field {
+        margin-top: 20px;
+    }
+
     &__field {
-        //width: 275px;
         //width: 100%;
         padding: 10px 20px;
         flex-direction: column;
@@ -489,14 +493,14 @@
         margin-left: 4px;
     }
 
-    &__field-file {
+    /* &__field-file {
         font-size: 12px;
         padding: 20px 10px;
 
         &--certificate {
             width: 272px;
         }
-    }
+    } */
 
     &__plus-btn {
         margin-top: 15px;
@@ -572,6 +576,7 @@
     }
 
     &__messangers {
+        padding: 0;
         label {
             display: flex;
             align-items: center;
