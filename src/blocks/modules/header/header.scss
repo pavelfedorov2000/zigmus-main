@@ -498,12 +498,12 @@
         z-index: 103;
         width: 185px;
         padding: 20px 0 15px;
-        opacity: 0;
+        display: none;
         overflow: hidden;
         transition: 0.3s all;
 
         &--active {
-            opacity: 1;
+            display: block;
             overflow: visible;
         }
     }
@@ -531,11 +531,11 @@
         z-index: 102;
         width: 237px;
         visibility: hidden;
-        opacity: 0;
+        display: none;
 
         &--active {
             visibility: visible;
-            opacity: 1;
+            display: block;
         }
     }
 }

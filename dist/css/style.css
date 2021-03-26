@@ -2996,7 +2996,7 @@ address {
   z-index: 103;
   width: 185px;
   padding: 20px 0 15px;
-  opacity: 0;
+  display: none;
   overflow: hidden;
   -webkit-transition: 0.3s all;
   -o-transition: 0.3s all;
@@ -3004,7 +3004,7 @@ address {
 }
 
 .header__dashboard--active {
-  opacity: 1;
+  display: block;
   overflow: visible;
 }
 
@@ -3035,12 +3035,12 @@ address {
   z-index: 102;
   width: 237px;
   visibility: hidden;
-  opacity: 0;
+  display: none;
 }
 
 .header__notifications--active {
   visibility: visible;
-  opacity: 1;
+  display: block;
 }
 
 .help-search {
@@ -8423,6 +8423,10 @@ address {
   border-bottom: 1px solid #236EFF;
 }
 
+.p-profile {
+  overflow: hidden;
+}
+
 .p-profile__content {
   padding-left: 15px;
   padding-top: 40px;
@@ -8748,6 +8752,10 @@ address {
   width: 8px;
   height: 6px;
   background-image: url(../img/icons/arrows/blue-arrow.svg);
+}
+
+.auction__dashboard {
+  padding-bottom: 30px;
 }
 
 .auction-card__transport-info {

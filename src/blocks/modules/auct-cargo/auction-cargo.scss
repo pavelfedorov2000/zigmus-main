@@ -1,3 +1,7 @@
+.p-profile {
+    overflow: hidden;
+}
+
 .p-profile__content {
     padding-left: 15px;
     padding-top: 40px;
@@ -312,4 +316,8 @@ line-height: 26px;
     width: 8px;
     height: 6px;
     background-image: url(../img/icons/arrows/blue-arrow.svg);
+}
+
+.auction__dashboard {
+    padding-bottom: 30px;
 }
