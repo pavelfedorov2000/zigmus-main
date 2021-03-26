@@ -1,51 +1,43 @@
 .order-card {
+    position: relative;
     background: #ffffff;
     border: 1px solid rgba(35, 110, 255, 0.3);
     border-radius: 8px;
-    padding: 15px 0;
-
-    // .order-card__header
 
     &__header {
-        @include flex;
-        align-items: center;
-        padding: 0 10px;
-        margin-bottom: 10px;
-
+        padding: 15px 10px;
         @media (max-width: 575px) {
-            padding: 0 7px;
-            margin-bottom: 7px;
+            padding: 0 7px 10px;
         }
     }
 
     // .order-card__title
 
     &__title {
+        white-space: nowrap;
         font-weight: 600;
         font-size: 16px;
         line-height: 26px;
+        margin-bottom: 10px;
 
         @media (max-width: 575px) {
             font-size: 11px;
             line-height: 18px;
+            margin-bottom: 7px;
         }
     }
 
     // .order-card__header-btn
 
     &__settings-btn {
+        position: absolute;
+        top: 18px;
+        right: 10px;
     }
 
     // .order-card__labels
 
     &__labels {
-        padding-left: 10px;
-        margin-bottom: 15px;
-
-        @media (max-width: 575px) {
-            padding-left: 7px;
-            margin-bottom: 10px;
-        }
     }
 
     // .order-card__label
@@ -201,45 +193,20 @@
     // .order-card__path-item
 
     &__path-item {
-        position: relative;
-        padding-left: 25px;
+    }
 
+    &__path-img {
+        width: 20px;
+        height: 20px;
+        margin-top: 2px;
         @media (max-width: 575px) {
-            padding-left: 17px;
-        }
-
-        &:before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 20px;
-            height: 20px;
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
-
-            @media (max-width: 575px) {
-                width: 13.65px;
-                height: 13.65px;
-            }
+            width: 13.5px;
+            height: 13.5px;
         }
     }
 
-    // .order-card__path-item--from
-
-    &__path-item--from {
-        &:before {
-            background-image: url('../img/icons/belarus.png');
-        }
-    }
-
-    // .order-card__path-item--to
-
-    &__path-item--to {
-        &:before {
-            background-image: url('../img/icons/poland.png');
-        }
+    &__path-info {
+        margin-left: 5px;
     }
 
     // .order-card__path-city
@@ -261,6 +228,7 @@
 
     &__path-region {
         font-size: 10px;
+        line-height: 12px;
         opacity: 0.5;
 
         @media (max-width: 575px) {
@@ -295,10 +263,9 @@
             &:last-child {
                 margin-bottom: 0;
             }
-
-            span {
-                color: rgba(52, 52, 52, 0.5);
-            }
+        }
+        span {
+            color: rgba(52, 52, 52, 0.5);
         }
     }
 
@@ -422,14 +389,10 @@
 
     &__action-label {
         display: inline-block;
-        border: 1px solid $second-blue;
-        border-radius: 5px;
         padding: 2px 12px;
         font-weight: 500;
         font-size: 12px;
         line-height: 19px;
-        color: $blue;
-        text-align: center;
 
         @media (max-width: 575px) {
             border-width: 0.682513px;
@@ -475,42 +438,35 @@
 
     &__info-nums {
         @include flex;
-        flex-wrap: wrap;
+    }
 
-        li {
-            margin-bottom: 0px;
+    &__info-id {
+        position: relative;
+        padding-left: 22px;
+        margin-bottom: 6px;
 
-            &:first-child {
-                width: 100%;
-                position: relative;
-                padding-left: 22px;
-                margin-bottom: 6px;
+        @media (max-width: 575px) {
+            padding-left: 15px;
+            margin-bottom: 4px;
+        }
+        &:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 15px;
+            height: 15px;
+            border-radius: 50%;
+            background-color: $blue;
+            background-image: url('../img/icons/id-check.svg');
+            background-size: 7px 7px;
+            background-position: center;
+            background-repeat: no-repeat;
 
-                @media (max-width: 575px) {
-                    padding-left: 15px;
-                    margin-bottom: 4px;
-                }
-
-                &:before {
-                    content: '';
-                    position: absolute;
-                    top: 0;
-                    left: 0;
-                    width: 15px;
-                    height: 15px;
-                    border-radius: 50%;
-                    background-color: $blue;
-                    background-image: url('../img/icons/id-check.svg');
-                    background-size: 7px 7px;
-                    background-position: center;
-                    background-repeat: no-repeat;
-
-                    @media (max-width: 575px) {
-                        width: 10px;
-                        height: 10px;
-                        top: 1px;
-                    }
-                }
+            @media (max-width: 575px) {
+                width: 10px;
+                height: 10px;
+                top: 1px;
             }
         }
     }
@@ -519,20 +475,20 @@
 
     &__footer {
         @include flex;
+        padding: 10px 10px 15px;
     }
 
     // .order-card__footer-item
 
-    &__footer-item {
+    &__mini-info {
         font-size: 8px;
         line-height: 10px;
         opacity: 0.5;
-        padding: 10px 10px 0 10px;
+        white-space: nowrap;
 
         @media (max-width: 575px) {
             font-size: 5.46px;
             line-height: 7px;
-            padding: 7px 7px 0 7px;
         }
 
         p {
@@ -572,6 +528,208 @@
 
             @media (max-width: 575px) {
                 margin-left: 7px;
+            }
+        }
+    }
+
+    &__item {
+        padding: 20px 20px 0 15px;
+    }
+
+    &__side {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    &__side-item + &__side-item {
+        border-top: 1px solid rgba($blue, 0.3);
+    }
+
+    &__left {
+        width: 35%;
+    }
+
+    &__right {
+        width: 22%;
+        padding-top: 30px;
+    }
+
+    &__right-bottom {
+        padding: 10px 10px 20px 7px;
+    }
+
+    &__item + &__item {
+        border-left: 1px solid rgba($blue, 0.3);
+    }
+
+    &__info-title {
+        font-size: 14px;
+        line-height: 14px;
+        margin-bottom: 15px;
+    }
+
+    &--line {
+        width: 100%;
+        min-height: 175px;
+        justify-content: space-between;
+
+        .order-card {
+            &__header {
+                align-items: center;
+                padding: 0 20px 15px 25px;
+            }
+
+            &__title {
+                line-height: 15px;
+                margin-bottom: 0;
+                margin-right: 9px;
+            }
+
+            &__mini-info {
+                line-height: 20px;
+            }
+
+            &__labels {
+                margin-right: 8px;
+            }
+
+            &__label + &__label {
+                margin-left: 7px;
+            }
+
+            &__label {
+                width: auto;
+                line-height: 15px;
+                padding: 3px 7px 3px 25px;
+            }
+
+            &__path {
+                background-color: transparent;
+                padding-left: 25px;
+            }
+
+            &__path-header {
+                justify-content: flex-start;
+            }
+
+            &__path-fromto {
+                margin-right: 6px;
+            }
+
+            &__path-length {
+                font-size: 12px;
+                font-weight: 400;
+                margin-right: 4px;
+                span {
+                    border-bottom: 1px solid $dark;
+                }
+            }
+
+            &__path-items {
+                justify-content: flex-start;
+                border-bottom: none;
+                padding-bottom: 0;
+                &:before,
+                &:after {
+                    display: none;
+                }
+            }
+
+            &__path-item {
+                &:last-child {
+                    position: relative;
+                    padding-left: 47px;
+                    margin-left: 6px;
+                    &:before {
+                        content: url('../img/icons/path-line--bigger.svg');
+                        position: absolute;
+                        top: 5px;
+                        left: 0;
+                    }
+                }
+            }
+
+            &__path-city {
+                font-size: 14px;
+                line-height: 17px;
+                margin-bottom: 1px;
+            }
+
+            &__info-item {
+                border-bottom: none;
+                li {
+                    white-space: nowrap;
+                    line-height: 18px;
+                    margin-bottom: 2px;
+                    span {
+                        color: #9a9a9a;
+                    }
+                }
+            }
+
+            &__info-dates,
+            &__info-params {
+                width: 15%;
+                flex-direction: column;
+                justify-content: flex-start;
+            }
+            &__info-params {
+                li {
+                    align-items: center;
+                    img {
+                        display: inline-block;
+                        margin-right: 8px;
+                    }
+                }
+            }
+            &__info-car {
+                width: 14%;
+                //padding-right: 33px;
+            }
+
+            &__action-head {
+                padding: 0 33px 15px 15px;
+                margin-bottom: 0;
+                justify-content: flex-start;
+            }
+
+            &__action-labels {
+                margin-left: 15px;
+            }
+
+            &__settings-btn {
+                top: 10px;
+            }
+
+            &__price {
+                line-height: 24px;
+            }
+
+            &__btn {
+                width: 100%;
+                margin-bottom: 10px;
+            }
+
+            &__info-nums {
+                justify-content: center;
+                background-color: $light-blue-bg;
+                border-radius: 5px;
+                padding: 7px 0;
+                line-height: 15px;
+                p + p {
+                    margin-left: 14px;
+                }
+            }
+
+            &__info-id {
+                margin-bottom: 0;
+            }
+
+            &__info-rate {
+                span {
+                    font-size: 9px;
+                    line-height: 12px;
+                }
             }
         }
     }

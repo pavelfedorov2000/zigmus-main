@@ -67,6 +67,13 @@
     background-color: $blue;
 }
 
+.blue-border-label {
+    border: 1px solid $second-blue;
+    border-radius: 5px;
+    color: $second-blue;
+    text-align: center;
+}
+
 @import '../components/top-page';
 @import '../components/breadcrumbs';
 @import '../components/titles';

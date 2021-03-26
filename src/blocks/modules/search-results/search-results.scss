@@ -196,9 +196,20 @@
     // .search-results__cards
 
     &__cards {
+        display: none;
+        &--active {
+            display: grid;
+        }
+    }
+
+    &__grid-cards {
         grid-template-columns: repeat(4, 1fr);
         grid-column-gap: 31px;
         grid-row-gap: 30px;
+    }
+
+    &__line-cards {
+        grid-row-gap: 20px;
     }
 
     // .search-results__more-btn

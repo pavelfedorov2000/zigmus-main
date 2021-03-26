@@ -22,8 +22,8 @@
 
     &--transparent {
         background-color: transparent;
-        border: 1px solid $blue;
-        color: $blue;
+        border-width: 1px;
+        border-style: solid;
 
         &:hover {
             box-shadow: none;
@@ -102,4 +102,10 @@
         height: 14px;
         border-width: 0.682513px;
     }
+}
+
+.info-btn {
+    width: 11px;
+    height: 11px;
+    background-image: url('../img/icons/info.svg');
 }

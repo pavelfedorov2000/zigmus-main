@@ -1,5 +1,4 @@
 .order-process {
-
     background-color: $light-blue-bg;
 
     // .order-process__inner
@@ -21,7 +20,8 @@
 
     // .order-process__why-review
 
-    &__why-review {}
+    &__why-review {
+    }
 
     // .order-process__aside
 
@@ -31,7 +31,6 @@
 }
 
 .main-process {
-
     // .main-process__header-img
 
     &__header-img {
@@ -46,7 +45,7 @@
     }
 
     &__body {
-        background: #FFFFFF;
+        background: #ffffff;
         box-shadow: 0px 10px 40px rgba(0, 4, 41, 0.05);
         border-radius: 14px;
         padding: 50px 25px;
@@ -66,7 +65,8 @@
 
     // .main-process__additional-agreement
 
-    &__additional-agreement {}
+    &__additional-agreement {
+    }
 
     // .main-process__title
 
@@ -88,13 +88,13 @@
 
     // .main-process__chat
 
-    &__chat {}
+    &__chat {
+    }
 
     &__blue-block {
-        background: linear-gradient(201.82deg, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0) 98.62%),
-            #236EFF;
+        background: linear-gradient(201.82deg, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0) 98.62%), #236eff;
         border-radius: 6px;
-        color: #FFFFFF;
+        color: #ffffff;
     }
 
     &__change {
@@ -109,7 +109,6 @@
 }
 
 .additional-agreement {
-
     // .additional-agreement__title
 
     &__title {
@@ -147,7 +146,7 @@
         white-space: nowrap;
 
         span {
-            color: #9A9A9A;
+            color: #9a9a9a;
         }
 
         .filter-style {
@@ -169,7 +168,6 @@
 }
 
 .chat {
-
     // .chat__day
 
     &__day {
@@ -177,7 +175,7 @@
         border-bottom: 1px solid rgba(35, 110, 255, 0.1);
     }
 
-    &__day+&__day {
+    &__day + &__day {
         margin-top: 25px;
     }
 
@@ -199,7 +197,6 @@
         padding: 15px 50px;
         margin-top: 25px;
     }
-
 
     // .chat__status-left
 
@@ -233,7 +230,7 @@
         font-size: 12px;
     }
 
-    &__status-btn+&__status-btn {
+    &__status-btn + &__status-btn {
         margin-left: 10px;
     }
 
@@ -249,7 +246,6 @@
 }
 
 .chat-item {
-
     &__blue-text {
         color: rgba(35, 110, 255, 0.5);
     }
@@ -300,7 +296,7 @@
             width: 10px;
             height: 10px;
             border-radius: 50%;
-            background: #00F836;
+            background: #00f836;
         }
     }
 
@@ -352,7 +348,8 @@
 
     // .chat-item__descr
 
-    &__descr {}
+    &__descr {
+    }
 
     // .chat-item__send-time
 
@@ -380,7 +377,6 @@
 }
 
 .review-form {
-
     padding: 20px;
 
     // .review-form__title
@@ -437,7 +433,7 @@
     &__why-link {
         font-size: 12px;
         line-height: 50px;
-        opacity: .5;
+        opacity: 0.5;
 
         span {
             border-bottom: 1px solid #fff;
@@ -446,7 +442,6 @@
 }
 
 .review-why {
-
     @include flex;
     align-items: flex-end;
     padding-bottom: 20px;
@@ -454,7 +449,8 @@
 
     // .review-why__content
 
-    &__content {}
+    &__content {
+    }
 
     // .review-why__title
 
@@ -466,7 +462,8 @@
 
     // .review-why__list
 
-    &__list {}
+    &__list {
+    }
 
     // .review-why__list-item
 
@@ -497,7 +494,7 @@
         align-items: center;
         background: rgba(35, 110, 255, 0.2);
         border-radius: 6px;
-        padding: 0 20px;
+        padding: 0 18px;
         font-weight: 600;
         font-size: 12px;
         line-height: 18px;
@@ -506,25 +503,24 @@
     }
 }
 
-
 .aside-process {
-
     // .aside-process__item
 
     &__item {
-        background: #FFFFFF;
+        background: #ffffff;
         box-shadow: 0px 10px 40px rgba(0, 4, 41, 0.05);
         border-radius: 8px;
         padding: 20px;
     }
 
-    &__item+&__item {
+    &__item + &__item {
         margin-top: 20px;
     }
 
     // .aside-process__contact
 
-    &__contact {}
+    &__contact {
+    }
 
     // .aside-process__item-title
 
@@ -554,7 +550,8 @@
 
     // .aside-process__contact-logo
 
-    &__contact-logo {}
+    &__contact-logo {
+    }
 
     // .aside-process__contact-header-info
 
@@ -564,7 +561,8 @@
 
     // .aside-process__contact-manager
 
-    &__contact-manager {}
+    &__contact-manager {
+    }
 
     // .aside-process__contact-items
 
@@ -589,14 +587,15 @@
         line-height: 50px;
     }
 
-    &__contact-link+&__contact-link {
+    &__contact-link + &__contact-link {
         display: inline-block;
         margin-left: 12px;
     }
 
     // .aside-process__payment
 
-    &__payment {}
+    &__payment {
+    }
 
     // .aside-process__item-text
 
@@ -632,7 +631,8 @@
 
     // .aside-process__docs
 
-    &__docs {}
+    &__docs {
+    }
 
     // .aside-process__docs-list
 
@@ -640,7 +640,7 @@
         margin: 30px 0 20px;
     }
 
-    &__docs-item+&__docs-item {
+    &__docs-item + &__docs-item {
         margin-top: 12px;
     }
 
@@ -668,7 +668,7 @@
         width: 433px;
         @include column;
         align-items: center;
-        background: #FFFFFF;
+        background: #ffffff;
         border: 1px solid rgba(35, 110, 255, 0.3);
         border-radius: 8px;
         padding: 24px 0;
@@ -733,7 +733,7 @@
         color: $blue;
     }
 
-    &__modal-btnitem+&__modal-btnitem {
+    &__modal-btnitem + &__modal-btnitem {
         margin-left: 15px;
     }
 
@@ -755,11 +755,11 @@
 
     // .aside-process__docs-add
 
-    &__docs-add {}
+    &__docs-add {
+    }
 }
 
 .contact-item {
-
     // .company__logo
 
     &__img {
@@ -785,7 +785,7 @@
         font-weight: 500;
         font-size: 10px;
         line-height: 20px;
-        opacity: .5;
+        opacity: 0.5;
     }
 
     // .company__properties
@@ -794,17 +794,16 @@
         color: $blue;
 
         span {
-            border-bottom: 1px solid rgba($blue, .5);
+            border-bottom: 1px solid rgba($blue, 0.5);
         }
     }
 
-    &__list-item+&__list-item {
+    &__list-item + &__list-item {
         margin-top: 10px;
     }
 }
 
 .contact-manager {
-
     // .contact-manager__avatar
 
     &__avatar {
@@ -823,15 +822,16 @@
 
     // .contact-manager__name
 
-    &__name {}
+    &__name {
+    }
 
     // .contact-manager__descr
 
-    &__descr {}
+    &__descr {
+    }
 }
 
 .payment-process {
-
     counter-reset: payment-process;
     position: relative;
 
@@ -865,32 +865,30 @@
             width: 32px;
             height: 32px;
             border-radius: 50%;
-            background: #AAC7FF;
+            background: #aac7ff;
             @include center;
             font-weight: 600;
             font-size: 16px;
             line-height: 50px;
-            color: #FFFFFF;
+            color: #ffffff;
         }
     }
 
     // .paymennt-process__item--done
 
     &__item--done {
-
         &:before {
             content: url('../img/icons/check-mark.svg');
             background-color: $blue;
         }
     }
 
-    &__item+&__item {
+    &__item + &__item {
         margin-top: 20px;
     }
 }
 
 .auto {
-
     // .auto__inner
 
     &__inner {
@@ -899,11 +897,11 @@
 
     // .auto__info
 
-    &__info {}
+    &__info {
+    }
 }
 
 .info-auto {
-
     // .info-auto__name
 
     &__name {
@@ -912,11 +910,13 @@
 
     // .info-auto__item
 
-    &__item {}
+    &__item {
+    }
 
     // .info-auto__item-title
 
-    &__item-title {}
+    &__item-title {
+    }
 
     // .info-auto__item-descr
 

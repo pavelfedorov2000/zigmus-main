@@ -4,6 +4,20 @@ $(function () {
 
     $('.datepicker-here').datepicker();
 
+    $('.search-results__list-btn').on('click', function () {
+        $(this).siblings().removeClass('search-results__btn--active');
+        $(this).addClass('search-results__btn--active');
+        $('.search-results__cards').removeClass('search-results__cards--active');
+        $('.search-results__line-cards').addClass('search-results__cards--active');
+    });
+
+    $('.search-results__grid-btn').on('click', function () {
+        $(this).siblings().removeClass('search-results__btn--active');
+        $(this).addClass('search-results__btn--active');
+        $('.search-results__cards').removeClass('search-results__cards--active');
+        $('.search-results__grid-cards').addClass('search-results__cards--active');
+    });
+
     @@include('tabs.js')
 
     @@include('input.js')
