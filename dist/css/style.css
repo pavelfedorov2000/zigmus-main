@@ -4870,7 +4870,6 @@ address {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  border-top: 1px solid rgba(35, 110, 255, 0.3);
   border-bottom: 1px solid rgba(35, 110, 255, 0.3);
 }
 
@@ -9414,6 +9413,63 @@ address {
 .reset-popup__email-reset,
 .forgot-password-popup__reset-by-phone {
   display: none;
+}
+
+.p-profile__add-transport-btn {
+  width: 194px;
+}
+
+.my-transport__params {
+  font-size: 12px;
+}
+
+.my-transport__params-span {
+  display: block;
+  opacity: 0.5;
+}
+
+.transport-card__bottom {
+  border-top: 1px solid rgba(35, 110, 255, 0.3);
+}
+
+.transport-date {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 12px;
+}
+
+.transport-date span {
+  opacity: 0.5;
+}
+
+.my-transport__confirm-btn {
+  margin-top: 12px;
+  width: 139px;
+}
+
+.transport-card__middle {
+  height: 22px;
+  border-top: none;
+}
+
+.transport-info--border {
+  border-left: 1px solid rgba(35, 110, 255, 0.3);
+}
+
+.my-transport__middle-title {
+  padding: 10px;
+}
+
+.transport-card__details {
+  width: 126px;
+}
+
+.transport-card__footer {
+  border-bottom: none;
 }
 
 .jq-checkbox,
