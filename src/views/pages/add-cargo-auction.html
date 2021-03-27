@@ -80,11 +80,20 @@
                                         </div>
                                     </div>
                                     <div class="profile__fields-col">
-                                        <div class="field profile__field ">
-                                            
-                                            <div class="field__value flex">
-                                                <input class="input field__value input--height" type="text" placeholder="Адрес пункта разгрузки?">
-                                                <button class="reset-filter-btn"></button>
+                                        <div class="field profile__field field--transparent where-label field--flex">
+
+                                            <div class="from__container">
+                                                <div class="from-icon">
+                                                    <img src="img/b-svg.svg" alt="where-logo">
+                                                </div>
+                                                <div class="from-content">
+                                                    <label for="where" class="where-label">
+                                                        Куда?
+                                                        <div class="plus filter-item__plus add__plus">+</div>
+                                                    </label>
+                                                    <input type="text" name="where" class="from-input" id="where" required>
+                                                </div>               
+
                                             </div>
 
                                         </div>
@@ -96,39 +105,6 @@
                             </form>
                             <form action="#" id="route" class="profile__form">
                                 <div class="profile__form-header flex">
-                                </div>
-                                <div class="profile__field-item profile__fields fields--aline-item">
-                                    <div class="profile__fields-col">
-                                        <div class="field profile__field field--transparent">
-    
-                                            <div class="field profile__field field--transparent where-label field--flex">
-
-                                                <div class="from__container">
-                                                    <div class="from-icon">
-                                                        <img src="img/b-svg.svg" alt="where-logo">
-                                                    </div>
-                                                    <div class="from-content">
-                                                        <label for="where" class="where-label">
-                                                            Куда?
-                                                            <div class="plus filter-item__plus add__plus">+</div>
-                                                        </label>
-                                                        <input type="text" name="where" class="from-input" id="where" required>
-                                                    </div>               
-    
-                                                </div>
-    
-                                            </div>
-    
-                                        </div>
-                                    </div>
-                                    <div class="profile__fields-col">
-                                        <div class="field profile__field ">
-                                                <div class="field__value flex">
-                                                    <input class="input field__value input--height" type="text" placeholder="Адрес пункта разгрузки?">
-                                                    <button class="reset-filter-btn"></button>
-                                                </div>
-                                        </div>
-                                    </div>
                                 </div>
                             </form>
                         </div>
@@ -251,7 +227,7 @@
                                         <div class="gabarits__item-inner flex">
                                             <input type="text"
                                                 class="field gabarits__item-input gabarits__item-input--counter"
-                                                placeholder="До (шт)">
+                                                placeholder="До (шт)" value="1">
                                             <div class="gabarits__counter flex">
                                                 <button class="field gabarits__btn gabarits__minus-btn"
                                                     type="button">-</button>

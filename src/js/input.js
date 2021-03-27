@@ -37,6 +37,7 @@ $('.gabarits__plus-btn').on('click', function (e) {
     var $this = $(this);
     var $input = $this.parent().siblings();
     var value = parseInt($input.val());
+
     value = value + 1;
     $input.val(value);
 });
