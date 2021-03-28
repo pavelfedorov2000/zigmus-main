@@ -243,8 +243,9 @@
                 &__select-value {
                     color: $blue;
                 }
+
                 &__select-content {
-                    opacity: 1;
+                    visibility: visible;
                 }
             }
         }
@@ -276,9 +277,9 @@
         min-height: 192px;
         padding: 22px 10px;
         background: #ffffff;
-        opacity: 0;
         @include column;
         transition: 0.3s all;
+        visibility: hidden;
     }
 
     &__select-droptitle {

@@ -1,0 +1,42 @@
+.path {
+    &__item {
+    }
+
+    &__item-img {
+        width: 20px;
+        height: 20px;
+        margin-top: 2px;
+        @media (max-width: 575px) {
+            width: 13.5px;
+            height: 13.5px;
+        }
+    }
+
+    &__item-info {
+        margin-left: 5px;
+    }
+
+    &__item-city {
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 14px;
+        margin-bottom: 2px;
+
+        @media (max-width: 575px) {
+            font-size: 8px;
+            line-height: 10px;
+            margin-bottom: 1.37px;
+        }
+    }
+
+    &__item-region {
+        font-size: 10px;
+        line-height: 12px;
+        opacity: 0.5;
+
+        @media (max-width: 575px) {
+            font-size: 7px;
+            line-height: 8px;
+        }
+    }
+}

@@ -69,6 +69,7 @@ $(document).mouseup(function (e) {
 
 const selectCurrency = document.getElementById('currency-choice');
 const selectCurrencyTitle = selectCurrency.querySelector('.header__select-title');
+const selectCurrencyContent = selectCurrency.querySelector('.header__select-content');
 const selectCurrencyValue = selectCurrency.querySelector('.header__select-value');
 const selectCurrencyLabels = selectCurrency.querySelectorAll('.header__select-label');
 
@@ -94,6 +95,7 @@ for (let i = 0; i < selectCurrencyLabels.length; i++) {
 
 const selectLang = document.getElementById('language-choice');
 const selectLangTitle = selectLang.querySelector('.header__select-title');
+const selectLangContent = selectLang.querySelector('.header__select-content');
 const selectLangValue = selectLang.querySelector('.header__select-value');
 const selectLangLabels = selectLang.querySelectorAll('.header__select-label');
 

@@ -37,7 +37,7 @@ $(function () {
     // ===================== POPUPS =======================//
 
     @@include('../blocks/modules/popups/popups.js')
-    
+
     @@include('../blocks/modules/popups/map-popup.js')
 
     // ===================== SLIDERS ========================/

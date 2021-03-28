@@ -482,3 +482,61 @@
     color: $blue;
     text-align: center;
 }
+
+.saved-filters {
+    &__card {
+        width: 285px;
+        min-height: 124px;
+        padding: 15px 20px;
+    }
+}
+
+.saved-filter {
+    // .saved-filter__header
+
+    &__header {
+        @include flex;
+        margin-bottom: 20px;
+    }
+
+    // .saved-filter__title
+
+    &__title {
+        font-size: 16px;
+        line-height: 26px;
+    }
+
+    // .saved-filter__btn
+
+    &__btn {
+        display: inline-block;
+        font-weight: 600;
+        font-size: 10px;
+        line-height: 20px;
+        opacity: 0.4;
+        span {
+            border-bottom: 1px solid $dark;
+        }
+    }
+
+    &__btn + &__btn {
+        margin-left: 17px;
+    }
+
+    // .saved-filter__path
+
+    &__path {
+        position: relative;
+        @include flex;
+        padding-bottom: 10px;
+        &:after {
+            content: url('../img/filter-line.svg');
+            position: absolute;
+            width: 100%;
+            height: 10px;
+            bottom: 0px;
+            left: 0;
+            right: 0;
+        }
+    }
+}

@@ -1,5 +1,4 @@
 .list {
-    
     &__title {
         font-weight: 700;
         font-size: 28px;
@@ -25,6 +24,58 @@
     &__item-text {
         font-size: 14px;
         line-height: 22px;
-        opacity: .7;
+        opacity: 0.7;
+    }
+}
+
+.check-list {
+    &__item {
+        position: relative;
+        align-items: center;
+        padding-left: 23px;
+        font-weight: 500;
+        font-size: 13px;
+        line-height: 15px;
+        white-space: nowrap;
+        &:before {
+            content: '';
+            position: absolute;
+            @include centerY;
+            left: 0px;
+            width: 15px;
+            height: 15px;
+            border-radius: 50%;
+            background-color: $blue;
+            background-image: url('../img/icons/check-mark.svg');
+            background-size: 7px 7px;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+    }
+}
+
+.small-list {
+    &__item {
+        position: relative;
+        font-weight: 500;
+        font-size: 10px;
+        line-height: 15px;
+        padding-left: 12px;
+        &:before {
+            content: '';
+            position: absolute;
+            @include centerY;
+            left: 0;
+            width: 6px;
+            height: 6px;
+            border-radius: 50%;
+            background-color: rgba(35, 110, 255, 0.4);
+        }
+        span {
+            color: rgba(52, 52, 52, 0.4);
+        }
+    }
+    &__item + &__item {
+        margin-top: 6px;
     }
 }
