@@ -9,13 +9,17 @@
 
 @import 'base/general';
 
-@import '../blocks/modules';
-@import '../blocks/modules/auct-cargo/auction-cargo.scss';
-@import '../blocks/modules/auct-transport/auct-transport.scss';
-@import '../blocks/modules/add-auction/add-auction.scss';
-@import '../blocks/modules/add-cargo/add-cargo.scss';
-@import '../blocks/modules/order-approve/order-approve.scss';
-@import '../blocks/modules/add-transport-auction/add-transport-auction.scss';
+
+@import "../blocks/modules";
+@import "../blocks/modules/auct-cargo/auction-cargo.scss";
+@import "../blocks/modules/auct-transport/auct-transport.scss";
+@import "../blocks/modules/add-auction/add-auction.scss";
+@import "../blocks/modules/add-cargo/add-cargo.scss";
+@import "../blocks/modules/order-approve/order-approve.scss";
+@import "../blocks/modules/add-transport-auction/add-transport-auction.scss";
+@import "../blocks/modules/my-transport/my-transport.scss";
+@import "../blocks/modules/your-status/your-status.scss";
+
 
 @import '../blocks/modules/order-card/order-card'; // Где-то мои стили перебились, поэтому сюда переместил
 

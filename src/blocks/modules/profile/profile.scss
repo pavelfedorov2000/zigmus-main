@@ -1173,7 +1173,7 @@
 
     &__offer-item {
         @include flex;
-        border-top: 1px solid rgba($blue, 0.3);
+        // border-top: 1px solid rgba($blue, 0.3);
         border-bottom: 1px solid rgba($blue, 0.3);
         &:last-child {
             border-radius: 0px 0px 10px 10px;

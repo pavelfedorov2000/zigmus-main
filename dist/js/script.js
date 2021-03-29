@@ -40,8 +40,8 @@ $('.reset-filter-btn').on('click', function () {
 });
 
 $('.radio-field__label').on('click', function () {
-    $(this).find('span').toggleClass('checked');
-    $(this).siblings().find('span').toggleClass('checked');
+    $(this).find('span').addClass('checked');
+    $(this).siblings().find('span').removeClass('checked');
 });
 
 $('.oval-check').on('click', function () {
@@ -69,6 +69,7 @@ $('.gabarits__plus-btn').on('click', function (e) {
     var $this = $(this);
     var $input = $this.parent().siblings();
     var value = parseInt($input.val());
+
     value = value + 1;
     $input.val(value);
 });

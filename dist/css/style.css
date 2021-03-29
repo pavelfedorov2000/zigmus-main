@@ -1989,6 +1989,48 @@ address {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+
+  padding: 0 10px;
+  margin-bottom: 10px;
+}
+
+.order-card__title {
+  padding-left: 10px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 26px;
+}
+
+.order-card__labels {
+  padding-left: 10px;
+  margin-bottom: 15px;
+}
+
+.order-card__label {
+  display: inline-block;
+  width: 85px;
+  height: 22px;
+  border-radius: 5px;
+  border-width: 1px;
+  border-style: solid;
+  padding: 0 8px 0 28px;
+  font-size: 10px;
+  line-height: 19px;
+  background-size: 13px 14px;
+  background-position: 10px center;
+}
+
+.order-card__label + .order-card__label {
+  margin-left: 9px;
+}
+
+.order-card__label--urgent {
+  background-color: rgba(249, 69, 30, 0.07);
+  border-color: rgba(249, 69, 30, 0.12);
+  background-image: url("../img/icons/fire.svg");
+  background-repeat: no-repeat;
+  color: rgba(249, 69, 30, 0.7);
+
 }
 
 .header__logo {
@@ -2975,22 +3017,70 @@ address {
   border-radius: 8px;
 }
 
+
 .aside-news__col + .aside-news__col {
   margin-top: 30px;
 }
 
 .aside-news__articles {
   padding: 15px 15px 20px 15px;
+
+.header__dashboard {
+  position: absolute;
+  top: 100%;
+  left: -3px;
+  z-index: 103;
+  width: 185px;
+  padding: 20px 0 15px;
+  display: none;
+  overflow: hidden;
+  -webkit-transition: 0.3s all;
+  -o-transition: 0.3s all;
+  transition: 0.3s all;
+}
+
+.header__dashboard--active {
+  display: block;
+  overflow: visible;
+
 }
 
 .aside-news__pagination {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
   margin-bottom: 22px;
+
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 35px;
+  line-height: 35px;
+  color: #ffffff;
+  text-align: center;
+}
+
+.header__notifications {
+  position: absolute;
+  top: calc(100% + 14px);
+  left: 30px;
+  z-index: 102;
+  width: 237px;
+  visibility: hidden;
+  display: none;
+}
+
+.header__notifications--active {
+  visibility: visible;
+  display: block;
+
 }
 
 .aside-news__pagination-link {
@@ -4681,8 +4771,19 @@ address {
   font-size: 14px;
 }
 
+
 .gabarits__title {
   margin-bottom: 15px;
+
+.profile-card__offer-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-bottom: 1px solid rgba(35, 110, 255, 0.3);
+
 }
 
 .gabarits__item + .gabarits__item {
@@ -9125,10 +9226,20 @@ address {
   max-width: 260px;
 }
 
+
 .added-point {
   width: 275px;
   margin-top: 10px;
   margin-bottom: 10px;
+
+.p-profile {
+  overflow: hidden;
+}
+
+.p-profile__content {
+  padding-left: 15px;
+  padding-top: 40px;
+
 }
 
 .template__field {
@@ -9530,9 +9641,17 @@ address {
   padding-right: 6px;
 }
 
+
 .order__path--sizes {
   margin-bottom: 0;
   padding-bottom: 10px;
+.auction__dashboard {
+  padding-bottom: 30px;
+}
+
+.auction-card__transport-info {
+  border-left: 1px solid rgba(35, 110, 255, 0.3);
+
 }
 
 .order-approve__info-dates {
@@ -9679,6 +9798,7 @@ address {
   display: none;
 }
 
+
 .reset-popup__email-reset,
 .forgot-password-popup__reset-by-phone {
   display: none;
@@ -9689,6 +9809,10 @@ address {
   background: #ffffff;
   border: 1px solid rgba(35, 110, 255, 0.3);
   border-radius: 8px;
+
+.field--flex {
+  height: 68px;
+
 }
 
 .order-card__header {
@@ -10246,6 +10370,149 @@ address {
 .order-card--line .order-card__info-rate span {
   font-size: 9px;
   line-height: 12px;
+}
+
+.p-profile__add-transport-btn {
+  width: 194px;
+}
+
+.my-transport__params {
+  font-size: 12px;
+}
+
+.my-transport__params-span {
+  display: block;
+  opacity: 0.5;
+}
+
+.transport-card__bottom {
+  border-top: 1px solid rgba(35, 110, 255, 0.3);
+}
+
+.transport-date {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 12px;
+}
+
+.transport-date span {
+  opacity: 0.5;
+}
+
+.my-transport__confirm-btn {
+  margin-top: 12px;
+  width: 139px;
+}
+
+.transport-card__middle {
+  height: 22px;
+  border-top: none;
+}
+
+.transport-info--border {
+  border-left: 1px solid rgba(35, 110, 255, 0.3);
+}
+
+.my-transport__middle-title {
+  padding: 10px;
+}
+
+.transport-card__details {
+  width: 126px;
+}
+
+.transport-card__footer {
+  border-bottom: none;
+}
+
+.your-status__content {
+  padding-left: 30px;
+}
+
+.your-status__block {
+  width: 945px;
+  height: 400px;
+  background-color: #fff;
+  border-radius: 8px;
+  -webkit-box-shadow: rgba(0, 4, 41, 0.05);
+          box-shadow: rgba(0, 4, 41, 0.05);
+  margin-top: 64px;
+}
+
+.your-status-block__title {
+  border-bottom: 1px solid rgba(35, 110, 255, 0.3);
+}
+
+.your-status__title-text {
+  padding: 30px;
+  font-weight: 700;
+  font-size: 36px;
+}
+
+.your-status-block__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.your-status-content__columns {
+  padding-top: 30px;
+  padding-left: 30px;
+}
+
+.your-status-content__columns span {
+  opacity: 0.4;
+  font-size: 13px;
+}
+
+.your-status-content__column {
+  width: 330px;
+  height: 206px;
+  margin-top: 15px;
+  border-radius: 8px;
+  border: 1px solid rgba(35, 110, 255, 0.3);
+}
+
+.your-status-content__column p {
+  font-size: 13px;
+  padding: 10px 20px;
+}
+
+.column__text--opacity {
+  opacity: 0.4;
+}
+
+.your-status-column__title {
+  border-bottom: 1px solid rgba(35, 110, 255, 0.3);
+}
+
+.your-status-column__title h4 {
+  font-size: 20px;
+  padding: 20px;
+  width: 104px;
+  margin-left: 34px;
+  position: relative;
+}
+
+.your-status-column__title h4::before {
+  content: url("../../../img/icons/medal1.svg");
+  width: 36px;
+  height: 36px;
+  position: absolute;
+  top: 25px;
+  left: -20px;
+}
+
+.your-status-column__item:not(:last-child) {
+  border-bottom: 1px solid rgba(35, 110, 255, 0.3);
+}
+
+.your-status-content__column--inactive {
+  opacity: 0.3;
 }
 
 .jq-checkbox,
