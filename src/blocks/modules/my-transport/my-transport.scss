@@ -50,3 +50,22 @@
 .transport-card__footer {
     border-bottom: none;
 }
+
+.profile-card__check {
+    cursor: pointer;
+}
+
+.profile-card__check .display-none {
+    background-color: #fff;
+    border: 1px solid rgba(35,110,255, 1);;
+}
+
+.width--38px {
+    width: 38px;
+}
+
+.check-length {
+    width: 15px;
+    font-weight: 700;
+    color: #343434;
+}

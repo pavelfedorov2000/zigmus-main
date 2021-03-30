@@ -25,7 +25,7 @@ $(function () {
     @@include('../blocks/modules/popups/popups.js')
     
     @@include('../blocks/modules/popups/map-popup.js')
-
+    
     // ===================== SLIDERS ========================/
 
     @@include('../blocks/modules/clients/clients.js')
@@ -41,4 +41,8 @@ $(function () {
 
     @@include('phone-select.js')
 
+
+    //=================CHECK-IMG====================//
+
+    @@include('../blocks/modules/my-transport/transport.js')
 });

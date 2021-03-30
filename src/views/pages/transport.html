@@ -607,21 +607,18 @@
                                         </div>
                                     </form>
                                 </div>
-                                <div class="profile__item profile__item--border">
+                                <div class="profile__item">
                                     <h5 class="title profile__item-title">Общая информация</h5>
                                     <form action="#" id="route" class="profile__form">
                                         <div class="profile__form-header flex">
                                             <h6 class="title profile__form-title">
                                                 Укажите ваш маршрут
                                             </h6>
-                                            <p class="profile__item-descr profile__route-descr">
-                                                не обязательно
-                                            </p>
                                         </div>
-                                        <div class="profile__field-item profile__fields">
+                                        <div class="profile__field-item profile__fields fields--aline-item">
                                             <div class="profile__fields-col">
                                                 <div class="field profile__field field--transparent field--flex">
-
+        
                                                     <div class="from__container">
                                                         <div class="from-icon">
                                                             <img src="img/a-svg.svg" alt="from-logo">
@@ -639,8 +636,20 @@
                                                 </div>
                                             </div>
                                             <div class="profile__fields-col">
+        
+                                                <div class="profile__fields-col field profile__field profile__date-field">
+                                                    <input class="datepicker-here label" type="text" name="date" id=""
+                                                        placeholder="Указать дату">
+                                                </div>
+                                            </div>
+        
+                                            
+                                        </div>
+                                        
+                                        <div class="profile__field-item profile__fields fields--aline-item">
+                                            <div class="profile__fields-col">
                                                 <div class="field profile__field field--transparent where-label field--flex">
-
+        
                                                     <div class="from__container">
                                                         <div class="from-icon">
                                                             <img src="img/b-svg.svg" alt="where-logo">
@@ -656,37 +665,22 @@
                                                     </div>
         
                                                 </div>
+                                            </div>
+                                            <div class="profile__fields-col">
+        
+                                                <div class="profile__fields-col field profile__field profile__date-field">
+                                                    <input class="datepicker-here label" type="text" name="date" id=""
+                                                        placeholder="Указать дату">
+                                                </div>
         
                                             </div>
+                                            
                                         </div>
+        
                                         <div class="plus-btn profile__plus-btn add-point">
                                             Добавить еще пункт (если сборный груз)
                                         </div>
-                                    </form>
-                                </div>
-                                <div class="profile__item">
-                                    <form action="#" id="dates" class="profile__form">
-                                        <h6 class="title profile__form-title">
-                                            Укажите даты по маршруту
-                                        </h6>
-                                        <div class="profile__field-item profile__fields">
-                                            <div class="profile__fields-col field profile__field profile__date-field">
-                                                <input class="datepicker-here label" type="text" name="date" id=""
-                                                    placeholder="Указать дату">
-                                            </div>
-                                            <div class="profile__fields-col">
-                                                <div class="profile__checkboxes flex profile__checkboxes--column">
-                                                    <label>
-                                                        <input type="radio" name="payment-choice" class="filter-style">
-                                                        Постоянный, ежедневный
-                                                    </label>
-                                                    <label>
-                                                        <input type="radio" name="payment-choice" class="filter-style">
-                                                        Постоянный, по договореннности
-                                                    </label>
-                                                </div>
-                                            </div>
-                                        </div>
+        
                                     </form>
                                 </div>
                             </div>

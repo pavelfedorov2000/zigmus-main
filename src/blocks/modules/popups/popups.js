@@ -49,11 +49,3 @@ $("#phone-enter").on("click", function () {
     $(".enter-popup__email-enter").hide();
     $(".enter-popup__phone-enter").show();
 });
-
-$('.from-label').on('click', function () {
-    $('.overlay, #map-popup').fadeIn('slow');
-});
-
-$('.where-label').on('click', function () {
-    $('.overlay, #map-popup').fadeIn('slow');
-});

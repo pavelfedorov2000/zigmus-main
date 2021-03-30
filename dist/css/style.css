@@ -8891,6 +8891,11 @@ address {
   margin-top: 0;
 }
 
+.added-date {
+  margin-top: 20px;
+  width: 275px;
+}
+
 .field--flex {
   height: 68px;
 }
@@ -9472,6 +9477,25 @@ address {
 
 .transport-card__footer {
   border-bottom: none;
+}
+
+.profile-card__check {
+  cursor: pointer;
+}
+
+.profile-card__check .display-none {
+  background-color: #fff;
+  border: 1px solid #236eff;
+}
+
+.width--38px {
+  width: 38px;
+}
+
+.check-length {
+  width: 15px;
+  font-weight: 700;
+  color: #343434;
 }
 
 .your-status__content {
