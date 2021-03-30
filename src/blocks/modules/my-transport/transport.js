@@ -3,3 +3,10 @@ $('.profile-card__check').on('click', function () {
     var length = $('.checked').length;
     $('.check-length').val(length);
 });
+
+$('.cancel-btn').on('click', function () {
+    $('.check-span').removeClass('checked');
+    $('.check-span').addClass('display-none');
+    var length = $('.checked').length;
+    $('.check-length').val(length);
+});
