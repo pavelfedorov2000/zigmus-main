@@ -1,0 +1,25 @@
+// libs
+@import 'base/libs/normalize';
+@import 'base/libs/slick';
+
+@import 'base/vars';
+@import 'base/mixins';
+@import 'base/fonts';
+@import 'base/null';
+
+@import 'base/general';
+
+@import "../blocks/modules";
+@import "../blocks/modules/auct-cargo/auction-cargo.scss";
+@import "../blocks/modules/auct-transport/auct-transport.scss";
+@import "../blocks/modules/add-auction/add-auction.scss";
+@import "../blocks/modules/add-cargo/add-cargo.scss";
+@import "../blocks/modules/order-approve/order-approve.scss";
+@import "../blocks/modules/add-transport-auction/add-transport-auction.scss";
+@import "../blocks/modules/my-transport/my-transport.scss";
+@import "../blocks/modules/your-status/your-status.scss";
+@import "../blocks/modules/your-company/your-company.scss";
+@import "../blocks/modules/settings-your-company/settings-your-company.scss";
+@import "../blocks/modules/balance/balance.scss";
+
+@import 'components/custom';

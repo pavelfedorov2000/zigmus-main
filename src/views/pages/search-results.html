@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('../_head.html')
+
+<body>
+
+    <div class="wrapper" style="background-color: #F5F9FF;">
+        @@include('../../blocks/modules/header/_header.html')
+
+        <section class="top-page search-filters">
+            <div class="container">
+                <nav class="breadcrumbs">
+                    <a class="breadcrumbs__item" href="#">
+                        <svg width="11" height="8" viewBox="0 0 11 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M0.646446 3.64645C0.451184 3.84171 0.451184 4.15829 0.646446 4.35355L3.82843 7.53553C4.02369 7.7308 4.34027 7.7308 4.53553 7.53553C4.7308 7.34027 4.7308 7.02369 4.53553 6.82843L1.70711 4L4.53553 1.17157C4.7308 0.976311 4.7308 0.659728 4.53553 0.464466C4.34027 0.269204 4.02369 0.269204 3.82843 0.464466L0.646446 3.64645ZM11 3.5L1 3.5V4.5L11 4.5V3.5Z"
+                                fill="#343434" />
+                        </svg>
+                        Хлебные крошки
+                    </a>
+                </nav>
+
+                <h1 class="title page-title top-page__title search-results__top-title title--white">
+                    Поиск грузов
+                </h1>
+            </div>
+            @@include('../../blocks/modules/filters/_top-filters.html')
+        </section>
+
+        <main>
+            <section class="section search-results">
+                <div class="container">
+                    <div class="search-results__header">
+                        <div class="search-results__info">
+                            <h2 class="title section-title search-results__title">Найдено</h2>
+                            <div class="button search-results__info-num button--transparent button--blue-border">63
+                                груза</div>
+                        </div>
+                        <div class="search-results__sort">
+                            Сортировать:
+                            <select name="" id="" class="filter-style search-results__select">
+                                <option value="km">По километражу +</option>
+                                <option value="km">По километражу +</option>
+                                <option value="km">По километражу +</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="search-results__buttons flex">
+                        <button class="search-results__btn search-results__map-btn">
+                            <svg width="12" height="16" viewBox="0 0 12 16" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M6 0C2.692 0 0 2.71067 0 6.04333C0 10.7787 5.436 15.668 5.66733 15.8733C5.76267 15.958 5.88133 16 6 16C6.11867 16 6.23733 15.958 6.33267 15.874C6.564 15.668 12 10.7787 12 6.04333C12 2.71067 9.308 0 6 0ZM6 9.33333C4.162 9.33333 2.66667 7.838 2.66667 6C2.66667 4.162 4.162 2.66667 6 2.66667C7.838 2.66667 9.33333 4.162 9.33333 6C9.33333 7.838 7.838 9.33333 6 9.33333Z"
+                                    fill="#343434" />
+                            </svg>
+                            Карта
+                        </button>
+                        <button class="search-results__btn search-results__list-btn">
+                            <div class="list-btn">
+                                <span class="list-btn__item"></span>
+                                <span class="list-btn__item"></span>
+                                <span class="list-btn__item"></span>
+                            </div>
+                            Список
+                        </button>
+                        <button class="search-results__btn search-results__grid-btn search-results__btn--active">
+                            <div class="grid-btn grid">
+                                <span class="grid-btn__item"></span>
+                                <span class="grid-btn__item"></span>
+                                <span class="grid-btn__item"></span>
+                                <span class="grid-btn__item"></span>
+                                <span class="grid-btn__item"></span>
+                                <span class="grid-btn__item"></span>
+                                <span class="grid-btn__item"></span>
+                                <span class="grid-btn__item"></span>
+                                <span class="grid-btn__item"></span>
+                            </div>
+                            Плитка
+                        </button>
+                    </div>
+
+                    <div class="search-results__cards grid">
+                        @@include('../../blocks/modules/order-card/_order-card.html')
+                        @@include('../../blocks/modules/order-card/_order-card.html')
+                        @@include('../../blocks/modules/order-card/_order-card.html')
+                        @@include('../../blocks/modules/order-card/_order-card.html')
+                        @@include('../../blocks/modules/order-card/_order-card.html')
+                        @@include('../../blocks/modules/order-card/_order-card.html')
+                        @@include('../../blocks/modules/order-card/_order-card.html')
+                        @@include('../../blocks/modules/order-card/_order-card.html')
+                    </div>
+
+                    <button class="button section-btn search-results__more-btn">
+                        Показать еще
+                    </button>
+                </div>
+            </section>
+        </main>
+
+        @@include('../../blocks/modules/footer/_footer.html')
+
+        <div class="overlay">
+            @@include('../../blocks/modules/popups/_popups.html')
+        </div>
+    </div>
+
+    @@include('../_js.html')
+
+</body>
+
+</html>

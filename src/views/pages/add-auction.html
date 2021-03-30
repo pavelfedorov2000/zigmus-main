@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('../_head.html')
+
+<body>
+
+    <div class="wrapper">
+        @@include('../../blocks/modules/header/_header.html')
+
+        <div class="p-profile">
+            <div class="container">
+                <div class="p-profile__wrapper">
+
+                    @@include('../../blocks/modules/dashboard/_dashboard.html')
+                    
+    
+
+            <div class="p-profile__content">
+                <nav class="breadcrumbs">
+                    <a class="breadcrumbs__item" href="#">
+                        <svg width="11" height="8" viewBox="0 0 11 8" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M0.646446 3.64645C0.451184 3.84171 0.451184 4.15829 0.646446 4.35355L3.82843 7.53553C4.02369 7.7308 4.34027 7.7308 4.53553 7.53553C4.7308 7.34027 4.7308 7.02369 4.53553 6.82843L1.70711 4L4.53553 1.17157C4.7308 0.976311 4.7308 0.659728 4.53553 0.464466C4.34027 0.269204 4.02369 0.269204 3.82843 0.464466L0.646446 3.64645ZM11 3.5L1 3.5V4.5L11 4.5V3.5Z"
+                                fill="#343434" />
+                        </svg>
+                        Хлебные крошки
+                    </a>
+                </nav>
+                <div class="p-profile__content-inner flex content--margin">
+                    <div class="p-profile__body">
+                        <div class="p-profile__head add-auction__head">
+                            <h3 class="title section-title p-profile__title">
+                                Добавить аукцион
+                            </h3>
+                            
+                            <div>
+                                <p class="add-auction__head-text--sizes">Заполнить из шаблона</p>
+                                
+                                <div class="profile__field template__field">
+                                  <select class="filter-style" name="" id="">
+                                    <option value="" class="field__value">
+                                      MAN 535 AA1691-7
+                                    </option>
+                                    <option value="" class="field__value">
+                                      MAN 535 AA1691-7
+                                    </option>
+                                  </select>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="profile__item profile__item--border">
+                            <h5 class="title profile__item-title">Общая информация</h5>
+                            <form action="#" id="route" class="profile__form">
+                                <div class="profile__form-header flex">
+                                    <h6 class="title profile__form-title">
+                                        Укажите ваш маршрут
+                                    </h6>
+                                </div>
+                                <div class="profile__field-item profile__fields fields--aline-item">
+                                    <div class="profile__fields-col">
+                                        <div class="field profile__field field--transparent field--flex">
+
+                                            <div class="from__container">
+                                                <div class="from-icon">
+                                                    <img src="img/a-svg.svg" alt="from-logo">
+                                                </div>
+                                                <div class="from-content">
+                                                    <label for="from" class="from-label">
+                                                        Откуда?
+                                                        <div class="plus filter-item__plus add__plus">+</div>
+                                                    </label>
+                                                    <input type="text" name="from" class="from-input" id="from" required>
+                                                </div>               
+
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <div class="profile__fields-col">
+                                        <div class="field profile__field field--transparent where-label field--flex">
+
+                                            <div class="from__container">
+                                                <div class="from-icon">
+                                                    <img src="img/b-svg.svg" alt="where-logo">
+                                                </div>
+                                                <div class="from-content">
+                                                    <label for="where" class="where-label">
+                                                        Куда?
+                                                        <div class="plus filter-item__plus add__plus">+</div>
+                                                    </label>
+                                                    <input type="text" name="where" class="from-input" id="where" required>
+                                                </div>               
+
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="plus-btn profile__plus-btn add-point">
+                                    Добавить еще пункт (если сборный груз)
+                                </div>
+                            </form>
+                        </div>
+
+                        <div class="profile__item">
+                            <form action="#" id="dates" class="profile__form">
+                                <h6 class="title profile__form-title">
+                                    Укажите даты по маршруту
+                                </h6>
+                                <div class="profile__field-item profile__fields add-auction__fields--center">
+                                    <div class="profile__fields-col field profile__field profile__date-field">
+                                        <input class="datepicker-here label" type="text" name="date" id=""
+                                            placeholder="Указать дату">
+                                    </div>
+                                    <div class="profile__fields-col">
+                                        <div class="profile__checkboxes flex profile__checkboxes--column">
+                                            <label>
+                                                <input type="radio" name="payment-choice" class="filter-style">
+                                                Постоянный, ежедневный
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+
+                        <div class="profile__item profile__item--border">
+                            <h5 class="title profile__item-title">Вам нужно перевезти</h5>
+                            <form action="#" class="profile__form profile__item">
+                                <h6 class="profile__form-title">
+                                    Информация о грузе
+                                </h6>
+                                <div class="profile__fields">
+                                    <div class="profile__fields-col">
+                                        <div class="field profile__field">
+                                            <label class="label">Назаначение груза</label>
+                                            <select class="filter-style" name="" id="">
+                                                <option value="" class="field__value">
+                                                    Стройматериалы
+                                                </option>
+                                                <option value="" class="field__value">
+                                                    Стройматериалы
+                                                </option>
+                                            </select>
+                                        </div>
+
+                                        <div class="profile__checkboxes flex profile__checkboxes--column">
+                                            <label class="label--margin">
+                                                <input type="radio" name="payment-choice" class="filter-style">
+                                                Постоянный, ежедневный
+                                            </label>
+                                        </div>
+
+                                        <div class="field profile__field">
+                                            <label class="label">Объем груза</label>
+                                            <select class="filter-style" name="" id="">
+                                                <option value="" class="field__value">
+                                                    83м3
+                                                </option>
+                                                <option value="" class="field__value">
+                                                    83м3
+                                                </option>
+                                            </select>
+                                        </div>
+
+                                        <h6 class="profile__form-title add-auction__form-title--sizes">
+                                            Выбрать из уже существующих грузов
+                                        </h6>
+                                        <div class="field profile__field">
+                                            <label class="label">Груз</label>
+                                            <select class="filter-style" name="" id="">
+                                                <option value="" class="field__value">
+                                                    Стройматериалы
+                                                </option>
+                                                <option value="" class="field__value">
+                                                    Стройматериалы
+                                                </option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="profile__fields-col">
+                                        <div class="field profile__field">
+                                            <label class="label">Вес</label>
+                                            <select class="filter-style" name="" id="">
+                                                <option value="" class="field__value">
+                                                    20 тонн
+                                                </option>
+                                                <option value="" class="field__value">
+                                                    20 тонн
+                                                </option>
+                                            </select>
+                                        </div>
+                                    
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+
+
+                        <div class="profile__item profile__item--border">
+                            <form class="profile__form profile__item gabarits add-auction__dimensions">
+                                <h6 class="profile__form-title gabarits__title">
+                                    Габариты
+                                </h6>
+                                <div class="gabarits__items flex">
+                                    <div class="gabarits__item">
+                                        <label for="" class="gabarits__item-label">Длина</label>
+                                        <input type="text" class="field gabarits__item-input" placeholder="метров">
+                                    </div>
+                                    <div class="gabarits__item">
+                                        <label for="" class="gabarits__item-label">Ширина</label>
+                                        <input type="text" class="field gabarits__item-input" placeholder="метров">
+                                    </div>
+                                    <div class="gabarits__item">
+                                        <label for="" class="gabarits__item-label">Высота</label>
+                                        <input type="text" class="field gabarits__item-input" placeholder="метров">
+                                    </div>
+                                    <div class="gabarits__item">
+                                        <label for="" class="gabarits__item-label">Палеты</label>
+                                        <div class="gabarits__item-inner flex">
+                                            <input type="text"
+                                                class="field gabarits__item-input gabarits__item-input--counter"
+                                                placeholder="До (шт)" value="1">
+                                            <div class="gabarits__counter flex">
+                                                <button class="field gabarits__btn gabarits__minus-btn"
+                                                    type="button">-</button>
+                                                <button class="field gabarits__btn gabarits__plus-btn"
+                                                    type="button">+</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+
+                        <div class="profile__item">
+                            
+                            <form action="#" id="docs" class="profile__form">
+                                <h6 class="profile__form-title">
+                                    Информация
+                                </h6>
+                                <div class="profile__fields">
+                                    <div class="profile__fields-col">
+                                        <div class="field profile__field">
+                                            <label class="label">
+                                                Документы на груз
+                                            </label>
+                                            <select class="filter-style" name="" id="">
+                                                <option value="" class="field__value">
+                                                    Готовы
+                                                </option>
+                                                <option value="" class="field__value">
+                                                    Готовы
+                                                </option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="profile__fields-col">
+                                        <div class="field profile__field profile__img-choice flex">
+                                            <label class="plus-btn">
+                                                Добавить фото груза
+                                                <input class="filter-style" type="file" name="logo" id="logo">
+                                            </label>
+                                        </div>
+
+                                        
+                                            <p class="profile__item-descr add-auction__photo-descr">
+                                                Добавив фото, ваш транспорт получит отметку проверен и имеет фото. Чтобы пройти верефикацию, вы должны сделать фото по правилам ZIGMUS
+                                            </p>
+                                        
+
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+
+                        <div class="profile__item">
+                            <h5 class="title profile__item-title">Машина</h5>
+                            <form action="#" id="comment" class="profile__form">
+                                <div class="profile__field-item profile__fields">
+                                    <div class="profile__fields-col">
+                                        <div class="field profile__field">
+                                            <label class="label">
+                                                Прицеп
+                                            </label>
+                                            <select class="filter-style" name="" id="">
+                                                <option value="" class="field__value">
+                                                    Тентовый
+                                                </option>
+                                                <option value="" class="field__value">
+                                                    Тентовый
+                                                </option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="profile__fields-col">
+                                        <div class="field profile__field">
+                                            <label class="label">
+                                                Загрузка
+                                            </label>
+                                            <select class="filter-style" name="" id="">
+                                                <option value="" class="field__value">
+                                                    Сзади, сбоку
+                                                </option>
+                                                <option value="" class="field__value">
+                                                    Сзади, сбоку
+                                                </option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                
+                                <div class="profile__field-item profile__fields">
+                                    <div class="profile__fields-col">
+                                        <div class="field profile__field">
+                                            <label class="label">Дополнительно</label>
+                                            <select class="filter-style" name="" id="">
+                                                <option value="" class="field__value">
+                                                    Гидролифт
+                                                </option>
+                                                <option value="" class="field__value">
+                                                    Гидролифт
+                                                </option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="profile__fields-col">
+                                        
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+
+                        <div class="profile__item">
+                            <h5 class="title profile__item-title">Оплата и аукцион</h5>
+                            <form action="#" id="payment" class="profile__form profile__form--w100">
+                                <!-- <div class="profile__fields profile__field-item">
+                                    <div class="field profile__fields-col profile__field">
+                                        <label class="label">
+                                            Вид оплаты
+                                        </label>
+                                        <select class="filter-style" name="" id="">
+                                            <option value="" class="field__value">
+                                                Ставка
+                                            </option>
+                                            <option value="" class="field__value">
+                                                Ставка
+                                            </option>
+                                        </select>
+                                    </div>
+                                    <div class="profile__checkboxes profile__payment-checkboxes flex">
+                                        <label>
+                                            <input type="radio" name="payment-choice" class="filter-style">
+                                            Безнал
+                                        </label>
+                                        <label>
+                                            <input type="radio" name="payment-choice" class="filter-style">
+                                            Наличными
+                                        </label>
+                                        <label>
+                                            <input type="radio" name="payment-choice" class="filter-style">
+                                            Наличными, на карту
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="profile__field-item profile__fields-col">
+                                    <div class="field profile__field profile__fields-col">
+                                        <label class="label">
+                                            Стоимость
+                                        </label>
+                                        <select class="filter-style" name="" id="">
+                                            <option value="" class="field__value">
+                                                20€ / <span>Км.</span>
+                                            </option>
+                                            <option value="" class="field__value">
+                                                20€ / <span>Км.</span>
+                                            </option>
+                                        </select>
+                                    </div>
+                                    <div class="profile__checkboxes profile__price-checkboxes flex">
+                                        <label>
+                                            <input type="radio" name="payment-choice" class="filter-style">
+                                            Торг
+                                        </label>
+                                        <label>
+                                            <input type="radio" name="payment-choice" class="filter-style">
+                                            Подача, бесплатно
+                                        </label>
+                                    </div>
+                                </div> -->
+                                <div class="profile__field-item profile__fields">
+                                    <div class="profile__fields-col">
+                                        <div class="field profile__field">
+                                            <label class="label">
+                                                Срок аукциона
+                                            </label>
+                                            <select class="filter-style" name="" id="">
+                                                <option value="" class="field__value">
+                                                    17.12 - 17.12
+                                                </option>
+                                                <option value="" class="field__value">
+                                                    17.12 - 17.12
+                                                </option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="profile__fields-col">
+                                        <div class="field profile__field">
+                                            <label class="label">
+                                                Свободная ставка?
+                                            </label>
+                                            <select class="filter-style" name="" id="">
+                                                <option value="" class="field__value">
+                                                    Да
+                                                </option>
+                                                <option value="" class="field__value">
+                                                    Нет
+                                                </option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="profile__field-item profile__fields">
+                                    <div class="profile__fields-col">
+                                        <div class="field profile__field">
+                                            <label class="label">
+                                                Максимальная ставка
+                                            </label>
+                                            <select class="filter-style" name="" id="">
+                                                <option value="" class="field__value">
+                                                    700 /€
+                                                </option>
+                                                <option value="" class="field__value">
+                                                    700 /€
+                                                </option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="profile__fields-col">
+                                        <div class="field profile__field">
+                                            <label class="label">
+                                                Минимальная ставка
+                                            </label>
+                                            <select class="filter-style" name="" id="">
+                                                <option value="" class="field__value">
+                                                    500 /€
+                                                </option>
+                                                <option value="" class="field__value">
+                                                    500 /€
+                                                </option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="profile__field-item profile__fields">
+                                    <div class="profile__fields-col">
+                                        <div class="field profile__field">
+                                            <label class="label">
+                                                Шаг ставки
+                                            </label>
+                                            <select class="filter-style" name="" id="">
+                                                <option value="" class="field__value">
+                                                    -20 /€
+                                                </option>
+                                                <option value="" class="field__value">
+                                                    -20 /€
+                                                </option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="profile__fields-col">
+                                        <div class="field profile__field">
+                                            <label class="label">
+                                                Время автоснижения
+                                            </label>
+                                            <select class="filter-style" name="" id="">
+                                                <option value="" class="field__value">
+                                                    1 /час
+                                                </option>
+                                                <option value="" class="field__value">
+                                                    1 /час
+                                                </option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="profile__field-item profile__fields">
+                                    <div class="profile__fields-col">
+                                        <div class="field profile__field">
+                                            <label class="label">
+                                                Свободная ставка?
+                                            </label>
+                                            <select class="filter-style" name="" id="">
+                                                <option value="" class="field__value">
+                                                    Да
+                                                </option>
+                                                <option value="" class="field__value">
+                                                    Нет
+                                                </option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="profile__fields-col">
+                                        <div class="field profile__field">
+                                            <label class="label">
+                                                Ставка мгновенного выкупа
+                                            </label>
+                                            <select class="filter-style" name="" id="">
+                                                <option value="" class="field__value">
+                                                    540 /€
+                                                </option>
+                                                <option value="" class="field__value">
+                                                    540 /€
+                                                </option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="profile__checkboxes profile__payment-checkboxes flex add-auction__payment-checkboxes">
+                                    <label>
+                                        <input type="radio" name="payment-choice" class="filter-style">
+                                        Безнал
+                                    </label>
+                                    <label>
+                                        <input type="radio" name="payment-choice" class="filter-style">
+                                        Наличными
+                                    </label>
+                                    <label>
+                                        <input type="radio" name="payment-choice" class="filter-style">
+                                        Наличными, на карту
+                                    </label>
+                                </div>
+
+                            </form>
+                        </div>
+                        
+                        <div class="profile__item">
+                            <h5 class="title profile__item-title">Размещение</h5>
+                            <form action="#" id="comment" class="profile__form">
+                                <div class="profile__field-item profile__fields">
+                                    <div class="profile__fields-col">
+                                        <div class="field profile__field">
+                                            <label class="label">
+                                                Показывать
+                                            </label>
+                                            <select class="filter-style" name="" id="">
+                                                <option value="" class="field__value">
+                                                    Всем
+                                                </option>
+                                                <option value="" class="field__value">
+                                                    Никому
+                                                </option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="profile__fields-col">
+                                        <div class="field profile__field">
+                                            <label class="label">
+                                                Разметить
+                                            </label>
+                                            <select class="filter-style" name="" id="">
+                                                <option value="" class="field__value">
+                                                    Сразу
+                                                </option>
+                                                <option value="" class="field__value">
+                                                    Сразу
+                                                </option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                
+                                <div class="profile__field-item profile__fields">
+                                    <div class="profile__fields-col">
+                                        <div class="field profile__field">
+                                            <label class="label">
+                                                Ответственный сотрдуник
+                                            </label>
+                                            <select class="filter-style" name="" id="">
+                                                <option value="" class="field__value">
+                                                    Егор Кравцов
+                                                </option>
+                                                <option value="" class="field__value">
+                                                    Егор Кравцов
+                                                </option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="profile__fields-col">
+                                        
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+
+                        <div class="profile__item">
+                            <h5 class="title profile__item-title">Комментарий</h5>
+                            <div class="profile__form">
+
+                                <textarea>Next, use our Get Started docs to setup Tiny!</textarea>
+
+                                <p class="profile__item-descr profile__comment-descr">
+                                    Указывать контактные данные, ссылки, запрещено, при нарушении правила,
+                                    транспорт будет удален
+                                </p>
+                            </div>
+                        </div>
+                        
+                        
+                    </div>
+                    <aside class="p-profile__aside">
+                        <div class="p-profile__add p-profile__aside-item">
+                            <div class="p-profile__fullness flex">
+                                <div class="p-profile__fullness-percent">
+                                    87%
+                                </div>
+                                <div class="p-profile__aside-item-text p-profile__fullness-text">
+                                    Чтобы опубликовать транспорт заполните на 100%
+                                </div>
+                            </div>
+                            <button id="add-profile" class="button p-profile__aside-btn">
+                                Добавить транспорт
+                            </button>
+                            <button id="skip-second-step" class="p-profile__aside-blue-btn flex">
+                                Отменить
+                            </button>
+                        </div>
+                    </aside>
+                </div>
+            </div>
+
+                </div>
+                </div>
+
+
+            @@include('../../blocks/modules/footer/_footer.html')
+
+            <div class="overlay">
+                @@include('../../blocks/modules/popups/_popups.html')
+            </div>
+        </div>
+    </div>
+        @@include('../_js.html')
+
+</body>
+
+</html>

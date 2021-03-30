@@ -1,0 +1,37 @@
+.breadcrumbs {
+    opacity: 0.5;
+
+    a {
+        //position: relative;
+        display: flex;
+        align-items: center;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 16px;
+        //padding-left: 21px;
+
+        /* &:before {
+            content: '';
+            position: absolute;
+            @include centerY;
+            left: 0;
+            width: 11px;
+            height: 8px;
+            background-image: url('../img/icons/arrows/crumb-arrow.svg');
+        } */
+
+        svg {
+            margin-right: 10px;
+        }
+    }
+}
+
+.top-page .breadcrumbs {
+    a {
+        color: #fff;
+
+        svg path {
+            fill: #fff;
+        }
+    }
+}
