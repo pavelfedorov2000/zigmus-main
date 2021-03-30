@@ -9560,6 +9560,174 @@ address {
   opacity: 0.3;
 }
 
+.advertisement__block {
+  width: 945px;
+  height: 367px;
+  border-radius: 8px;
+  background: #fff;
+  -webkit-box-shadow: rgba(0, 4, 41, 0.05);
+          box-shadow: rgba(0, 4, 41, 0.05);
+  margin-bottom: 30px;
+}
+
+.advertisement-block__content {
+  position: relative;
+}
+
+.advertisement-block__title {
+  border-bottom: 1px solid rgba(35, 110, 255, 0.3);
+}
+
+.advertisement__title-text {
+  padding: 30px;
+  font-weight: 700;
+  font-size: 36px;
+}
+
+.advertisement-block__column {
+  height: 199px;
+  padding: 30px;
+}
+
+.advertisement-column__title {
+  font-size: 24px;
+  font-weight: 700;
+  width: 256px;
+}
+
+.advertisement-column__title {
+  font-size: 24px;
+  padding-bottom: 10px;
+}
+
+.advertisement-column__text {
+  opacity: 0.4;
+  font-size: 12px;
+  padding-bottom: 15px;
+}
+
+.advertisement-list__item {
+  position: relative;
+  font-size: 10px;
+  margin-left: 11px;
+  padding-bottom: 6px;
+}
+
+.advertisement-list__item::before {
+  content: url(../../../img/icons/Ellipse.svg);
+  width: 6px;
+  height: 6px;
+  position: absolute;
+  left: -10px;
+  top: -1px;
+}
+
+.advertisement-column__footer-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 20px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-bottom: 28px;
+}
+
+.advertisement-column-footer__buy-btn {
+  width: 134px;
+  height: 42px;
+  background: #FF6118;
+  border-radius: 4px;
+  color: #fff;
+}
+
+.advertisement-column-footer__text {
+  font-size: 14px;
+  font-weight: 600;
+  padding-left: 20px;
+}
+
+.advertisement-column__img {
+  width: 180px;
+  position: absolute;
+  top: 33px;
+  left: 550px;
+}
+
+.advertisement-lower-block__title {
+  font-size: 36px;
+  padding: 30px;
+}
+
+.advertisement-block__items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-left: 30px;
+}
+
+.advertisement-block__item {
+  width: 203px;
+  height: 234px;
+  border-radius: 8px;
+  border: 1px solid rgba(35, 110, 255, 0.3);
+  margin-right: 20px;
+}
+
+.advertisement-block-item__title {
+  border-bottom: 1px solid rgba(35, 110, 255, 0.3);
+  height: 56px;
+}
+
+.advertisement-item-title__text {
+  font-size: 16px;
+  width: 100px;
+  position: relative;
+  font-weight: 600;
+  margin-left: 74px;
+  margin-top: 18px;
+}
+
+.advertisement-item-title__text::before {
+  content: url(../../../img/icons/id-logo.svg);
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  top: -7px;
+  left: -60px;
+}
+
+.advertisement-block-item__content {
+  border-bottom: 1px solid rgba(35, 110, 255, 0.3);
+}
+
+.advertisement-item-content__text {
+  font-size: 12px;
+  font-weight: 500;
+  padding: 15px;
+}
+
+.advertisement-block-item__price-btn {
+  padding: 15px;
+}
+
+.advertisement-item-price__text {
+  font-size: 18px;
+  font-weight: 600;
+  padding-bottom: 6px;
+  margin: auto;
+  padding-left: 36%;
+}
+
+.advertisement-item__buy-id-btn {
+  width: 172px;
+  height: 40px;
+  background: #FF6118;
+  color: #fff;
+  border-radius: 8px;
+  margin: auto;
+}
+
 .referral-program__content-block {
   border-radius: 8px;
   -webkit-box-shadow: rgba(0, 4, 41, 0.05);
