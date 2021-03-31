@@ -9340,6 +9340,12 @@ address {
   cursor: pointer;
 }
 
+.order-approve-card__title {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 26px;
+}
+
 .add-transport__tittle--sizes {
   max-width: 380px;
 }
