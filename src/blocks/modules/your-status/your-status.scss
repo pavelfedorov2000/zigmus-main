@@ -3,12 +3,15 @@
     padding-left: 30px;
 }
 .your-status__block {
-    width: 945px;
     height: 400px;
     background-color: #fff;
     border-radius: 8px;
     box-shadow: rgba(0, 4, 41, 0.05);
     margin-top: 64px;
+    @media (max-width:768px) {
+        display: block;
+        height: 100%;
+    }
 }
 
 .your-status-block__title {
@@ -24,11 +27,17 @@
 
 .your-status-block__content {
     display: flex;
+    @media (max-width:768px) {
+        display: block;
+    }
 }
 
 .your-status-content__columns {
     padding-top: 30px;
     padding-left: 30px;
+    @media (max-width:768px) {
+        padding-right: 30px;
+    }
 }
 
 .your-status-content__columns span {
@@ -42,6 +51,9 @@
     margin-top: 15px;
     border-radius: 8px;
     border: 1px solid rgba(35, 110, 255, 0.3);
+    @media (max-width:768px) {
+        width: 100%;
+    }
 }
 
 .your-status-content__column p {
