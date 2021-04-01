@@ -45,4 +45,8 @@ $(function () {
     //=================CHECK-IMG====================//
 
     @@include('../blocks/modules/my-transport/transport.js')
+
+    //================ASIDE======================//
+
+    @@include('aside.js')
 });

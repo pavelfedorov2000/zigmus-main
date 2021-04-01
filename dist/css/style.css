@@ -850,7 +850,6 @@ address {
 .plus-btn {
   font-weight: 500;
   line-height: 24px;
-  white-space: nowrap;
   color: #236EFF;
   position: relative;
   padding-left: 20px;
@@ -3994,7 +3993,6 @@ address {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  height: 59px;
 }
 
 .profile__date-field {
@@ -4006,6 +4004,7 @@ address {
           align-items: flex-start;
   position: relative;
   padding-left: 54px;
+  height: 59px;
 }
 
 .profile__date-field:before,
@@ -8882,6 +8881,18 @@ address {
   width: 275px;
 }
 
+.percent-none {
+  display: none;
+}
+
+.aside-none {
+  display: none;
+}
+
+.p-profile__fullness-percent--adaptive {
+  margin-left: 10px;
+}
+
 .field--flex {
   height: 68px;
 }
@@ -11425,6 +11436,24 @@ input:-internal-autofill-selected {
     display: none;
   }
 
+  .add-auction__photo-descr {
+    width: 100%;
+  }
+
+  .template__field {
+    width: 100%;
+  }
+
+  .p-profile__fullness-percent--adaptive {
+    position: absolute;
+    top: 125px;
+    right: 3%;
+  }
+
+  .p-profile__body {
+    width: 100%;
+  }
+
   .general-dashboard-column__info-block {
     height: 50%;
   }
@@ -11629,6 +11658,47 @@ input:-internal-autofill-selected {
 }
 
 @media (max-width: 768px) {
+  .profile__file-fields {
+    margin-left: 0;
+  }
+
+  .profile__img-choice {
+    width: 100%;
+  }
+
+  .profile__img-choice--197 {
+    width: 100%;
+  }
+
+  .gabarits__item + .gabarits__item {
+    margin-left: 0;
+  }
+
+  .gabarits__item + .gabarits__item:before {
+    display: none;
+  }
+
+  .profile__form {
+    width: 100%;
+  }
+
+  .profile__fields-col {
+    margin-right: 15px;
+    width: 100%;
+  }
+
+  .gabarits__items {
+    display: block;
+  }
+
+  .gabarits__item {
+    margin-left: 0;
+  }
+
+  .gabarits__items::before {
+    display: none;
+  }
+
   .your-status__block {
     display: block;
     height: 100%;
@@ -12490,6 +12560,31 @@ input:-internal-autofill-selected {
 }
 
 @media (max-width: 545px) {
+  .profile__fields-col + .profile__fields-col {
+    margin-left: 0;
+  }
+
+  .add-auction__head {
+    display: block;
+  }
+
+  .profile__form {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .profile__fields-col {
+    margin-bottom: 10px;
+  }
+
+  .profile__fields {
+    display: block;
+  }
+
+  .plus-btn {
+    white-space: none;
+  }
+
   .advertisement-column__title {
     padding-right: 15px;
   }
@@ -12534,6 +12629,16 @@ input:-internal-autofill-selected {
         -ms-flex-align: center;
             align-items: center;
     text-align: center;
+  }
+}
+
+@media (max-width: 425px) {
+  .profile__checkboxes label + label {
+    margin-left: 0;
+  }
+
+  .add-auction__payment-checkboxes {
+    display: block;
   }
 }
 
