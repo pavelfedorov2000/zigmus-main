@@ -86,7 +86,7 @@
 .jq-selectbox__search input::-webkit-search-decoration {
 	-webkit-appearance: none;
 }
-.jq- ul {
+.jq-selectbox__dropdown ul {
 	position: relative;
 	overflow: auto;
 	overflow-x: hidden;
