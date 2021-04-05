@@ -36,7 +36,8 @@
 
     &__section-text {
         padding: 15px 20px 0;
-        width: 97%;
+        width: 96%;
+        font-size: 14px;
         & span {
             opacity: 0.4;
             text-decoration: underline;
@@ -123,5 +124,9 @@
 }
 
 .none {
+    display: none;
+}
+
+.dropdown-content {
     display: none;
 }

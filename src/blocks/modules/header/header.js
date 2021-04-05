@@ -1,3 +1,50 @@
+// ========================= OPENING BURGER-MENU ===================== //
+$('.burger-menu .button-opening-burger-menu').click(function () {
+    let backgroundBM = $('.burger-menu .bg-fixed-burger-menu');
+    backgroundBM.addClass('bg-fixed-burger-menu--active');
+
+    let headerBM = $('.burger-menu .header__menu');
+    headerBM.addClass('header__menu--active');
+
+    let crossButtonBM = $('.burger-menu .cross-icon');
+    crossButtonBM.addClass('cross-icon--active');
+
+    setTimeout(function () {
+        $('.bg-fixed-burger-menu--active').animate({
+            opacity: '1'
+        }, 50);
+
+        $('.header__menu--active').animate({
+            left: '0px'
+        }, 200, "linear");
+
+        $('.cross-icon--active').animate({
+            left: '269px'
+        }, 200, "linear");
+
+    }, 50);
+});
+
+$('.burger-menu .cross-icon').click(function closingBurgerMenu() {
+    $('.header__menu--active').animate({
+        left: '-320px'
+    }, 200, "linear");
+
+    $('.cross-icon--active').animate({
+        left: '-269px'
+    }, 200, "linear");
+
+    $('.bg-fixed-burger-menu--active').animate({
+        opacity: '0'
+    }, 250);
+
+    setTimeout(function () {
+        $('.burger-menu .bg-fixed-burger-menu').removeClass('bg-fixed-burger-menu--active');
+        $('.burger-menu .header__menu').removeClass('header__menu--active');
+        $('.burger-menu .cross-icon').removeClass('cross-icon--active');
+    }, 400);
+});
+
 // ========================= MENU-DROP ===================== //
 
 $('.header__menu-item').on('click', function () {
@@ -45,6 +92,46 @@ $('.header__search-input').on('focus', function () {
     $(this).parent().addClass('header__search-form--active');
     $('.header__menu').hide();
     $('.header__search-help').show();
+
+    if (($(window).width() >= 768) && ($(window).width() <= 1023)) {
+        if ($('.header__search-form').hasClass('header__search-form--active') == true) {
+            $('.logo.header__logo').hide();
+        } else {
+            $('.logo.header__logo').show();
+        }
+    }
+
+    if (($(window).width() <= 709)) {
+        if ($('.header__search-form').hasClass('header__search-form--active') == true) {
+            $('.logo.header__logo').hide();
+        } else {
+            $('.logo.header__logo').show();
+        }
+    }
+});
+
+$('.header__search-input').on('blur', function () {
+    $(this).parent().removeClass('header__search-form--active');
+    $('.header__menu').show();
+    $('.header__search-help').hide();
+
+    setTimeout(function () {
+        if (($(window).width() >= 768) && ($(window).width() <= 1023)) {
+            if ($('.header__search-form').hasClass('header__search-form--active') != true) {
+                $('.logo.header__logo').show();
+            } else {
+                $('.logo.header__logo').hide();
+            }
+        }
+
+        if (($(window).width() <= 709)) {
+            if ($('.header__search-form').hasClass('header__search-form--active') != true) {
+                $('.logo.header__logo').show();
+            } else {
+                $('.logo.header__logo').hide();
+            }
+        }
+    }, 100);
 });
 
 $(document).mouseup(function (e) {
@@ -115,5 +202,58 @@ for (let i = 0; i < selectLangLabels.length; i++) {
     selectLangLabels[i].addEventListener('click', () => {
         selectLangValue.textContent = langs[i];
         selectLang.setAttribute('data-state', '');
+    });
+}
+
+// ========================= SELECTS MOBILE =========================== //
+
+const selectCurrencyMobile = document.getElementById('currency-choice--mobile');
+const selectCurrencyTitleMobile = selectCurrencyMobile.querySelector('.header__select-title');
+const selectCurrencyValueMobile = selectCurrencyMobile.querySelector('.header__select-value');
+const selectCurrencyLabelsMobile = selectCurrencyMobile.querySelectorAll('.header__select-label');
+
+// Toggle menu
+selectCurrencyTitleMobile.addEventListener('click', () => {
+    if ('active' === selectCurrencyMobile.getAttribute('data-state')) {
+        selectCurrencyMobile.setAttribute('data-state', '');
+    } else {
+        selectCurrencyMobile.setAttribute('data-state', 'active');
+    }
+    if (selectLangMobile.getAttribute('data-state') === 'active') {
+        selectLangMobile.setAttribute('data-state', '');
+    }
+});
+
+// Close when click to option
+for (let i = 0; i < selectCurrencyLabelsMobile.length; i++) {
+    selectCurrencyLabelsMobile[i].addEventListener('click', (event) => {
+        selectCurrencyValueMobile.textContent = event.target.textContent;
+        selectCurrencyMobile.setAttribute('data-state', '');
+    });
+}
+
+const selectLangMobile = document.getElementById('language-choice--mobile');
+const selectLangTitleMobile = selectLangMobile.querySelector('.header__select-title');
+const selectLangValueMobile = selectLangMobile.querySelector('.header__select-value');
+const selectLangLabelsMobile = selectLangMobile.querySelectorAll('.header__select-label');
+
+// Toggle menu
+selectLangTitleMobile.addEventListener('click', () => {
+    if ('active' === selectLangMobile.getAttribute('data-state')) {
+        selectLangMobile.setAttribute('data-state', '');
+    } else {
+        selectLangMobile.setAttribute('data-state', 'active');
+    }
+    if (selectCurrencyMobile.getAttribute('data-state') === 'active') {
+        selectCurrencyMobile.setAttribute('data-state', '');
+    }
+});
+
+// Close when click to option
+for (let i = 0; i < selectLangLabelsMobile.length; i++) {
+    const langsMobile = ['Ру', 'Англ', 'Пол', 'Бел'];
+    selectLangLabelsMobile[i].addEventListener('click', () => {
+        selectLangValueMobile.textContent = langsMobile[i];
+        selectLangMobile.setAttribute('data-state', '');
     });
 }

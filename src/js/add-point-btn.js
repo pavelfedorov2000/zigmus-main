@@ -29,3 +29,15 @@ $('body').on('click', '.add-list-img', function () {
     $('.response-popup__list').append(`<li class="response-popup__list-item">` + value + `</li>`);
 });
 
+$('.span-text').on('click', function () {
+    $(this).find('.dropdown').toggleClass('none');
+});
+
+$('.dropdow-list').on('click', function () {
+    var listValue = $(this).text();
+    $(this).parent().parent().find('span').text(listValue);
+})
+
+
+
+
