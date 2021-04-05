@@ -1774,9 +1774,20 @@ address {
   display: none;
 }
 
+.span-text {
+  display: inline;
+  padding-left: 5px;
+  position: relative;
+}
+
+.span-text:nth-child(3) {
+  padding-left: 0;
+}
+
 .dropdown {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  width: 150px;
   margin: 2px 0 0;
   padding: 0;
   border: 1px solid #CCC;
@@ -1785,27 +1796,15 @@ address {
   -webkit-box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
           box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
   font: 14px/18px Arial, sans-serif;
-  width: 150px;
   position: absolute;
-  z-index: 15;
   top: 15px;
-  right: -30px;
-  opacity: 1;
+  left: -10px;
+  z-index: 10;
 }
 
 .dropdow-list {
-  margin-left: 30px;
+  margin-left: 20%;
   cursor: pointer;
-}
-
-.span-text {
-  display: inline;
-  position: relative;
-  margin-left: 7px;
-}
-
-.span-text:nth-child(3) {
-  margin-left: 0;
 }
 
 .dashboard {
@@ -6290,6 +6289,19 @@ body {
   line-height: 12px;
   color: #236EFF;
   text-align: center;
+}
+
+.search-btn {
+  width: 188px;
+  height: 59px;
+  background: #236EFF;
+  color: #fff;
+  border-radius: 8px;
+  margin-top: 60px;
+}
+
+.datepicker-here--width {
+  width: 50px;
 }
 
 .about {
