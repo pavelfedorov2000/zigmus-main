@@ -7630,6 +7630,7 @@ body {
 .contacts__license-img {
   max-width: 100%;
   height: auto;
+  width: 425px;
 }
 
 .letter-form__title {
