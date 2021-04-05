@@ -301,3 +301,7 @@ input:-internal-autofill-selected {
         color: rgba($dark, 0.6);
     }
 }
+
+.filter-item__content .jq-selectbox__trigger {
+    background-image: none;
+}

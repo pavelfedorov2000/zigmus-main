@@ -1062,12 +1062,14 @@ address {
   padding-right: 10px;
 }
 
-.tabs--blue .tab {
+.tabs--blue .tab,
+.tabs--blue .required-tab {
   color: #343434;
   padding: 0 18px;
 }
 
-.tabs--blue .tab--active {
+.tabs--blue .tab--active,
+.tabs--blue .required-tab--active {
   background-color: #236EFF;
   color: #fff;
 }
@@ -1098,7 +1100,8 @@ address {
   padding: 7px;
 }
 
-.tab {
+.tab,
+required-tab {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1116,7 +1119,8 @@ address {
   cursor: pointer;
 }
 
-.tab--active {
+.tab--active,
+required-tab--active {
   background: rgba(255, 255, 255, 0.13);
   border-radius: 20px;
   padding: 9px 25px;
@@ -1124,16 +1128,22 @@ address {
   font-weight: 600;
 }
 
-.tab--mini {
+.tab--mini,
+required-tab--mini {
   font-size: 14px;
   line-height: 28px;
   color: rgba(255, 255, 255, 0.5);
   padding: 0 15px;
 }
 
-.tab--mini.tab--active {
+.tab--mini.tab--active,
+required-tab--mini.tab--active {
   border-radius: 10px;
   color: #fff;
+}
+
+.required-tab {
+  height: 49px;
 }
 
 .field {
@@ -6144,7 +6154,7 @@ body {
 }
 
 .filters__line-item {
-  padding: 22px 0;
+  padding: 15px 0;
   padding-left: 51px;
   padding-right: 52px;
 }
@@ -6294,14 +6304,14 @@ body {
 .search-btn {
   width: 188px;
   height: 59px;
-  background: #236EFF;
+  background: #FF6118;
   color: #fff;
   border-radius: 8px;
   margin-top: 60px;
 }
 
 .datepicker-here--width {
-  width: 50px;
+  width: 80px;
 }
 
 .about {
@@ -11678,6 +11688,10 @@ input:-internal-autofill-selected {
   color: rgba(52, 52, 52, 0.6);
 }
 
+.filter-item__content .jq-selectbox__trigger {
+  background-image: none;
+}
+
 @media (min-width: 1024px) {
   .header .container.desktop {
     display: block;
@@ -12535,13 +12549,15 @@ input:-internal-autofill-selected {
     padding: 4px 0px 4px 30px;
   }
 
-  .tab {
+  .tab,
+  required-tab {
     width: auto;
     padding: 0 6px;
     font-size: 12px;
   }
 
-  .tab--active {
+  .tab--active,
+  required-tab--active {
     border-radius: 10px;
   }
 
