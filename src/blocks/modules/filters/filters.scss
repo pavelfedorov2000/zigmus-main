@@ -18,11 +18,16 @@
     margin-left: 10px;
 }
 
+.oval-check:nth-child(6) {
+    margin-left: 0;
+}
+
 .oval-check {
     position: relative;
     background-color: $light-blue-bg;
     border-radius: 20px;
     padding: 8px 15px;
+    margin-bottom: 10px;
     font-weight: 500;
     font-size: 12px;
     line-height: 12px;
@@ -269,6 +274,7 @@
 
     &__footer-items {
         display: flex;
+        flex-wrap: wrap;
     }
 
     // .filters__tabs
