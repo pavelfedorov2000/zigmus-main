@@ -11576,6 +11576,222 @@ body {
   top: 2px;
 }
 
+.horizontal-order-card {
+  width: 1140px;
+  height: 215px;
+  background: #FFFFFF;
+  border: 1px solid rgba(35, 110, 255, 0.3);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.horizontal-order-card__column:not(:last-child) {
+  border-right: 1px solid rgba(35, 110, 255, 0.3);
+}
+
+.horizontal-order-card__column h5 {
+  font-size: 14px;
+  padding: 20px 15px 10px;
+}
+
+.horizontal-order-card__column li {
+  font-size: 12px;
+  padding: 0 20px 10px 30px;
+  position: relative;
+}
+
+.horizontal-order-card__column span {
+  opacity: 0.4;
+}
+
+.horizontal-order-card__header {
+  border-bottom: 1px solid rgba(35, 110, 255, 0.3);
+  margin-bottom: 0;
+}
+
+.horizontal-order-card__labels {
+  margin-top: 20px;
+}
+
+.horizontal-order-card__title {
+  padding-top: 6px;
+}
+
+.horizontal-order-card__title-info {
+  padding-top: 6px;
+}
+
+.horizontal-order-card__path {
+  padding: 10px 0 0 25px;
+  width: 270px;
+}
+
+.horizontal-order-card__path-header {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+}
+
+.horizontal-order-card__path-link {
+  padding-top: 3px;
+}
+
+.horizontal-order-card__path-from-to {
+  padding-right: 10px;
+}
+
+.horizontal-order-card__path-items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.horizontal-order-card__path-item {
+  position: relative;
+  padding-left: 25px;
+  font-weight: 600;
+  font-size: 12px;
+}
+
+.horizontal-order-card__path-item:not(:last-child)::after {
+  content: url(../../../img/icons/path-line--bigger.svg);
+  position: absolute;
+  top: -1px;
+  left: 50px;
+}
+
+.horizontal-order-card__path-item--from::before {
+  content: url(../../../img/icons/belarus.png);
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: -4px;
+  left: 0;
+}
+
+.horizontal-order-card__path-item--gap::before {
+  content: url(../../../img/icons/poland.png);
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: -4px;
+  left: 0;
+}
+
+.horizontal-order-card__path-item--to::before {
+  content: url(../../../img/icons/lithuania.svg);
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: -4px;
+  left: 0;
+}
+
+.horizontal-order-card__column-dates {
+  width: 173px;
+}
+
+.horizontal-order-card__column-car {
+  width: 172px;
+}
+
+.horizontal-order-card__column-documents {
+  width: 154px;
+}
+
+.horizontal-order-card__column-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.horizontal-order-card__action-head {
+  margin-bottom: 0;
+  padding: 30px 0 10px 7px;
+}
+
+.horizontal-order-card__dates-info li::before {
+  content: url(../../../img/icons/clock.svg);
+  position: absolute;
+  top: 1px;
+  left: 15px;
+}
+
+.horizontal-order-card__car-img::before {
+  content: url(../../../img/icons/delivery-truck.svg);
+  position: absolute;
+  top: -1px;
+  left: 15px;
+  width: 14px;
+  height: 14px;
+}
+
+.horizontal-order-card__weight-img::before {
+  content: url(../../../img/icons/weight.svg);
+  position: absolute;
+  top: 0px;
+  left: 15px;
+}
+
+.horizontal-order-card__dimensions-img::before {
+  content: url(../../../img/icons/size-box.svg);
+  position: absolute;
+  top: 1px;
+  left: 15px;
+}
+
+.horizontal-order-card__additionaly-img::before {
+  content: url(../../../img/icons/additionaly.svg);
+  position: absolute;
+  top: 1px;
+  left: 15px;
+}
+
+.horizontal-order-card__loading-img::before {
+  content: url(../../../img/icons/loading.svg);
+  position: absolute;
+  top: 2px;
+  left: 15px;
+}
+
+.horizontal-order-card__sizes-img::before {
+  content: url(../../../img/icons/diagonal-resize.svg);
+  position: absolute;
+  top: 1px;
+  left: 15px;
+}
+
+.horizontal-order-card__alert-img::before {
+  content: url(../../../img/icons/alert.svg);
+  position: absolute;
+  top: -1px;
+  left: 13px;
+}
+
+.horizontal-order-card__documents-img::before {
+  content: url(../../../img/icons/documents.svg);
+  position: absolute;
+  top: 1px;
+  left: 15px;
+}
+
+.horizontal-order-card__car-info li {
+  padding-left: 35px;
+}
+
+.add-more-path-btn {
+  color: #236EFF;
+  font-size: 10px;
+  padding-left: 2px;
+}
+
 .notifications__content {
   width: 100%;
   padding-left: 30px;
