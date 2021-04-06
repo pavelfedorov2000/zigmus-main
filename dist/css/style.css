@@ -11476,6 +11476,11 @@ body {
   margin-left: 10px;
 }
 
+.transport-order-card__label {
+  width: 133px;
+  height: 22px;
+}
+
 .transport-order-card__cities-descr {
   display: -webkit-box;
   display: -ms-flexbox;
