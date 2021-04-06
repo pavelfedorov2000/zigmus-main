@@ -172,7 +172,7 @@
     }
 
     &__btn + &__btn {
-        margin-left: 28px;
+        margin-left: 42px;
     }
 
     // .search-results__map-btn
@@ -186,11 +186,29 @@
     // .search-results__list-btn
 
     &__list-btn {
+        position: relative;
+        &::before {
+            content: url(../../../img/icons/list-menu.svg);
+            width: 16px;
+            height: 16px;
+            position: absolute;
+            top: 1px;
+            left: -23px;
+        }
     }
 
     // .search-results__grid-btn
 
     &__grid-btn {
+        position: relative;
+        &::before {
+            content: url(../../../img/icons/bar.svg);
+            width: 16px;
+            height: 16px;
+            position: absolute;
+            top: 1px;
+            left: -23px;
+        }
     }
 
     // .search-results__cards
