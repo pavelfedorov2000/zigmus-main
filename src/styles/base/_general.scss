@@ -1,7 +1,9 @@
 .container {
-    max-width: $container + 30px * 2;
+    // max-width: $container + 30px * 2;
+    width: 100%;
     padding: 0 30px;
     margin: 0 auto;
+
 }
 
 .wrapper {

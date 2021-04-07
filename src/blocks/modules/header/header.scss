@@ -505,7 +505,6 @@ body {
 
     &__btn {
         height: auto;
-        //height: 38px;
         border-radius: 6px;
         padding-top: 11px;
         padding-bottom: 11px;
@@ -531,7 +530,6 @@ body {
     // .header__avatar
 
     &__avatar {
-        //display: none;
         cursor: pointer;
     }
 
@@ -623,7 +621,7 @@ body {
 
     .container.mobile {
         @media (max-width: 1023px) {
-            max-width: 963px;
+            padding: 0 30px;
         }
 
         .button-opening-burger-menu {
@@ -776,6 +774,7 @@ body {
         }
 
         .logo.header__logo {
+            cursor: pointer;
 
             .logo__img.header__logo-img {
                 @media (max-width: 1023px) {
@@ -1010,7 +1009,6 @@ body {
         &__submenu {
             display: none;
             margin-top: 16px;
-            //padding-left: 28px;
         }
 
         // .header-dashboard__submenu-item

@@ -21,10 +21,10 @@
                 </nav>
 
                 <h1 class="title page-title top-page__title search-results__top-title title--white">
-                    Поиск транспорта
+                    Аукцион
                 </h1>
             </div>
-            @@include('../../blocks/modules/transport-top-filters/_transport-top-filters.html')
+            @@include('../../blocks/modules/filters/_top-filters.html')
         </section>
 
         <main>
@@ -33,15 +33,14 @@
                     <div class="search-results__header">
                         <div class="search-results__info">
                             <h2 class="title section-title search-results__title">Найдено</h2>
-                            <div class="button search-results__info-num button--transparent button--blue-border">63
-                                груза</div>
+                            <div class="button search-results__info-num auction-search-result__info-num button--transparent button--blue-border">5 аукционов на груз</div>
                         </div>
                         <div class="search-results__sort">
                             Сортировать:
                             <select name="" id="" class="filter-style search-results__select">
-                                <option value="km">По километражу +</option>
-                                <option value="km">По километражу +</option>
-                                <option value="km">По километражу +</option>
+                                <option value="km">Самые новые</option>
+                                <option value="km">Самые новые</option>
+                                <option value="km">Самые новые</option>
                             </select>
                         </div>
                     </div>
@@ -63,24 +62,25 @@
                         </button>
                     </div>
 
-                    <div class="search-results__cards grid" id="transport-vertical-cards">
-                        @@include('../../blocks/modules/transport-order-card/_transport-order-card.html')
-                        @@include('../../blocks/modules/transport-order-card/_transport-order-card.html')
-                        @@include('../../blocks/modules/transport-order-card/_transport-order-card.html')
-                        @@include('../../blocks/modules/transport-order-card/_transport-order-card.html')
-                        @@include('../../blocks/modules/transport-order-card/_transport-order-card.html')
-                        @@include('../../blocks/modules/transport-order-card/_transport-order-card.html')
-                        @@include('../../blocks/modules/transport-order-card/_transport-order-card.html')
-                        @@include('../../blocks/modules/transport-order-card/_transport-order-card.html')
+                    <div class="search-results__cards grid">
+                        @@include('../../blocks/modules/auction-search-result/transport-auction-search-result/_transport-auction-vertical-card.html')
+                        @@include('../../blocks/modules/auction-search-result/transport-auction-search-result/_transport-auction-vertical-card.html')
+                        @@include('../../blocks/modules/auction-search-result/transport-auction-search-result/_transport-auction-vertical-card.html')
+                        @@include('../../blocks/modules/auction-search-result/transport-auction-search-result/_transport-auction-vertical-card.html')
+                        @@include('../../blocks/modules/auction-search-result/transport-auction-search-result/_transport-auction-vertical-card.html')
+                        @@include('../../blocks/modules/auction-search-result/transport-auction-search-result/_transport-auction-vertical-card.html')
+                        @@include('../../blocks/modules/auction-search-result/transport-auction-search-result/_transport-auction-vertical-card.html')
+                        @@include('../../blocks/modules/auction-search-result/transport-auction-search-result/_transport-auction-vertical-card.html')
+                        
                     </div>
 
-                    <div id="transport-horizontal-cards">
-                        @@include('../../blocks/modules/horizontal-order-cards/_horizontal-order-cards.html')
-                        @@include('../../blocks/modules/horizontal-order-cards/_horizontal-order-cards.html')
-                        @@include('../../blocks/modules/horizontal-order-cards/_horizontal-order-cards.html')
-                        @@include('../../blocks/modules/horizontal-order-cards/_horizontal-order-cards.html')
-                        @@include('../../blocks/modules/horizontal-order-cards/_horizontal-order-cards.html')
-                        @@include('../../blocks/modules/horizontal-order-cards/_horizontal-order-cards.html')
+                    <div id="cargo-horizontal-cards">
+                        @@include('../../blocks/modules/auction-search-result/transport-auction-search-result/_transport-auction-horizontal-card.html')
+                        @@include('../../blocks/modules/auction-search-result/transport-auction-search-result/_transport-auction-horizontal-card.html')
+                        @@include('../../blocks/modules/auction-search-result/transport-auction-search-result/_transport-auction-horizontal-card.html')
+                        @@include('../../blocks/modules/auction-search-result/transport-auction-search-result/_transport-auction-horizontal-card.html')
+                        @@include('../../blocks/modules/auction-search-result/transport-auction-search-result/_transport-auction-horizontal-card.html')
+                        @@include('../../blocks/modules/auction-search-result/transport-auction-search-result/_transport-auction-horizontal-card.html')
                     </div>
 
                     <button class="button section-btn search-results__more-btn">

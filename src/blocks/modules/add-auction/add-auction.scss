@@ -176,7 +176,7 @@
     }
 }
 
-.gabarits__item {
+.gabarits__item + .gabarits__item {
     @media (max-width:768px) {
         margin-left: 0;
     }

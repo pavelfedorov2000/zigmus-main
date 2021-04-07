@@ -2,31 +2,31 @@
     overflow: hidden;
 }
 
-.p-profile__content {
-    padding-left: 15px;
-    padding-top: 40px;
-}
+// .p-profile__content {
+//     padding-left: 15px;
+//     padding-top: 40px;
+// }
 
 .auction__header {
-    padding-top: 40px;
+    // padding-top: 40px;
+
+    @media (max-width: 599px) {
+        flex-direction: column;
+        align-items: flex-start;
+    }
 }
 
 .auction__add-btn {
     padding-left: 30px;
     padding-right: 30px;
+
+    @media (max-width: 599px) {
+        margin-top: 7px;
+    }
 }
 
 .auction__tabs {
     justify-content: left;
-}
-
-.auction-tab__content {
-    padding-top: 40px;
-    margin-bottom: 100px; 
-}
-
-.p-profile__cards-bottom {
-    margin-top: 40px;
 }
 
 .auction-card__top {
@@ -44,9 +44,6 @@
     // }
 }
 
-
-
-// new style top card
 .auction-card__top-items:not(:first-child) {
     border-left: 1px solid rgba(35,110,255,.3);
 }
