@@ -20,9 +20,13 @@
                     </a>
                 </nav>
 
-                <h1 class="title page-title top-page__title search-results__top-title title--white">
-                    Аукцион
-                </h1>
+                <div class="auction-search-results">
+                    <h1 class="title page-title top-page__title search-results__top-title title--white">
+                        Аукцион
+                    </h1>
+                    <a href="#">Транспорт</a>
+                    <a href="#">Грузы</a>
+                </div>
             </div>
             @@include('../../blocks/modules/filters/_top-filters.html')
         </section>
@@ -33,7 +37,7 @@
                     <div class="search-results__header">
                         <div class="search-results__info">
                             <h2 class="title section-title search-results__title">Найдено</h2>
-                            <div class="button search-results__info-num auction-search-result__info-num button--transparent button--blue-border">5 аукционов на груз</div>
+                            <div class="button search-results__info-num auction-search-result__info-num button--transparent button--blue-border">5 аукционов на транспорт</div>
                         </div>
                         <div class="search-results__sort">
                             Сортировать:
@@ -57,12 +61,16 @@
                         <button class="search-results__btn search-results__list-btn">
                             Список
                         </button>
+
+                        <a href="#transport-auction-search-results__horizontal-cards">Список</a>
+                        <a href="#transport-auction-search-results__vertical-cards">Плитка</a>
+
                         <button class="search-results__btn search-results__grid-btn search-results__btn--active">
                             Плитка
                         </button>
                     </div>
 
-                    <div class="search-results__cards grid">
+                    <div class="search-results__cards grid" id="transport-auction-search-results__vertical-cards">
                         @@include('../../blocks/modules/auction-search-result/transport-auction-search-result/_transport-auction-vertical-card.html')
                         @@include('../../blocks/modules/auction-search-result/transport-auction-search-result/_transport-auction-vertical-card.html')
                         @@include('../../blocks/modules/auction-search-result/transport-auction-search-result/_transport-auction-vertical-card.html')
@@ -74,7 +82,7 @@
                         
                     </div>
 
-                    <div id="cargo-horizontal-cards">
+                    <div id="transport-auction-search-results__horizontal-cards">
                         @@include('../../blocks/modules/auction-search-result/transport-auction-search-result/_transport-auction-horizontal-card.html')
                         @@include('../../blocks/modules/auction-search-result/transport-auction-search-result/_transport-auction-horizontal-card.html')
                         @@include('../../blocks/modules/auction-search-result/transport-auction-search-result/_transport-auction-horizontal-card.html')

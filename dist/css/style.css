@@ -1646,6 +1646,322 @@ required-tab--mini.tab--active {
   position: fixed;
 }
 
+.overlay {
+  display: block;
+}
+
+.response-popup {
+  display: none;
+}
+
+.cargo-order-card-popup {
+  width: 840px;
+  height: 100%;
+  background: #fff;
+  border-radius: 20px 0px 0px 20px;
+  margin-left: auto;
+}
+
+.cargo-order-card-popup__content {
+  padding: 80px 30px 0;
+}
+
+.cargo-order-card-popup__title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.cargo-order-card-popup__title-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.cargo-order-card-popup__title-labels {
+  padding-top: 10px;
+}
+
+.cargo-order-card-popup__settings-btns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.cargo-order-card-popup__settings-btns svg + svg {
+  margin-left: 10px;
+}
+
+.cargo-order-card-popup__map {
+  width: 780px;
+  height: 144px;
+  margin-top: 20px;
+  margin-bottom: 58px;
+  background: rgba(35, 110, 255, 0.1);
+  border: 1px solid rgba(35, 110, 255, 0.15);
+  border-radius: 6px;
+}
+
+.cargo-order-card-popup__columns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.cargo-order-card-popup__column-list {
+  border-radius: 6px;
+  border: 1px solid rgba(35, 110, 255, 0.3);
+}
+
+.cargo-order-card-popup__column-item {
+  padding: 15px;
+}
+
+.cargo-order-card-popup__column-price {
+  background: #F5F9FF;
+  border-radius: 6px;
+  padding: 15px 20px;
+}
+
+.cargo-order-card-popup__column-price-btns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.cargo-order-card-popup__column-price-btns a {
+  font-size: 12px;
+  text-decoration: underline;
+  padding-left: 10px;
+  padding-right: 38px;
+}
+
+.cargo-order-card-popup__path {
+  padding-left: 20px;
+  margin-left: 10px;
+  padding-bottom: 20px;
+}
+
+.cargo-order-card-popup__path h5 {
+  position: relative;
+}
+
+.cargo-order-card-popup__path h5::before {
+  content: url(../img/icons/belarus.svg);
+  position: absolute;
+  top: 0;
+  left: -31px;
+}
+
+.cargo-order-card-popup__path--to h5 {
+  position: relative;
+}
+
+.cargo-order-card-popup__path--to h5::before {
+  content: url(../img/icons/poland.svg);
+  position: absolute;
+  top: 0;
+  left: -30px;
+}
+
+.cargo-order-card-popup__path span {
+  padding-left: 15px;
+  font-size: 10px;
+  position: relative;
+}
+
+.cargo-order-card-popup__path span::before {
+  content: url(../img/icons/clock.svg);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.cargo-order-card-popup__path--loading,
+.cargo-order-card-popup__path--add-cargo,
+.cargo-order-card-popup__path--unloading {
+  position: relative;
+}
+
+.cargo-order-card-popup__path--loading::after,
+.cargo-order-card-popup__path--add-cargo::after,
+.cargo-order-card-popup__path--unloading::after {
+  content: url(../img/icons/arrows/arrow-down-2.svg);
+  position: absolute;
+  top: 0;
+  right: 75px;
+  -webkit-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.cargo-order-card-popup__path--add-cargo::after {
+  -webkit-transform: rotate(270deg);
+      -ms-transform: rotate(270deg);
+          transform: rotate(270deg);
+}
+
+.cargo-order-card-popup__path--unloading::after {
+  -webkit-transform: rotate(0deg);
+      -ms-transform: rotate(0deg);
+          transform: rotate(0deg);
+}
+
+.cargo-order-card-popup__path:not(:last-child) {
+  border-left: 1px dashed #236eff;
+}
+
+.cargo-order-card-popup__column-path p {
+  font-size: 10px;
+  opacity: 0.5;
+}
+
+.cargo-order-card-popup__path-input {
+  opacity: 0.4;
+  font-size: 10px;
+  display: block;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+
+.cargo-order-card-popup__list-title {
+  padding-bottom: 20px;
+}
+
+.cargo-order-card-popup__car-title {
+  padding: 20px 0;
+}
+
+.cargo-order-card-popup__column-cargo-list li,
+.cargo-order-card-popup__column-car-list li {
+  position: relative;
+  padding-left: 20px;
+  padding-bottom: 10px;
+  font-size: 12px;
+}
+
+.cargo-order-card-popup__column-cargo-list li::before,
+.cargo-order-card-popup__column-car-list li::before {
+  left: 0;
+}
+
+.cargo-order-card-popup__column-cargo-list li span,
+.cargo-order-card-popup__column-car-list li span {
+  opacity: 0.4;
+}
+
+.cargo-order-card-popup__list-imgs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.cargo-order-card-popup__list-imgs img:not(:last-child) {
+  margin-right: 10px;
+}
+
+.cargo-order-card-popup__column-metrics {
+  padding: 15px;
+  border: 1px solid rgba(35, 110, 255, 0.3);
+  border-radius: 6px;
+  margin-left: 15px;
+}
+
+.cargo-order-card-popup__column-metrics:not(:last-child) {
+  margin-bottom: 15px;
+}
+
+.cargo-order-card-popup__metrics-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.cargo-order-card-popup__metrics-list,
+.cargo-order-card-popup__metrics-comfort-list {
+  margin-top: 15px;
+}
+
+.cargo-order-card-popup__metrics-list li,
+.cargo-order-card-popup__metrics-comfort-list li {
+  padding-left: 12px;
+  position: relative;
+  font-size: 10px;
+  padding-bottom: 10px;
+}
+
+.cargo-order-card-popup__metrics-list li::before,
+.cargo-order-card-popup__metrics-comfort-list li::before {
+  content: url(../img/icons/Ellipse.svg);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.cargo-order-card-popup__metrics-list li span,
+.cargo-order-card-popup__metrics-comfort-list li span {
+  opacity: 0.4;
+}
+
+.cargo-order-card-popup__head-top-rating {
+  display: inline;
+  padding-left: 10px;
+  color: rgba(35, 110, 255, 0.5);
+  font-size: 10px;
+}
+
+.cargo-order-card-popup__description {
+  border: 1px solid rgba(35, 110, 255, 0.3);
+  border-radius: 6px;
+  padding: 15px;
+  margin-top: 15px;
+}
+
+.cargo-order-card-popup__description p {
+  font-size: 14px;
+  padding-top: 10px;
+}
+
+.cargo-order-card-popup__description-head {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.cargo-order-card-popup__response-stats {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.cargo-order-card-popup__response-stats span {
+  opacity: 0.4;
+  padding-right: 5px;
+}
+
 .response-popup__form {
   padding: 30px 0 30px 30px;
   background: #f5f9ff;
@@ -2547,37 +2863,11 @@ required-tab--mini.tab--active {
 }
 
 .search-results__btn + .search-results__btn {
-  margin-left: 42px;
+  margin-left: 28px;
 }
 
 .search-results__map-btn svg {
   margin-right: 9px;
-}
-
-.search-results__list-btn {
-  position: relative;
-}
-
-.search-results__list-btn::before {
-  content: url(../../../img/icons/list-menu.svg);
-  width: 16px;
-  height: 16px;
-  position: absolute;
-  top: 1px;
-  left: -23px;
-}
-
-.search-results__grid-btn {
-  position: relative;
-}
-
-.search-results__grid-btn::before {
-  content: url(../../../img/icons/bar.svg);
-  width: 16px;
-  height: 16px;
-  position: absolute;
-  top: 1px;
-  left: -23px;
 }
 
 .search-results__cards {
@@ -2634,6 +2924,27 @@ required-tab--mini.tab--active {
 
 .search-results__container {
   width: 1200px;
+}
+
+.auction-search-results {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.auction-search-results a {
+  margin-top: 22px;
+  padding-left: 20px;
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 14px;
+}
+
+.auction-search-results a:active {
+  color: white;
+  text-decoration: underline;
 }
 
 body {
@@ -11222,6 +11533,17 @@ body {
   position: absolute;
   left: 0;
   top: 2px;
+}
+
+.transport-search-results__cost-counter {
+  margin-top: 22px;
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 14px;
+}
+
+.transport-search-results__cost-counter:active {
+  color: white;
+  text-decoration: underline;
 }
 
 .horizontal-order-card {

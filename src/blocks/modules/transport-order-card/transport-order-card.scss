@@ -102,3 +102,14 @@
         top: 2px;
     }
 }
+
+.transport-search-results__cost-counter {
+    margin-top: 22px;
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 14px;
+}
+
+.transport-search-results__cost-counter:active {
+    color: rgba(255, 255, 255, 1);
+    text-decoration: underline;
+}

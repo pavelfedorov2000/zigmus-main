@@ -49,4 +49,6 @@ $(function () {
     //================ASIDE======================//
 
     @@include('aside.js')
+
+    @@include('../blocks/modules/search-results/search-results.js')
 });
