@@ -1654,6 +1654,10 @@ required-tab--mini.tab--active {
   display: none;
 }
 
+#cargo-order-card {
+  display: none;
+}
+
 .cargo-order-card-popup {
   width: 840px;
   height: 100%;
@@ -1757,6 +1761,11 @@ required-tab--mini.tab--active {
   padding-bottom: 20px;
 }
 
+.cargo-order-card-popup__path-text {
+  padding-bottom: 20px;
+  padding-top: 10px;
+}
+
 .cargo-order-card-popup__path h5 {
   position: relative;
 }
@@ -1841,6 +1850,10 @@ required-tab--mini.tab--active {
 
 .cargo-order-card-popup__list-title {
   padding-bottom: 20px;
+}
+
+.cargo-order-card-popup__list-title:not(:first-child) {
+  padding-top: 10px;
 }
 
 .cargo-order-card-popup__car-title {
@@ -1960,6 +1973,79 @@ required-tab--mini.tab--active {
 .cargo-order-card-popup__response-stats span {
   opacity: 0.4;
   padding-right: 5px;
+}
+
+.transport-order-card-popup__path-item--from,
+.transport-order-card-popup__path-item--gap,
+.transport-order-card-popup__path-item--to {
+  position: relative;
+}
+
+.transport-order-card-popup__path-item--from::after,
+.transport-order-card-popup__path-item--gap::after,
+.transport-order-card-popup__path-item--to::after {
+  content: url(../img/icons/belarus.svg);
+  position: absolute;
+  top: 0;
+  left: -31px;
+}
+
+.transport-order-card-popup__path-item--gap::after {
+  content: url(../img/icons/poland.svg);
+}
+
+.transport-order-card-popup__path-item--to::after {
+  content: url(../img/icons/lithuania.svg);
+  left: -30px;
+}
+
+.transport-order-card-popup__car-info,
+.transport-order-card-popup__dates,
+.transport-order-card-popup__documents {
+  font-size: 12px;
+}
+
+.transport-order-card-popup__car-info li,
+.transport-order-card-popup__dates li,
+.transport-order-card-popup__documents li {
+  position: relative;
+  padding-left: 20px;
+  padding-bottom: 10px;
+}
+
+.transport-order-card-popup__car-info li::before,
+.transport-order-card-popup__dates li::before,
+.transport-order-card-popup__documents li::before {
+  left: 0;
+}
+
+.transport-order-card-popup__dates li::before {
+  content: url(../img/icons/clock.svg);
+  position: absolute;
+}
+
+.transport-order-card-popup__column-price {
+  margin-left: 15px;
+}
+
+.transport-order-card-popup__column-price a {
+  padding-right: 20px;
+}
+
+.transport-order-card-popup__label {
+  margin-top: 10px;
+  margin-left: 15px;
+}
+
+.auction-cargo-order-card__bet-btns {
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+}
+
+.auction-cargo-order-card__column-price {
+  margin-left: 15px;
+  padding: 15px;
 }
 
 .response-popup__form {

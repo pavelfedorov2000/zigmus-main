@@ -6,6 +6,10 @@
     display: none;
 }
 
+#cargo-order-card {
+    display: none;
+}
+
 .cargo-order-card-popup {
     width: 840px;
     height: 100%;
@@ -86,6 +90,11 @@
         margin-left: 10px;
         padding-bottom: 20px;
 
+        &-text {
+            padding-bottom: 20px;
+            padding-top: 10px;
+        }
+
         & h5 {
             position: relative;
             &::before {
@@ -159,7 +168,11 @@
 
     &__list-title {
         padding-bottom: 20px;
+        &:not(:first-child) {
+            padding-top: 10px;
+        }
     }
+
 
     &__car-title {
         padding: 20px 0;
