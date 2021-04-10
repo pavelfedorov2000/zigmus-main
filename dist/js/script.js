@@ -659,20 +659,16 @@ $('.p-profile__fullness-percent--adaptive').removeClass('percent-none');
     $(this).siblings().removeClass('search-results__btn--active');
     $('.search-results__cards').removeClass('search-results__cards--active');
     $($(this).attr('href')).addClass('search-results__cards--active');
-    // $('.start__slider').slick('setPosition'); // Инициализация слайдера
 });
 
-// $('.tab').on('click', function (e) {
-//     e.preventDefault(); // отмена стандартного поведения браузера
 
-//     $($(this).siblings()).removeClass('tab--active');
-//     $('.tabs__content').removeClass('tabs__content--active');
-
-//     $(this).addClass('tab--active');
-//     $($(this).attr('href')).addClass('tabs__content--active');
-
-//     $('.start__slider').slick('setPosition'); // Инициализация слайдера
-// });
+window.onload = function () {
+    document.body.classList.add('loaded_hiding');
+    window.setTimeout(function () {
+      document.body.classList.add('loaded');
+      document.body.classList.remove('loaded_hiding');
+    }, 500);
+  }
 
 
 });
