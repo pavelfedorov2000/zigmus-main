@@ -148,9 +148,15 @@ $('.order-card__settings-btn').on('click', function () {
     $(this).find('ul').toggleClass('none');
 });
 
-// $('.close-btn-img').on('click', function () {
-//     $(this).parent('ul').addClass('none');
-// });
+$('.carrier-profile__check-dropdown').on('click', function () {
+    $(this).toggleClass('carrier-profile__check-dropdown--active')
+    $('.carrier-profile__check-list').toggleClass('none');
+});
+
+$('.carrier-profile__item-head').on('click', function () {
+    $(this).toggleClass('carrier-profile__item-head--active')
+    $(this).parent().find('.carrier-profile__item-content ').toggleClass('carrier-profile__item-content--active');
+});
 
     // ========================= OPENING BURGER-MENU ===================== //
 $('.burger-menu .button-opening-burger-menu').click(function () {
