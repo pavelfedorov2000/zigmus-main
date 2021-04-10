@@ -62,18 +62,10 @@
     cursor: pointer;
 
     &:before {
-        content: '+';
+        content: url(../img/icons/plus-btn.svg);
         position: absolute;
-        @include centerY;
+        top: 1px;
         left: 0;
-        box-sizing: content-box;
-        width: 15px;
-        height: 15px;
-        border: 0.8px solid $blue;
-        border-radius: 50%;
-        text-align: center;
-        font-size: 14px;
-        line-height: 14px;
     }
 }
 

@@ -9,3 +9,4 @@ $('.tab').on('click', function (e) {
 
     $('.start__slider').slick('setPosition'); // Инициализация слайдера
 });
+

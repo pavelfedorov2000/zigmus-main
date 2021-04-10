@@ -201,6 +201,13 @@
         grid-template-columns: repeat(4, 1fr);
         grid-column-gap: 31px;
         grid-row-gap: 30px;
+        display: none;
+        &--active {
+            display: block;
+            &.grid {
+                display: grid;
+            }
+        }
     }
 
     // .search-results__more-btn
@@ -260,4 +267,13 @@
 .auction-search-results a:active {
     color: rgba(255, 255, 255, 1);
     text-decoration: underline;
+}
+
+.remove-filter-style {
+    padding-bottom: 0!important;
+    border-bottom: none!important;
+}
+
+#transport-map {
+    
 }

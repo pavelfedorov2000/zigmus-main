@@ -1,5 +1,5 @@
 .response-popup {
-    
+    display: none;
 
     &__form {
         padding: 30px 0 30px 30px;
@@ -124,7 +124,7 @@
 }
 
 .none {
-    display: none;
+    display: none!important;
 }
 
 .dropdown-content {

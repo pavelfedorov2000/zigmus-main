@@ -48,7 +48,7 @@
                         </div>
                     </div>
                     <div class="search-results__buttons flex">
-                        <button class="search-results__btn search-results__map-btn">
+                        <a href="#transport-map" class="search-results__btn search-results__map-btn">
                             <svg class="svg-file" width="12" height="16" viewBox="0 0 12 16" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path
@@ -56,17 +56,15 @@
                                     fill="#343434" />
                             </svg>
                             Карта
-                        </button>
-                        <button class="search-results__btn search-results__list-btn">
+                        </a>
+                        <a href="#transport-horizontal-cards" class="search-results__btn search-results__list-btn">
                             <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path opacity="1" d="M15.3333 8.11998H0.666667C0.298665 8.11998 0 7.79012 0 7.38367C0 6.97724 0.298665 6.64737 0.666667 6.64737H15.3333C15.7013 6.64737 16 6.97724 16 7.38367C16 7.79012 15.7013 8.11998 15.3333 8.11998Z" fill="#343434"/>
                                 <path opacity="1" d="M15.3333 2.47261H0.666667C0.298665 2.47261 0 2.14274 0 1.7363C0 1.32987 0.298665 1 0.666667 1H2.49833H4.33H5.2475H6.16499H7.99998H11.6666H15.3333C15.7013 1 16 1.32987 16 1.7363C16 2.14274 15.7013 2.47261 15.3333 2.47261Z" fill="#343434"/>
                                 <path opacity="1" d="M15.3333 13.763H0.666667C0.298665 13.763 0 13.4332 0 13.0268C0 12.6203 0.298665 12.2904 0.666667 12.2904H15.3333C15.7013 12.2904 16 12.6203 16 13.0268C16 13.4332 15.7013 13.763 15.3333 13.763Z" fill="#343434"/>
                                 </svg>
-                                
-                            Список
-                        </button>
-                        <button class="search-results__btn search-results__grid-btn search-results__btn--active">
+                            Список</a>
+                        <a href="#transport-vertical-cards" class="search-results__btn search-results__grid-btn search-results__btn--active">
                             <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <!-- <g clip-path="url(#clip0)"> -->
                                 <path d="M3.33333 0H0.666667C0.298667 0 0 0.298667 0 0.666667V3.33333C0 3.70133 0.298667 4 0.666667 4H3.33333C3.70133 4 4 3.70133 4 3.33333V0.666667C4 0.298667 3.70133 0 3.33333 0Z" fill="#343434"/>
@@ -86,10 +84,10 @@
                                 </defs>
                                 </svg>
                             Плитка
-                        </button>
+                        </a>
                     </div>
 
-                    <div class="search-results__cards grid" id="transport-vertical-cards">
+                    <div class="search-results__cards search-results__cards--active grid" id="transport-vertical-cards">
                         @@include('../../blocks/modules/transport-order-card/_transport-order-card.html')
                         @@include('../../blocks/modules/transport-order-card/_transport-order-card.html')
                         @@include('../../blocks/modules/transport-order-card/_transport-order-card.html')
@@ -100,13 +98,17 @@
                         @@include('../../blocks/modules/transport-order-card/_transport-order-card.html')
                     </div>
 
-                    <div id="transport-horizontal-cards">
+                    <div class="search-results__cards" id="transport-horizontal-cards">
                         @@include('../../blocks/modules/horizontal-order-cards/_horizontal-order-cards.html')
                         @@include('../../blocks/modules/horizontal-order-cards/_horizontal-order-cards.html')
                         @@include('../../blocks/modules/horizontal-order-cards/_horizontal-order-cards.html')
                         @@include('../../blocks/modules/horizontal-order-cards/_horizontal-order-cards.html')
                         @@include('../../blocks/modules/horizontal-order-cards/_horizontal-order-cards.html')
                         @@include('../../blocks/modules/horizontal-order-cards/_horizontal-order-cards.html')
+                    </div>
+
+                    <div id="transport-map" class="search-results__cards">
+                        
                     </div>
 
                     <button class="button section-btn search-results__more-btn">

@@ -16,6 +16,8 @@ $(function () {
     $('.start__slider').slick('setPosition'); // Инициализация слайдера
 });
 
+
+
     $('.input').on('change', function () {
     $(this).parent().find('button').show();
 });
@@ -123,7 +125,24 @@ $('.span-text').on('click', function () {
 $('.dropdow-list').on('click', function () {
     var listValue = $(this).text();
     $(this).parent().parent().find('span').text(listValue);
-})
+});
+
+$('.top-filters__less-btn').on('click', function () {
+    $('.main-filters').addClass('none');
+    $('.filters__footer').addClass('none');
+    $('.filters__main').addClass('remove-filter-style');
+    $('section').removeClass('search-results');
+    $(this).addClass('none');
+    $('.top-filters__more-btn').removeClass('none');
+});
+$('.top-filters__more-btn').on('click', function () {
+    $('.main-filters').removeClass('none');
+    $('.filters__footer').removeClass('none');
+    $('.filters__main').removeClass('remove-filter-style');
+    $('section').addClass('search-results');
+    $(this).addClass('none');
+    $('.top-filters__less-btn').removeClass('none');
+});
 
 
     // ========================= OPENING BURGER-MENU ===================== //
@@ -638,5 +657,22 @@ $('.p-profile__fullness-percent--adaptive').removeClass('percent-none');
     $('.search-results__btn').on('click', function () {
     $(this).addClass('search-results__btn--active');
     $(this).siblings().removeClass('search-results__btn--active');
+    $('.search-results__cards').removeClass('search-results__cards--active');
+    $($(this).attr('href')).addClass('search-results__cards--active');
+    // $('.start__slider').slick('setPosition'); // Инициализация слайдера
 });
+
+// $('.tab').on('click', function (e) {
+//     e.preventDefault(); // отмена стандартного поведения браузера
+
+//     $($(this).siblings()).removeClass('tab--active');
+//     $('.tabs__content').removeClass('tabs__content--active');
+
+//     $(this).addClass('tab--active');
+//     $($(this).attr('href')).addClass('tabs__content--active');
+
+//     $('.start__slider').slick('setPosition'); // Инициализация слайдера
+// });
+
+
 });
