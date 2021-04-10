@@ -46,7 +46,7 @@
             cursor: pointer;
         }
         & span::after {
-            content: url(../../../../img/icons/arrows/arrow-down.svg);
+            content: url(../img/icons/arrows/arrow-down.svg);
             width: 8px;
             height: 4.56px;
             top: 0;
@@ -73,7 +73,7 @@
     }
 
     &__list-item::before {
-        content: url(../../../../img/icons/Ellipse.svg);
+        content: url(../img/icons/Ellipse.svg);
         height: 6px;
         width: 6px;
         top: 0px;

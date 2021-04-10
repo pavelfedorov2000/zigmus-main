@@ -2,7 +2,7 @@
     
     &__path-item:not(:last-child) {
         &::after {
-            content: url(../../../img/icons/path-line--bigger.svg);
+            content: url(../img/icons/path-line--bigger.svg);
             position: absolute;
             top: -1px;
             left: 94px;

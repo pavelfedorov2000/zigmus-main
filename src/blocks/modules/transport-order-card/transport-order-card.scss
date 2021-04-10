@@ -71,7 +71,7 @@
     }
 
     &__documents::before {
-        content: url(../../../img/icons/documents.svg);
+        content: url(../img/icons/documents.svg);
         width: 11px;
         height: 11px;
         position: absolute;
@@ -94,7 +94,7 @@
     cursor: pointer;
     padding-left: 20px;
     &::before {
-        content: url(../../../img/icons/minus-btn.svg);
+        content: url(../img/icons/minus-btn.svg);
         width: 14px;
         height: 14px;
         position: absolute;

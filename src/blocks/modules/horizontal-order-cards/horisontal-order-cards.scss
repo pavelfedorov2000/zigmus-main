@@ -81,7 +81,7 @@
 
     &__path-item:not(:last-child){
         &::after {
-            content: url(../../../img/icons/path-line--bigger.svg);
+            content: url(../img/icons/path-line--bigger.svg);
             position: absolute;
             top: -1px;
             left: 50px;
@@ -90,7 +90,7 @@
     }
 
     &__path-item--from::before {
-        content: url(../../../img/icons/belarus.png);
+        content: url(../img/icons/belarus.png);
         width: 20px;
         height: 20px;
         position: absolute;
@@ -98,7 +98,7 @@
         left: 0;
     }
     &__path-item--gap::before {
-        content: url(../../../img/icons/poland.png);
+        content: url(../img/icons/poland.png);
         width: 20px;
         height: 20px;
         position: absolute;
@@ -106,7 +106,7 @@
         left: 0;
     }
     &__path-item--to::before {
-        content: url(../../../img/icons/lithuania.svg);
+        content: url(../img/icons/lithuania.svg);
         width: 20px;
         height: 20px;
         position: absolute;
@@ -137,14 +137,14 @@
     }
 
     &__dates-info li::before {
-        content: url(../../../img/icons/clock.svg);
+        content: url(../img/icons/clock.svg);
         position: absolute;
         top: 1px;
         left: 15px;
     }
 
     &__car-img::before {
-        content: url(../../../img/icons/delivery-truck.svg);
+        content: url(../img/icons/delivery-truck.svg);
         position: absolute;
         top: -1px;
         left: 15px;
@@ -152,52 +152,52 @@
         height: 14px;
     }
     &__weight-img::before {
-        content: url(../../../img/icons/weight.svg);
+        content: url(../img/icons/weight.svg);
         position: absolute;
         top: 0px;
         left: 15px;
     }
     &__dimensions-img::before {
-        content: url(../../../img/icons/size-box.svg);
+        content: url(../img/icons/size-box.svg);
         position: absolute;
         top: 1px;
         left: 15px;
     }
     &__additionaly-img::before {
-        content: url(../../../img/icons/additionaly.svg);
+        content: url(../img/icons/additionaly.svg);
         position: absolute;
         top: 1px;
         left: 15px;
     }
     &__loading-img::before {
-        content: url(../../../img/icons/loading.svg);
+        content: url(../img/icons/loading.svg);
         position: absolute;
         top: 2px;
         left: 15px;
     }
     &__sizes-img::before {
-        content: url(../../../img/icons/diagonal-resize.svg);
+        content: url(../img/icons/diagonal-resize.svg);
         position: absolute;
         top: 1px;
         left: 15px;
     }
 
     &__alert-img::before {
-        content: url(../../../img/icons/alert.svg);
+        content: url(../img/icons/alert.svg);
         position: absolute;
         top: -1px;
         left: 13px;
         
     }
     &__documents-img::before {
-        content: url(../../../img/icons/documents.svg);
+        content: url(../img/icons/documents.svg);
         position: absolute;
         top: 1px;
         left: 15px;
     }
 
     &__box-img::before {
-        content: url(../../../img/icons/box.svg);
+        content: url(../img/icons/box.svg);
         position: absolute;
         top: 0;
         left: 15px;

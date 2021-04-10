@@ -22,7 +22,7 @@ $('body').on('click', '.add-list-img', function () {
 });
 
 $('.span-text').on('click', function () {
-    $(this).find('.dropdown').toggleClass('none');
+    $(this).find('.response-popup__dropdown').toggleClass('none');
 });
 
 $('.dropdow-list').on('click', function () {

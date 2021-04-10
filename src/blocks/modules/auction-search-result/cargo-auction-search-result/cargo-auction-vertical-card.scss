@@ -39,7 +39,7 @@
     color: #236EFF;
     position: relative;
     &::before {
-        content: url(../../../../img/icons/clock.svg);
+        content: url(../img/icons/clock.svg);
         position: absolute;
         top: 1px;
         left: 0;
@@ -52,7 +52,7 @@
     position: relative;
     font-weight: 500;
     &::before {
-        content: url(../../../../img/icons/surface.svg);
+        content: url(../img/icons/surface.svg);
         position: absolute;
         top: 0;
         left: 0;

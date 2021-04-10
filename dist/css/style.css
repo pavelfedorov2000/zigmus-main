@@ -1650,10 +1650,6 @@ required-tab--mini.tab--active {
   display: block;
 }
 
-.response-popup {
-  display: none;
-}
-
 #cargo-order-card {
   display: none;
 }
@@ -2037,6 +2033,10 @@ required-tab--mini.tab--active {
   margin-left: 15px;
 }
 
+#transport-order-card {
+  display: none;
+}
+
 .auction-cargo-order-card__bet-btns {
   -webkit-box-align: baseline;
       -ms-flex-align: baseline;
@@ -2046,6 +2046,14 @@ required-tab--mini.tab--active {
 .auction-cargo-order-card__column-price {
   margin-left: 15px;
   padding: 15px;
+}
+
+#auction-cargo-order-card {
+  display: none;
+}
+
+#auction-transport-order-card {
+  display: none;
 }
 
 .response-popup__form {
@@ -2097,7 +2105,7 @@ required-tab--mini.tab--active {
 }
 
 .response-popup__section-text span::after {
-  content: url(../../../../img/icons/arrows/arrow-down.svg);
+  content: url(../img/icons/arrows/arrow-down.svg);
   width: 8px;
   height: 4.56px;
   top: 0;
@@ -2125,7 +2133,7 @@ required-tab--mini.tab--active {
 }
 
 .response-popup__list-item::before {
-  content: url(../../../../img/icons/Ellipse.svg);
+  content: url(../img/icons/Ellipse.svg);
   height: 6px;
   width: 6px;
   top: 0px;
@@ -3002,10 +3010,6 @@ required-tab--mini.tab--active {
   height: 4px;
   background-color: rgba(52, 52, 52, 0.4);
   border-radius: 1px;
-}
-
-.search-results .container {
-  width: 1200px;
 }
 
 .search-results__container {
@@ -9871,7 +9875,7 @@ body {
 }
 
 .order-approve__column-list li {
-  list-style-image: url(../../../img/icons/list-style-img.svg);
+  list-style-image: url(../img/icons/list-style-img.svg);
   font-size: 10px;
   line-height: 15px;
 }
@@ -10335,7 +10339,7 @@ body {
 }
 
 .your-status-column__title h4::before {
-  content: url("../../../img/icons/medal1.svg");
+  content: url("../img/icons/medal1.svg");
   width: 36px;
   height: 36px;
   position: absolute;
@@ -10400,7 +10404,7 @@ body {
 }
 
 .advertisement-list__item::before {
-  content: url(../../../img/icons/Ellipse.svg);
+  content: url(../img/icons/Ellipse.svg);
   width: 6px;
   height: 6px;
   position: absolute;
@@ -10474,7 +10478,7 @@ body {
 }
 
 .advertisement-item-title__text::before {
-  content: url(../../../img/icons/id-logo.svg);
+  content: url(../img/icons/id-logo.svg);
   position: absolute;
   width: 50px;
   height: 50px;
@@ -10568,7 +10572,7 @@ body {
 }
 
 .content-block__column-wrapper p::before {
-  content: url(../../../img/icons/checkmark.svg);
+  content: url(../img/icons/checkmark.svg);
   width: 15px;
   height: 15px;
   position: absolute;
@@ -10881,7 +10885,7 @@ body {
 }
 
 .your-company__content__block .wrapper--border .wrapper--grid__item.block-requisites-and-verification .item-2 .block-verification .verification-list li.active::before {
-  content: url("../../../img/icons/check-active.svg");
+  content: url("../img/icons/check-active.svg");
   position: absolute;
   left: 16px;
 }
@@ -10891,13 +10895,13 @@ body {
 }
 
 .your-company__content__block .wrapper--border .wrapper--grid__item.block-requisites-and-verification .item-2 .block-verification .verification-list li.inactive::before {
-  content: url("../../../img/icons/check-active.svg");
+  content: url("../img/icons/check-active.svg");
   position: absolute;
   left: 16px;
 }
 
 .your-company__content__block .wrapper--border .wrapper--grid__item.block-requisites-and-verification .item-2 .block-verification .verification-list li.legal-entity-text::after {
-  content: url("../../../img/icons/info.svg");
+  content: url("../img/icons/info.svg");
   position: absolute;
   margin-left: 64px;
   margin-top: 1px;
@@ -11021,7 +11025,7 @@ body {
 }
 
 .your-company__content__block .wrapper--border .edit-text::before {
-  content: url("../../../img/icons/blue-pencil.svg");
+  content: url("../img/icons/blue-pencil.svg");
   margin-right: 4px;
   cursor: pointer;
 }
@@ -11170,7 +11174,7 @@ body {
 }
 
 .settings-your-company__content__block .wrapper--border .wrapper--grid__item.company-info.company-info .item-2 .edit-text::before {
-  content: url("../../../img/icons/blue-pencil.svg");
+  content: url("../img/icons/blue-pencil.svg");
   margin-right: 4px;
   cursor: pointer;
 }
@@ -11430,7 +11434,7 @@ body {
 }
 
 .general-dashboard-column-info__cargo::before {
-  content: url(../../../img/icons/box2.svg);
+  content: url(../img/icons/box2.svg);
   position: absolute;
   width: 18px;
   height: 18px;
@@ -11439,7 +11443,7 @@ body {
 }
 
 .general-dashboard-column-info__auction::before {
-  content: url(../../../img/icons/surface.svg);
+  content: url(../img/icons/surface.svg);
   position: absolute;
   width: 18px;
   height: 18px;
@@ -11448,7 +11452,7 @@ body {
 }
 
 .general-dashboard-column-info__transport::before {
-  content: url(../../../img/icons/delivery-truck.svg);
+  content: url(../img/icons/delivery-truck.svg);
   position: absolute;
   width: 18px;
   height: 18px;
@@ -11589,7 +11593,7 @@ body {
 }
 
 .transport-order-card__documents::before {
-  content: url(../../../img/icons/documents.svg);
+  content: url(../img/icons/documents.svg);
   width: 11px;
   height: 11px;
   position: absolute;
@@ -11613,7 +11617,7 @@ body {
 }
 
 .minus-btn::before {
-  content: url(../../../img/icons/minus-btn.svg);
+  content: url(../img/icons/minus-btn.svg);
   width: 14px;
   height: 14px;
   position: absolute;
@@ -11728,14 +11732,14 @@ body {
 }
 
 .horizontal-order-card__path-item:not(:last-child)::after {
-  content: url(../../../img/icons/path-line--bigger.svg);
+  content: url(../img/icons/path-line--bigger.svg);
   position: absolute;
   top: -1px;
   left: 50px;
 }
 
 .horizontal-order-card__path-item--from::before {
-  content: url(../../../img/icons/belarus.png);
+  content: url(../img/icons/belarus.png);
   width: 20px;
   height: 20px;
   position: absolute;
@@ -11744,7 +11748,7 @@ body {
 }
 
 .horizontal-order-card__path-item--gap::before {
-  content: url(../../../img/icons/poland.png);
+  content: url(../img/icons/poland.png);
   width: 20px;
   height: 20px;
   position: absolute;
@@ -11753,7 +11757,7 @@ body {
 }
 
 .horizontal-order-card__path-item--to::before {
-  content: url(../../../img/icons/lithuania.svg);
+  content: url(../img/icons/lithuania.svg);
   width: 20px;
   height: 20px;
   position: absolute;
@@ -11786,14 +11790,14 @@ body {
 }
 
 .horizontal-order-card__dates-info li::before {
-  content: url(../../../img/icons/clock.svg);
+  content: url(../img/icons/clock.svg);
   position: absolute;
   top: 1px;
   left: 15px;
 }
 
 .horizontal-order-card__car-img::before {
-  content: url(../../../img/icons/delivery-truck.svg);
+  content: url(../img/icons/delivery-truck.svg);
   position: absolute;
   top: -1px;
   left: 15px;
@@ -11802,56 +11806,56 @@ body {
 }
 
 .horizontal-order-card__weight-img::before {
-  content: url(../../../img/icons/weight.svg);
+  content: url(../img/icons/weight.svg);
   position: absolute;
   top: 0px;
   left: 15px;
 }
 
 .horizontal-order-card__dimensions-img::before {
-  content: url(../../../img/icons/size-box.svg);
+  content: url(../img/icons/size-box.svg);
   position: absolute;
   top: 1px;
   left: 15px;
 }
 
 .horizontal-order-card__additionaly-img::before {
-  content: url(../../../img/icons/additionaly.svg);
+  content: url(../img/icons/additionaly.svg);
   position: absolute;
   top: 1px;
   left: 15px;
 }
 
 .horizontal-order-card__loading-img::before {
-  content: url(../../../img/icons/loading.svg);
+  content: url(../img/icons/loading.svg);
   position: absolute;
   top: 2px;
   left: 15px;
 }
 
 .horizontal-order-card__sizes-img::before {
-  content: url(../../../img/icons/diagonal-resize.svg);
+  content: url(../img/icons/diagonal-resize.svg);
   position: absolute;
   top: 1px;
   left: 15px;
 }
 
 .horizontal-order-card__alert-img::before {
-  content: url(../../../img/icons/alert.svg);
+  content: url(../img/icons/alert.svg);
   position: absolute;
   top: -1px;
   left: 13px;
 }
 
 .horizontal-order-card__documents-img::before {
-  content: url(../../../img/icons/documents.svg);
+  content: url(../img/icons/documents.svg);
   position: absolute;
   top: 1px;
   left: 15px;
 }
 
 .horizontal-order-card__box-img::before {
-  content: url(../../../img/icons/box.svg);
+  content: url(../img/icons/box.svg);
   position: absolute;
   top: 0;
   left: 15px;
@@ -11924,7 +11928,7 @@ body {
 }
 
 .cargo-horizontal-order-card__path-item:not(:last-child)::after {
-  content: url(../../../img/icons/path-line--bigger.svg);
+  content: url(../img/icons/path-line--bigger.svg);
   position: absolute;
   top: -1px;
   left: 94px;
@@ -12088,7 +12092,7 @@ body {
 }
 
 .auction-search-result-card__time::before {
-  content: url(../../../../img/icons/clock.svg);
+  content: url(../img/icons/clock.svg);
   position: absolute;
   top: 1px;
   left: 0;
@@ -12102,7 +12106,7 @@ body {
 }
 
 .auction-search-result-card__bet-title::before {
-  content: url(../../../../img/icons/surface.svg);
+  content: url(../img/icons/surface.svg);
   position: absolute;
   top: 0;
   left: 0;

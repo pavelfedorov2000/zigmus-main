@@ -393,7 +393,7 @@
                                 }
 
                                 &.active::before {
-                                    content: url('../../../img/icons/check-active.svg');
+                                    content: url('../img/icons/check-active.svg');
                                     position: absolute;
                                     left: 16px;
 
@@ -406,7 +406,7 @@
                                     opacity: 0.5;
 
                                     &::before {
-                                        content: url('../../../img/icons/check-active.svg');
+                                        content: url('../img/icons/check-active.svg');
                                         position: absolute;
                                         left: 16px;
 
@@ -417,7 +417,7 @@
                                 }
 
                                 &.legal-entity-text::after {
-                                    content: url('../../../img/icons/info.svg');
+                                    content: url('../img/icons/info.svg');
 
                                     position: absolute;
                                     margin-left: 64px;
@@ -588,7 +588,7 @@
             }
 
             &::before {
-                content: url('../../../img/icons/blue-pencil.svg');
+                content: url('../img/icons/blue-pencil.svg');
                 margin-right: 4px;
                 cursor: pointer;
             }
