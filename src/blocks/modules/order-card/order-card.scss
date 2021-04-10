@@ -34,6 +34,25 @@
     // .order-card__header-btn
 
     &__settings-btn {
+        position: relative;
+        & ul {
+            z-index: 1;
+            position: absolute;
+            background: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0px 10px 40px rgba(0, 4, 41, 0.05);
+            top: 25px;
+            left: -20px;
+            & li {
+                font-size: 12px;
+                padding: 0 15px 15px 35px;
+                width: 180px;
+                position: relative;
+                &:first-child {
+                    padding-top: 15px;
+                }
+            }
+        }
     }
 
     // .order-card__labels
@@ -575,4 +594,29 @@
             }
         }
     }
+}
+
+.notification-img::before {
+    content: url(../img/icons/notifications.svg);
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+.comment-img::before {
+    content: url(../img/icons/chat-1.svg);
+    position: absolute;
+    top: -5px;
+    left: 10px;
+}
+.property-img::before {
+    content: url(../img/icons/add-to-property.svg);
+    position: absolute;
+    top: -5px;
+    left: 10px;
+}
+.close-btn-img::before {
+    content: url(../img/icons/close-img.svg);
+    position: absolute;
+    top: -5px;
+    left: 10px;
 }

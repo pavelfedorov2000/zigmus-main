@@ -144,6 +144,13 @@ $('.top-filters__more-btn').on('click', function () {
     $('.top-filters__less-btn').removeClass('none');
 });
 
+$('.order-card__settings-btn').on('click', function () {
+    $(this).find('ul').toggleClass('none');
+});
+
+// $('.close-btn-img').on('click', function () {
+//     $(this).parent('ul').addClass('none');
+// });
 
     // ========================= OPENING BURGER-MENU ===================== //
 $('.burger-menu .button-opening-burger-menu').click(function () {

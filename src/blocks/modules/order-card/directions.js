@@ -20,3 +20,4 @@ $('.order-slider__inner').slick({
         },
     ]
 });
+

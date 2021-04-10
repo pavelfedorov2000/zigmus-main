@@ -46,3 +46,11 @@ $('.top-filters__more-btn').on('click', function () {
     $(this).addClass('none');
     $('.top-filters__less-btn').removeClass('none');
 });
+
+$('.order-card__settings-btn').on('click', function () {
+    $(this).find('ul').toggleClass('none');
+});
+
+// $('.close-btn-img').on('click', function () {
+//     $(this).parent('ul').addClass('none');
+// });
