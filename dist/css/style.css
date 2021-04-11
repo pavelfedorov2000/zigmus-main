@@ -2468,7 +2468,7 @@ required-tab--mini.tab--active {
   -webkit-box-shadow: 0px 10px 40px rgba(0, 4, 41, 0.05);
           box-shadow: 0px 10px 40px rgba(0, 4, 41, 0.05);
   top: 25px;
-  left: -20px;
+  left: -155px;
 }
 
 .order-card__settings-btn ul li {
@@ -11520,6 +11520,12 @@ body {
   display: none;
 }
 
+.carrier-profile__content {
+  margin-top: 40px;
+  margin-bottom: 80px;
+  width: 100%;
+}
+
 .carrier-profile__settings-btns {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -11541,6 +11547,15 @@ body {
   display: -ms-flexbox;
   display: flex;
   margin-top: 20px;
+  width: 100%;
+}
+
+.carrier-profile__column--first {
+  width: 35%;
+}
+
+.carrier-profile__column--second {
+  width: 65%;
 }
 
 .carrier-profile__coplaint-btn {
@@ -11558,7 +11573,6 @@ body {
   -webkit-box-shadow: 0px 10px 40px rgba(0, 4, 41, 0.05);
           box-shadow: 0px 10px 40px rgba(0, 4, 41, 0.05);
   border-radius: 8px;
-  width: 360px;
   margin-bottom: 10px;
 }
 
@@ -11640,7 +11654,6 @@ body {
           box-shadow: 0px 10px 40px rgba(0, 4, 41, 0.05);
   border-radius: 8px;
   margin-bottom: 10px;
-  width: 360px;
 }
 
 .carrier-profile__metrics-info h4 {
@@ -11666,8 +11679,7 @@ body {
 }
 
 .carrier-profile__column-item {
-  width: 750px;
-  margin-left: 30px;
+  margin-left: 15px;
   margin-bottom: 10px;
   border-radius: 8px;
   background: #fff;
@@ -11821,7 +11833,7 @@ body {
   margin-left: 20px;
   margin-bottom: 20px;
   border-radius: 8px;
-  width: 46%;
+  width: 50%;
 }
 
 .carrier-profile__content-answer-head {
@@ -13617,6 +13629,10 @@ input:-internal-autofill-selected {
     grid-template-columns: repeat(3, 1fr);
   }
 
+  .transport-search-results {
+    padding-top: 530px;
+  }
+
   .header .container.desktop {
     display: none;
   }
@@ -13669,6 +13685,20 @@ input:-internal-autofill-selected {
   .balance__content {
     padding-left: 0;
     padding-right: 0;
+  }
+
+  .carrier-profile__footer a {
+    display: block;
+  }
+
+  .carrier-profile__content-head-rating {
+    display: block;
+    padding-left: 30px;
+  }
+
+  .carrier-profile__content-head-statistic span {
+    display: block;
+    padding-top: 5px;
   }
 
   .general-dashboard-column__info-block {
@@ -13998,6 +14028,22 @@ input:-internal-autofill-selected {
 
   .lower-content-block__items p {
     padding: 10px 15px;
+  }
+
+  .carrier-profile__columns {
+    display: block;
+  }
+
+  .carrier-profile__column--first {
+    width: 100%;
+  }
+
+  .carrier-profile__column--second {
+    width: 100%;
+  }
+
+  .carrier-profile__column-item {
+    margin-left: 0;
   }
 
   .general-dashboard__wrapper {
@@ -14494,6 +14540,12 @@ input:-internal-autofill-selected {
   }
 }
 
+@media (max-width: 758px) {
+  .transport-search-results {
+    padding-top: 970px;
+  }
+}
+
 @media (max-width: 599px) {
   .p-profile__content-header-buttons {
     display: grid;
@@ -14929,6 +14981,22 @@ input:-internal-autofill-selected {
     padding-top: 1430px;
   }
 
+  .transport-search-results {
+    padding-top: 1630px;
+  }
+
+  .auction-search-results__info {
+    display: block;
+  }
+
+  .auction-search-results__info h2 {
+    margin-left: 50px;
+  }
+
+  .auction-search-result__btn {
+    margin-left: 0px;
+  }
+
   .profile__fields-col + .profile__fields-col {
     margin-left: 0;
   }
@@ -15019,6 +15087,38 @@ input:-internal-autofill-selected {
 
   .advertisement-lower-block__title {
     font-size: 28px;
+  }
+
+  .carrier-profile__content-head {
+    display: block;
+  }
+
+  .carrier-profile__content-head-icon::after {
+    left: 130px;
+  }
+
+  .carrier-profile__content-head-rating {
+    padding-left: 0;
+  }
+
+  .carrier-profile__content-head-statistic span {
+    display: inline;
+  }
+
+  .carrier-profile__content-answer {
+    width: 85%;
+  }
+
+  .carrier-profile__head-date {
+    padding-left: 0;
+  }
+
+  .auction-search-result-card__bet-title::before {
+    top: -3px;
+  }
+
+  .transport-auction-search-result__btn {
+    font-size: 21px;
   }
 }
 
@@ -15167,6 +15267,18 @@ input:-internal-autofill-selected {
 
   .balance__content__block .history-block--grid__item {
     padding: 15px;
+  }
+}
+
+@media (max-width: 475px) {
+  .carrier-profile__item-head-info {
+    font-size: 12px;
+    margin-top: 10px;
+    margin-left: 0;
+  }
+
+  .carrier-profile__item-head {
+    display: block;
   }
 }
 

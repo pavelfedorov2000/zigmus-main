@@ -58,6 +58,9 @@
         left: 0;
         width: 13px;
         height: 13px;
+        @media (max-width:545px) {
+            top: -3px;
+        }
     }
 }
 
@@ -73,4 +76,10 @@
 
 .auction-search-result-card__bet-btns {
     padding: 10px;
+}
+
+.transport-auction-search-result__btn {
+    @media (max-width:545px) {
+        font-size: 21px;
+    }
 }

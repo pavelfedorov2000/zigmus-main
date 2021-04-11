@@ -259,6 +259,19 @@
     }
 }
 
+.transport-search-results {
+    @media (max-width:1023px) {
+        padding-top: 530px;
+    }    
+    @media (max-width:758px) {
+        padding-top: 970px;
+    }    
+
+    @media (max-width:545px) {
+        padding-top: 1630px;
+    }    
+}
+
 .list-btn {
     @include column;
     justify-content: space-between;
@@ -313,3 +326,21 @@
     padding-bottom: 0!important;
     border-bottom: none!important;
 }
+
+.auction-search-results__info {
+    @media (max-width:545px) {
+        display: block;
+    }
+    & h2 {
+        @media (max-width:545px) {
+            margin-left: 50px;
+        }
+    }
+}
+
+.auction-search-result__btn {
+    @media (max-width:545px) {
+        margin-left: 0px;
+    }
+}
+
