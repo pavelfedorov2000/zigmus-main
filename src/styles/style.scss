@@ -31,6 +31,10 @@
 @import "../blocks/modules/search-results/cargo-horizontal-card.scss";
 @import "../blocks/modules/auction-search-result/cargo-auction-search-result/cargo-auction-horizontal-card.scss";
 @import "../blocks/modules/auction-search-result/cargo-auction-search-result/cargo-auction-vertical-card.scss";
+@import "../blocks/modules/auction-search-result/cargo-auction-search-result/cargo-auction-dif-cards/cargo-auction-deny-card.scss";
+@import "../blocks/modules/auction-search-result/cargo-auction-search-result/cargo-auction-dif-cards/cargo-auction-outbided-card.scss";
+@import "../blocks/modules/auction-search-result/cargo-auction-search-result/cargo-auction-dif-cards/cargo-auction-outbid-card.scss";
+@import "../blocks/modules/auction-search-result/cargo-auction-search-result/cargo-auction-dif-cards/cargo-auction-won-card.scss";
 
 @import "../blocks/modules/notifications/notifications.scss";
 

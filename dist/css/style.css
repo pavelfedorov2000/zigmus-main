@@ -1634,6 +1634,52 @@ required-tab--mini.tab--active {
   position: fixed;
 }
 
+.auction-bet-popup {
+  width: 262px;
+  height: 229px;
+  background: #fff;
+  border-radius: 8px;
+  border: 1px solid rgba(35, 110, 255, 0.3);
+  margin-left: 41%;
+  margin-top: 20%;
+  position: fixed;
+  padding: 20px;
+}
+
+.auction-bet-popup__head {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-bottom: 15px;
+}
+
+.auction-bet-popup__accept-bet-btn {
+  width: 221px;
+  height: 58px;
+  background: #FF6118;
+  border-radius: 8px;
+  color: #fff;
+  margin-top: 15px;
+}
+
+.auction-bet-popup__accept-bet-btn:hover {
+  -webkit-box-shadow: 0px 4px 20px rgba(255, 107, 0, 0.35);
+          box-shadow: 0px 4px 20px rgba(255, 107, 0, 0.35);
+  -webkit-transition: 300ms;
+  -o-transition: 300ms;
+  transition: 300ms;
+}
+
+.popup-close-btn {
+  cursor: pointer;
+}
+
 #cargo-order-card {
   display: none;
 }
@@ -12623,6 +12669,80 @@ body {
 
 .auction-search-result-card__bet-btns {
   padding: 10px;
+}
+
+.cargo-auction-outbided-card__status {
+  position: relative;
+  font-size: 12px;
+  color: #ff2626;
+  padding-left: 13px;
+  padding-top: 5px;
+}
+
+.cargo-auction-outbided-card__status::before {
+  content: url(../img/icons/arrows/red-arrow-up.svg);
+  position: absolute;
+  top: 5px;
+  left: 0;
+}
+
+.cargo-auction-outbided-card__bet {
+  background: #ffeded;
+}
+
+.cargo-auction-outbided-card__footer {
+  padding-top: 15px;
+  background: #ffeded;
+  border-radius: 0 0 7px 7px;
+}
+
+.cargo-auction-outbided-card__footer a {
+  text-decoration: underline;
+  font-size: 10px;
+  opacity: .4;
+  padding: 0 10px;
+}
+
+.cargo-auction-outbid-card__status {
+  position: relative;
+  font-size: 12px;
+  color: #236eff;
+  padding-left: 13px;
+  padding-top: 5px;
+}
+
+.cargo-auction-outbid-card__status::before {
+  content: url(../img/icons/arrows/datepicker-arrow-left.svg);
+  position: absolute;
+  top: 5px;
+  left: 0;
+  -webkit-transform: rotate(90deg);
+      -ms-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+.cargo-auction-outbid-card__bet-btn {
+  font-size: 10px;
+  padding: 5px;
+  border-radius: 6px;
+  border: 1px solid rgba(35, 110, 255, 0.3);
+  margin-top: 10px;
+}
+
+.cargo-auction-won-card__bet {
+  padding: 0;
+  background: #e8fae8;
+}
+
+.cargo-auction-won-card__status {
+  color: #06c602;
+  padding-top: 5px;
+}
+
+.cargo-auction-won-card__time-to-accept {
+  padding: 0 10px 15px;
+  font-size: 10px;
+  opacity: 0.4;
 }
 
 .container.notification {
