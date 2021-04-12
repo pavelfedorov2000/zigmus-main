@@ -67,6 +67,9 @@
 
 .tabs__content--active.benefits__content {
     @include flex;
+    @media (max-width:425px) {
+        display: block;
+    }
 }
 
 .tabs.container {
@@ -96,9 +99,9 @@
         color: rgba(#fff, 1);
         font-weight: 600;
 
-        // @media (max-width: 575px) {
-        //     border-radius: 10px;
-        // }
+        @media (max-width: 425px) {
+            padding: 9px 55px;
+        }
     }
 
     &--mini {
@@ -116,4 +119,16 @@
 
 .required-tab {
     height: 49px;
+}
+
+.benefits .tabs {
+    @media (max-width:545px) {
+        padding: 4px 0 4px;
+    }
+}
+
+.section .tabs {
+    @media (max-width:545px) {
+        padding: 4px 0 4px;
+    }
 }

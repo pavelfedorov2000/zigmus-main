@@ -6,11 +6,18 @@
     width: 840px;
     height: 100%;
     background: #fff;
-    border-radius: 20px 0px 0px 20px;
-    margin-left: auto;
+    border-radius: 20px;
+    margin: auto;
+    @media (max-width:900px) {
+        width: calc(100% - 60px);
+        margin: auto;
+    }
 
     &__content {
         padding: 80px 30px 0;
+        @media (max-width:425px) {
+            padding: 80px 15px 0;
+        }
     }
 
     &__title {
@@ -20,10 +27,19 @@
         &-text {
             display: flex;
             align-items: center;
+            @media (max-width: 768px) {
+                display: block;
+            }
         }
 
         &-labels {
             padding-top: 10px;
+            @media (max-width: 768px) {
+                padding-left: 0;
+            }
+            @media (max-width: 545px) {
+                padding-left: 0;
+            }
         }
     }
 
@@ -36,7 +52,7 @@
     }
 
     &__map {
-        width: 780px;
+        width: 100%;
         height: 144px;
         margin-top: 20px;
         margin-bottom: 58px;
@@ -47,6 +63,16 @@
 
     &__columns {
         display: flex;
+        @media (max-width: 768px) {
+            display: grid;
+            grid-template-columns: 50% 50%;
+            grid-template-areas: "item-a item-b" "item-c item-c" ;
+            grid-row-gap: 15px;
+        }
+        @media (max-width: 425px) {
+            grid-template-areas: "item-a" "item-b" "item-c" ;
+            grid-template-columns: 100%;
+        }
     }
 
     &__column {
@@ -63,6 +89,13 @@
             background: #F5F9FF;
             border-radius: 6px;
             padding: 15px 20px;
+            margin-left: 15px;
+            @media (max-width: 768px) {
+                margin-left: 0;
+            }
+            @media (max-width: 425px) {
+                padding: 10px 15px;
+            }
 
             &-btns {
                 display: flex;
@@ -72,6 +105,9 @@
                     text-decoration: underline;
                     padding-left: 10px;
                     padding-right: 38px;
+                    @media (max-width: 425px) {
+                        padding-right: 0;
+                    }
                 }
             }
         }
@@ -81,6 +117,9 @@
         padding-left: 20px;
         margin-left: 10px;
         padding-bottom: 20px;
+        @media (max-width: 768px) {
+            grid-area: item-a;
+        }
 
         &-text {
             padding-bottom: 20px;
@@ -127,7 +166,7 @@
                 content: url(../img/icons/arrows/arrow-down-2.svg);
                 position: absolute;
                 top: 0;
-                right: 75px;
+                left: 45px;
                 transform: rotate(180deg);
             }
         }
@@ -136,6 +175,18 @@
         }
         &--unloading::after {
             transform: rotate(0deg);
+        }
+    }
+
+    &__column-list {
+        @media (max-width: 768px) {
+            grid-area: item-b;
+        }
+    }
+
+    &__column-price-grid {
+        @media (max-width: 768px) {
+            grid-area: item-c;
         }
     }
 
@@ -186,7 +237,7 @@
     }
 
     &__list-imgs {
-        display: flex;
+        display: block;
         & img:not(:last-child) {
             margin-right: 10px;
         }
@@ -200,11 +251,17 @@
         &:not(:last-child) {
            margin-bottom: 15px;
     }
+        @media (max-width: 768px) {
+            margin-left: 0;
+        }
     }
 
     &__metrics-list {
         display: grid;
         grid-template-columns: 1fr 1fr;
+        @media (max-width: 425px) {
+        grid-template-columns: 1fr;
+        }
     }
 
     &__metrics-list,

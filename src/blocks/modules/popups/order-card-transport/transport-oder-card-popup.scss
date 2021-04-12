@@ -49,6 +49,19 @@
         margin-left: 15px;
         
     }
+
+    &__car-img {
+        width: 100%;
+    }
+}
+
+.tracking-label {
+    @media (max-width: 545px) {
+        width: 100px;
+    }
+}
+#bet-popup {
+    display: none;
 }
 
 #transport-order-card {

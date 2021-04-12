@@ -1688,8 +1688,8 @@ required-tab--mini.tab--active {
   width: 840px;
   height: 100%;
   background: #fff;
-  border-radius: 20px 0px 0px 20px;
-  margin-left: auto;
+  border-radius: 20px;
+  margin: auto;
 }
 
 .cargo-order-card-popup__content {
@@ -1735,7 +1735,7 @@ required-tab--mini.tab--active {
 }
 
 .cargo-order-card-popup__map {
-  width: 780px;
+  width: 100%;
   height: 144px;
   margin-top: 20px;
   margin-bottom: 58px;
@@ -1763,6 +1763,7 @@ required-tab--mini.tab--active {
   background: #F5F9FF;
   border-radius: 6px;
   padding: 15px 20px;
+  margin-left: 15px;
 }
 
 .cargo-order-card-popup__column-price-btns {
@@ -1839,7 +1840,7 @@ required-tab--mini.tab--active {
   content: url(../img/icons/arrows/arrow-down-2.svg);
   position: absolute;
   top: 0;
-  right: 75px;
+  left: 45px;
   -webkit-transform: rotate(180deg);
       -ms-transform: rotate(180deg);
           transform: rotate(180deg);
@@ -1905,9 +1906,7 @@ required-tab--mini.tab--active {
 }
 
 .cargo-order-card-popup__list-imgs {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: block;
 }
 
 .cargo-order-card-popup__list-imgs img:not(:last-child) {
@@ -2061,6 +2060,14 @@ required-tab--mini.tab--active {
 .transport-order-card-popup__label {
   margin-top: 10px;
   margin-left: 15px;
+}
+
+.transport-order-card-popup__car-img {
+  width: 100%;
+}
+
+#bet-popup {
+  display: none;
 }
 
 #transport-order-card {
@@ -3137,6 +3144,14 @@ required-tab--mini.tab--active {
 .remove-filter-style {
   padding-bottom: 0 !important;
   border-bottom: none !important;
+}
+
+#cargo-map {
+  width: 1300px;
+  height: 975px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  margin-left: -80px;
 }
 
 body {
@@ -4725,17 +4740,6 @@ body {
   margin-top: 20px;
 }
 
-.profile {
-  /* &__field-file {
-        font-size: 12px;
-        padding: 20px 10px;
-
-        &--certificate {
-            width: 272px;
-        }
-    } */
-}
-
 .profile__item--border {
   padding-bottom: 30px;
   border-bottom: 1px solid rgba(35, 110, 255, 0.3);
@@ -4878,6 +4882,7 @@ body {
           align-items: flex-start;
   position: relative;
   padding-left: 54px;
+  height: 59px;
 }
 
 .profile__date-field:before,
@@ -4961,6 +4966,15 @@ body {
   opacity: 0.4;
   margin-bottom: 0;
   margin-left: 4px;
+}
+
+.profile__field-file--certificate {
+  font-size: 12px;
+  padding: 20px 10px;
+}
+
+.profile__field-file--certificate--certificate {
+  width: 272px;
 }
 
 .profile__plus-btn {
@@ -6171,6 +6185,8 @@ body {
 .employees {
   width: 946px;
   padding-top: 64px;
+  margin-left: 15px;
+  margin-bottom: 80px;
 }
 
 .employees__header {
@@ -6300,6 +6316,10 @@ body {
 
 .employee-card__tel + .employee-card__tel {
   margin-left: 10px;
+}
+
+.profile__employee-form.grid .employee__field {
+  height: 61px;
 }
 
 .reset-filter-btn {
@@ -7558,6 +7578,10 @@ body {
             height: 362px;
         }
     } */
+}
+
+.start-container {
+  padding: 30px;
 }
 
 .start__inner {
@@ -13411,6 +13435,10 @@ input:-internal-autofill-selected {
 }
 
 @media (max-width: 1200px) {
+  .news__card {
+    width: 100%;
+  }
+
   .main-filters__col {
     width: 25%;
   }
@@ -13471,6 +13499,14 @@ input:-internal-autofill-selected {
     width: 100%;
     margin-left: 0;
     margin-top: 20px;
+  }
+
+  .popular-directions__tabs-content:before {
+    width: 30%;
+  }
+
+  #popular-directions-tab-1:after {
+    width: 300px;
   }
 
   .footer__main-column {
@@ -13649,9 +13685,47 @@ input:-internal-autofill-selected {
     vertical-align: 10px;
   }
 
+  .news__cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
   .p-profile__content {
     width: 100%;
     padding-left: 0;
+  }
+
+  .benefits__img {
+    max-width: 50%;
+  }
+
+  .start-container {
+    padding: 0;
+  }
+
+  .start__tabs {
+    margin-left: 0;
+    margin-top: 20px;
+  }
+
+  .start__header {
+    display: block;
+  }
+
+  .orders-tape__content {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .popular-directions__content {
+    width: 75%;
+  }
+
+  .popular-directions__list {
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 25px;
+  }
+
+  #popular-directions-tab-1:after {
+    width: 250px;
   }
 
   .add-auction__photo-descr {
@@ -13900,7 +13974,49 @@ input:-internal-autofill-selected {
   }
 }
 
+@media (max-width: 900px) {
+  .cargo-order-card-popup {
+    width: calc(100% - 60px);
+    margin: auto;
+  }
+}
+
 @media (max-width: 768px) {
+  .cargo-order-card-popup__title-text {
+    display: block;
+  }
+
+  .cargo-order-card-popup__title-labels {
+    padding-left: 0;
+  }
+
+  .cargo-order-card-popup__columns {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-areas: "item-a item-b" "item-c item-c";
+    grid-row-gap: 15px;
+  }
+
+  .cargo-order-card-popup__column-price {
+    margin-left: 0;
+  }
+
+  .cargo-order-card-popup__path {
+    grid-area: item-a;
+  }
+
+  .cargo-order-card-popup__column-list {
+    grid-area: item-b;
+  }
+
+  .cargo-order-card-popup__column-price-grid {
+    grid-area: item-c;
+  }
+
+  .cargo-order-card-popup__column-metrics {
+    margin-left: 0;
+  }
+
   .section-results {
     padding-top: 290px;
   }
@@ -13929,16 +14045,64 @@ input:-internal-autofill-selected {
     grid-row-gap: 15px;
   }
 
+  .profile__form.grid {
+    display: block;
+  }
+
   .profile__file-fields {
     margin-left: 0;
+  }
+
+  .profile__field-wrap {
+    display: block;
+  }
+
+  .profile__field-descr {
+    margin-top: 10px;
   }
 
   .profile__img-choice--197 {
     width: 100%;
   }
 
+  .verification-item__inner {
+    display: block;
+  }
+
+  .verification-item__right {
+    margin-top: 20px;
+  }
+
+  .verification-item__btn {
+    margin-top: 10px;
+  }
+
+  .confirm-payment__inner {
+    display: block;
+  }
+
+  #bill-request {
+    margin-top: 10px;
+  }
+
+  .contact-verification__item-field {
+    width: 50%;
+  }
+
   .gabarits__item + .gabarits__item:before {
     display: none;
+  }
+
+  .employees {
+    margin-left: 0;
+  }
+
+  .employees__cards {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .profile__employee-form.grid .employee__field {
+    margin-top: 10px;
   }
 
   .filters {
@@ -13975,8 +14139,35 @@ input:-internal-autofill-selected {
     right: 15px;
   }
 
+  .start__tabs {
+    margin: auto;
+    margin-top: 20px;
+  }
+
+  .start__btn {
+    margin: auto;
+  }
+
+  .start__video {
+    margin-bottom: 20px;
+  }
+
+  .orders-tape__content {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .popular-directions__list {
+    grid-template-columns: repeat(2, 130px);
+    grid-column-gap: 15px;
+  }
+
+  #popular-directions-tab-1:after {
+    width: 200px;
+  }
+
   .profile__form {
     width: 100%;
+    padding-right: 30px;
   }
 
   .profile__fields-col {
@@ -14546,6 +14737,18 @@ input:-internal-autofill-selected {
   }
 }
 
+@media (max-width: 700px) {
+  .p-profile__step + .p-profile__step:last-child {
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 600px) {
+  .news__cards {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
 @media (max-width: 599px) {
   .p-profile__content-header-buttons {
     display: grid;
@@ -14972,7 +15175,38 @@ input:-internal-autofill-selected {
   }
 }
 
+@media (max-width: 560px) {
+  .profile__bills-field {
+    display: block;
+  }
+
+  .profile__field-inner + .profile__field-inner {
+    border-left: none;
+    border-top: 1px solid rgba(35, 110, 255, 0.3);
+  }
+}
+
 @media (max-width: 545px) {
+  .benefits .tabs {
+    padding: 4px 0 4px;
+  }
+
+  .section .tabs {
+    padding: 4px 0 4px;
+  }
+
+  .benefits__header .video-link {
+    margin-bottom: 40px;
+  }
+
+  .cargo-order-card-popup__title-labels {
+    padding-left: 0;
+  }
+
+  .tracking-label {
+    width: 100px;
+  }
+
   .section-results {
     padding-top: 360px;
   }
@@ -14997,8 +15231,41 @@ input:-internal-autofill-selected {
     margin-left: 0px;
   }
 
+  .p-profile__title {
+    font-size: 22px;
+  }
+
+  .profile__form.grid .profile__field-registration {
+    margin-top: 10px;
+  }
+
+  .profile__item-inner {
+    padding: 0 15px;
+  }
+
   .profile__fields-col + .profile__fields-col {
     margin-left: 0;
+  }
+
+  .verification-item__inner {
+    padding-right: 30px;
+  }
+
+  .verification-item__left {
+    width: 100%;
+  }
+
+  .verification-item__info {
+    padding: 10px;
+    font-size: 10px;
+  }
+
+  .contact-verification__item {
+    display: block;
+  }
+
+  .contact-verification__item-status {
+    margin-top: 5px;
   }
 
   .oval-check + .oval-check {
@@ -15033,6 +15300,36 @@ input:-internal-autofill-selected {
 
   .filters__top-btn + .filters__top-btn {
     margin-left: 0;
+  }
+
+  .benefits__header {
+    display: block;
+  }
+
+  .benefits__head {
+    margin-bottom: 20px;
+  }
+
+  .benefits__header .benefits__title {
+    font-size: 30px;
+  }
+
+  .section__head .section__title {
+    font-size: 30px;
+  }
+
+  .start {
+    padding: 30px;
+  }
+
+  .start__title {
+    font-size: 25px;
+  }
+
+  .popular-directions__list {
+    grid-template-columns: repeat(1, 150px);
+    grid-column-gap: 15px;
+    padding-bottom: 20px;
   }
 
   .add-auction__head {
@@ -15271,6 +15568,15 @@ input:-internal-autofill-selected {
 }
 
 @media (max-width: 475px) {
+  .p-profile__step + .p-profile__step {
+    margin-left: 0;
+  }
+
+  .profile__email-choice span {
+    right: 10px;
+    left: -15px;
+  }
+
   .carrier-profile__item-head-info {
     font-size: 12px;
     margin-top: 10px;
@@ -15296,8 +15602,86 @@ input:-internal-autofill-selected {
 }
 
 @media (max-width: 425px) {
+  .tabs__content--active.benefits__content {
+    display: block;
+  }
+
+  .tab--active,
+  required-tab--active {
+    padding: 9px 55px;
+  }
+
+  .cargo-order-card-popup__content {
+    padding: 80px 15px 0;
+  }
+
+  .cargo-order-card-popup__columns {
+    grid-template-areas: "item-a" "item-b" "item-c";
+    grid-template-columns: 100%;
+  }
+
+  .cargo-order-card-popup__column-price {
+    padding: 10px 15px;
+  }
+
+  .cargo-order-card-popup__column-price-btns a {
+    padding-right: 0;
+  }
+
+  .cargo-order-card-popup__metrics-list {
+    grid-template-columns: 1fr;
+  }
+
   .profile__checkboxes label + label {
     margin-left: 0;
+  }
+
+  .employees__header {
+    display: block;
+  }
+
+  .employees__btn {
+    margin-top: 10px;
+  }
+
+  .employee-card__tel {
+    display: block;
+  }
+
+  .employee-card__tel + .employee-card__tel {
+    margin-left: 0;
+    margin-top: 10px;
+  }
+
+  .benefits__img {
+    margin-left: 20%;
+  }
+
+  .benefits__list {
+    max-width: 100%;
+  }
+
+  .popular-directions__tabs-content:before {
+    content: none;
+  }
+
+  .popular-directions__content {
+    width: 100%;
+  }
+
+  .popular-directions__list-title {
+    margin-left: 33%;
+    margin-bottom: 15px;
+    margin-top: 20px;
+  }
+
+  .popular-directions__list {
+    margin-left: 30%;
+    padding-bottom: 20px;
+  }
+
+  #popular-directions-tab-1:after {
+    content: none;
   }
 
   .add-auction__payment-checkboxes {
@@ -15418,6 +15802,12 @@ input:-internal-autofill-selected {
   }
 }
 
+@media (max-width: 390px) {
+  .orders-tape__content {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
 @media (max-width: 375px) {
   .search-results__cards {
     grid-template-columns: repeat(1, 1fr);
@@ -15428,6 +15818,18 @@ input:-internal-autofill-selected {
   .settings-your-company__content__block .wrapper--border .wrapper--grid__item.verification-and-password .change-password {
     display: block;
     margin: 10px auto 0;
+  }
+}
+
+@media (max-width: 370px) {
+  .employee__field .employee-number {
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 340px) {
+  .order-card__label + .order-card__label {
+    margin-left: 0px;
   }
 }
 
@@ -15538,5 +15940,11 @@ input:-internal-autofill-selected {
     width: 65px;
     height: 25px;
     font-size: 14px;
+  }
+}
+
+@media (max-widtH: 545px) {
+  .contact-verification__item-field {
+    width: 100%;
   }
 }
