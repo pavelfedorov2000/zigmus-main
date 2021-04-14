@@ -45,5 +45,16 @@ $('.carrier-profile__check-dropdown').on('click', function () {
 
 $('.carrier-profile__item-head').on('click', function () {
     $(this).toggleClass('carrier-profile__item-head--active')
-    $(this).parent().find('.carrier-profile__item-content ').toggleClass('carrier-profile__item-content--active');
+    $(this).parent().find('.carrier-profile__item-content').toggleClass('carrier-profile__item-content--active');
+    $(this).parent().find('.carrier-profile__item-content').slideToggle('1000');
+});
+
+$('.knowledge-base__question-descr').on('click', function () {
+    $(this).toggleClass('knowledge-base__question-descr--active')
+    $(this).find('.knowledge-base__question-descr-content ').toggleClass('knowledge-base__question-descr-content--active');
+});
+
+$('.knowledge-base__start-working-block').on('click', function () {
+    $(this).toggleClass('knowledge-base__start-working-block--active')
+    $(this).find('.knowledge-base__start-working-block-content').toggleClass('knowledge-base__start-working-block-content--active');
 });

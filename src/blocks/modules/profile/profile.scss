@@ -1840,3 +1840,30 @@
         }
     }
 }
+
+.transport__content {
+    @media (max-width: 1200px) {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-areas: "block-a" "block-b";
+    }
+}
+
+.transport-body {
+    @media (max-width:1200px) {
+        grid-area: block-b;
+        width: 100%;
+    }
+}
+
+.p-profile__aside-item {
+    @media (max-width: 1200px) {
+        grid-area: block-a;
+    }
+}
+
+.transport-aside {
+    @media (max-width: 1200px) {
+        margin: 0 0 20px;
+    }
+}

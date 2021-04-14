@@ -142,8 +142,20 @@ $('.carrier-profile__check-dropdown').on('click', function () {
 
 $('.carrier-profile__item-head').on('click', function () {
     $(this).toggleClass('carrier-profile__item-head--active')
-    $(this).parent().find('.carrier-profile__item-content ').toggleClass('carrier-profile__item-content--active');
+    $(this).parent().find('.carrier-profile__item-content').toggleClass('carrier-profile__item-content--active');
+    $(this).parent().find('.carrier-profile__item-content').slideToggle('1000');
 });
+
+$('.knowledge-base__question-descr').on('click', function () {
+    $(this).toggleClass('knowledge-base__question-descr--active')
+    $(this).find('.knowledge-base__question-descr-content ').toggleClass('knowledge-base__question-descr-content--active');
+});
+
+$('.knowledge-base__start-working-block').on('click', function () {
+    $(this).toggleClass('knowledge-base__start-working-block--active')
+    $(this).find('.knowledge-base__start-working-block-content').toggleClass('knowledge-base__start-working-block-content--active');
+});
+
 
     // ========================= OPENING BURGER-MENU ===================== //
 $('.burger-menu .button-opening-burger-menu').click(function () {
@@ -656,15 +668,15 @@ $('.cancel-btn').on('click', function () {
 
     //================ASIDE======================//
 
-    $(window).resize(function(){
-    var windowWidth = $('body').innerWidth();
-    if(windowWidth < 1200){$(".p-profile__aside").addClass('aside-none');
-$('.p-profile__fullness-percent--adaptive').removeClass('percent-none');
-}
-    if(windowWidth > 1200){$(".p-profile__aside").removeClass('aside-none');
-    $('.p-profile__fullness-percent--adaptive').addClass('percent-none');
-    }
-  });
+    // $(window).resize(function(){
+//     var windowWidth = $('body').innerWidth();
+//     if(windowWidth < 1200){$(".p-profile__aside").addClass('aside-none');
+// $('.p-profile__fullness-percent--adaptive').removeClass('percent-none');
+// }
+//     if(windowWidth > 1200){$(".p-profile__aside").removeClass('aside-none');
+//     $('.p-profile__fullness-percent--adaptive').addClass('percent-none');
+//     }
+//   });
 
     $('.search-results__btn').on('click', function () {
     $(this).addClass('search-results__btn--active');

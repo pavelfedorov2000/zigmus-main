@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('../_head.html')
+
+<body>
+    @@include('../../blocks/modules/loader/_loader.html')
+
+    <div class="wrapper">
+        @@include('../../blocks/modules/header/_header.html')
+
+        <section class="top-page">
+            <div class="container">
+                <nav class="breadcrumbs">
+                    <a class="breadcrumbs__item" href="#">
+                        <svg width="11" height="8" viewBox="0 0 11 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M0.646446 3.64645C0.451184 3.84171 0.451184 4.15829 0.646446 4.35355L3.82843 7.53553C4.02369 7.7308 4.34027 7.7308 4.53553 7.53553C4.7308 7.34027 4.7308 7.02369 4.53553 6.82843L1.70711 4L4.53553 1.17157C4.7308 0.976311 4.7308 0.659728 4.53553 0.464466C4.34027 0.269204 4.02369 0.269204 3.82843 0.464466L0.646446 3.64645ZM11 3.5L1 3.5V4.5L11 4.5V3.5Z"
+                                fill="#343434" />
+                        </svg>
+                        Хлебные крошки
+                    </a>
+                </nav>
+                <h1 class="title page-title top-page__title title--white">
+                    О компании ZIGMUS
+                </h1>
+            </div>
+        </section>
+
+        <!-- <div class="container"> -->
+            <div class="about-us__zigmus-stats">
+                <h2 class="about-us__zigmus-stats-title">ZIGMUS в цифрах</h2>
+                <div class="about-us__zigmus-stats-info">
+                    <div class="about-us__zigmus-stats-item">
+                        <p class="about-us__zigmus-stats-item-number">5.473</p>
+                        <p class="about-us__zigmus-stats-item-text">Грузов</p>
+                    </div>
+                    <div class="about-us__zigmus-stats-item">
+                        <p class="about-us__zigmus-stats-item-number">3.251</p>
+                        <p class="about-us__zigmus-stats-item-text">Машин</p>
+                    </div>
+                    <div class="about-us__zigmus-stats-item">
+                        <p class="about-us__zigmus-stats-item-number">2.533</p>
+                        <p class="about-us__zigmus-stats-item-text">Компаний</p>
+                    </div>
+                    <div class="about-us__zigmus-stats-item">
+                        <p class="about-us__zigmus-stats-item-number">89%</p>
+                        <p class="about-us__zigmus-stats-item-text">Проверенных</p>
+                    </div>
+                    <div class="about-us__zigmus-stats-item">
+                        <p class="about-us__zigmus-stats-item-number">2019</p>
+                        <p class="about-us__zigmus-stats-item-text">Год основания</p>
+                    </div>
+                    <div class="about-us__zigmus-stats-item">
+                        <p class="about-us__zigmus-stats-item-number">34+</p>
+                        <p class="about-us__zigmus-stats-item-text">Сотрудников в штате</p>
+                    </div>
+                    <div class="about-us__zigmus-stats-item">
+                        <p class="about-us__zigmus-stats-item-number">Все</p>
+                        <p class="about-us__zigmus-stats-item-text">Направления для перевозок</p>
+                    </div>
+                    <div class="about-us__zigmus-stats-item">
+                        <p class="about-us__zigmus-stats-item-number">5/5</p>
+                        <p class="about-us__zigmus-stats-item-text">Наш рейтинг у пользователей</p>
+                    </div>
+                </div>
+            </div>
+
+            <section id="why-we" class="section forget about-us__zigmus-descr" style="background-image: url(../img/bg/forget_bg.jpg);">
+                <div class="about-us__zigmus-descr-text">
+                    <h2 class="about-us__zigmus-descr-title">Платформа
+                        ZIGMUS — Это будущее грузоперевозок, уже сегодня</h2>
+                        <p>Ключевая особенность ZIGMUS, это оплата за результат, безопасная сделка и база проверенных перевозчиков с которыми вы можете работать и не ждать подвоха</p>
+                    <button class="about-us__zigmus-descr-btn">Подробнее о работе ZIGMUS</button>
+                </div>
+            </section>
+            
+            <section class="about-us__company-mission">
+                <div class="container about-us__company-mission-container">
+                    <div class="about-us__company-mission-text">
+                        <h2 class="about-us__company-mission-title">
+                            Миссия и цель компании ZIGMUS
+                        </h2>
+                        <p class="about-us__company-mission-descr">
+                            Кратко описать к чему стремиться компания и какие у нее принципы (Желательно тоже от Алексея)
+                        </p>
+                    </div>
+                    <div class="about-us__company-mission-img">
+                        <img src="../img/campaign-creators.svg" alt="">
+                    </div>
+                </div>
+            </section>
+
+            @@include('../../blocks/modules/founder/_founder.html')
+
+            @@include('../../blocks/modules/clients/_clients.html')
+
+            @@include('../../blocks/modules/logos/_logos.html')
+
+            @@include('../../blocks/modules/renewal/_renewal.html')
+
+            <section class="section forget " style="background-image: url(../img/bg/big-map.svg);">
+                <div class="container">
+                    <h2 class="about-us__work-countries">ZIGMUS работает по всей Европе и странам СНГ</h2>
+                    
+                </div>
+            </section>
+            
+            @@include('../../blocks/modules/registration/_registration.html')
+
+
+        <!-- </div> -->
+
+
+        @@include('../../blocks/modules/footer/_footer.html')
+
+        <div class="overlay">
+            @@include('../../blocks/modules/popups/_popups.html')
+        </div>
+    </div>
+
+    @@include('../_js.html')
+
+</body>
+
+</html>

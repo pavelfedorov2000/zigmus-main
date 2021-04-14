@@ -10,6 +10,12 @@
 @import 'base/general';
 
 @import "../blocks/modules";
+@import "../blocks/modules/registration/registration.scss";
+@import "../blocks/modules/renewal/renewal.scss";
+@import "../blocks/modules/founder/founder.scss";
+@import "../blocks/modules/forget/forget.scss";
+@import "../blocks/modules/about-us/about-us.scss";
+@import "../blocks/modules/how-it-works/how-it-works.scss";
 @import "../blocks/modules/auct-cargo/auction-cargo.scss";
 @import "../blocks/modules/auct-transport/auct-transport.scss";
 @import "../blocks/modules/add-auction/add-auction.scss";
@@ -24,6 +30,7 @@
 @import "../blocks/modules/settings-your-company/settings-your-company.scss";
 @import "../blocks/modules/balance/balance.scss";
 @import "../blocks/modules/loader/loader.scss";
+@import "../blocks/modules/knowledge-base/knowledge-base.scss";
 @import "../blocks/modules/carrier-profile/carrier-profile.scss";
 @import "../blocks/modules/general-dashboard/general-dashboard.scss";
 @import "../blocks/modules/transport-order-card/transport-order-card.scss";

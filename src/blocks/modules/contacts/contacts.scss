@@ -8,6 +8,9 @@
 
     &__item+&__item {
         margin-left: 80px;
+        @media (max-width: 425px) {
+            margin-left: 0;
+        }
     }
 }
 
@@ -22,6 +25,9 @@
     &__inner {
         @include flex;
         align-items: center;
+        @media (max-width: 1023px) {
+            display: block;
+        }
     }
 
     // .contacts__form
@@ -32,6 +38,12 @@
         background: linear-gradient(239.5deg, rgba(255, 255, 255, 0.35) -0.02%, rgba(255, 255, 255, 0) 68.53%), $blue;
         border-radius: 10px;
         padding: 30px;
+        @media (max-width: 1023px) {
+            width: 100%;
+        }
+        @media (max-width: 545px) {
+            padding: 15px;
+        }
     }
 
     // .contacts__items
@@ -39,6 +51,10 @@
     &__items {
 
         display: flex;
+        @media (max-width: 1023px) {
+            justify-content: center;
+            margin-top: 20px;
+        }
 
         &--column {
             flex-direction: column;
@@ -89,7 +105,11 @@
 
     // .contacts__item-content
 
-    &__item-content {}
+    &__item-content {
+        @media (max-width: 545px) {
+            width: 200px;
+        }
+    }
 
     &__item-title {
         font-size: 18px;
@@ -107,6 +127,9 @@
 
     &__license {
         position: relative;
+        @media (max-width: 1023px) {
+            margin-top: 20px;
+        }
     }
 
     &__license-title {
@@ -138,6 +161,14 @@
         max-width: 100%;
         height: auto;
         width: 425px;
+    }
+    &__letter-form-btn {
+        @media (max-width: 545px) {
+            width: 100px;
+        }
+        @media (max-width: 375px) {
+            width: 90px;
+        }
     }
 }
 
@@ -172,6 +203,11 @@
         line-height: 24px;
         color: rgba($dark, .6);
 
+        @media (max-width: 545px) {
+            padding-right: 90px;
+            padding-left: 5px;
+        }
+
         &::placeholder {
             color: rgba($dark, .6);
         }
@@ -199,7 +235,11 @@
 .address {
     padding: 64px 0 73px;
 
-    &__inner {}
+    &__inner {
+        @media (max-width: 545px) {
+            padding: 0 20px;
+        }
+    }
 
     &__item+&__item {
         margin-top: 60px;
