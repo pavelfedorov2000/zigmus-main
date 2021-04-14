@@ -1,3 +1,6 @@
+$.fn.hasAttr = function(name) {  
+    return this.attr(name) !== undefined;
+ };
 $('.input').on('change', function () {
     $(this).parent().find('button').show();
 });
@@ -10,10 +13,37 @@ $('.reset-filter-btn').on('click', function () {
 $('.radio-field__label').on('click', function () {
     $(this).find('span').addClass('checked');
     $(this).siblings().find('span').removeClass('checked');
+    // if ($(this).find('div').hasClass('focused checked')) {
+    //     $(this).find('div').removeClass('focused checked');
+    // } else {    
+    //     $(this).find('div').addClass('focused checked');
+    // }
+
+    // if ($($(this).find('span').hasClass('checked'))) {
+    //     $(this).find('span').removeClass('checked');
+    // } else {
+    //     $(this).find('span').addClass('checked');
+    // }
+
+    // if($(this).find('input').hasAttr('checked')) {
+    //     $(this).find('input').removeAttr("checked", "checked");
+    // } else {
+    //     $(this).find('input').attr("checked", "checked");
+    // }
 });
 
-$('.oval-check').on('click', function () {
-    $(this).find('span').toggleClass('checked');
+
+ $('.oval-check').on('click', function() {
+     $(this).find('span').toggleClass('checked');
+    if($(this).find('input').hasAttr('checked')) {
+        $(this).find('input').removeAttr("checked", "checked");
+    } else {
+        $(this).find('input').attr("checked", "checked");
+    }
+});
+
+$('.filters__reset-btn').on('click', function () {
+    $(this).parent().parent().parent().find('input').removeAttr('checked');
 });
 
 $('.gabarits__minus-btn').on('click', function (e) {

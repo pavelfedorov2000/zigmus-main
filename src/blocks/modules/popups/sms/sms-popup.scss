@@ -1,6 +1,15 @@
 .sms-popup {
     display: none;
     min-height: 331px;
+    @media (max-width: 425px) {
+        width: 95%;
+    }
+
+    &__form {
+        @media (max-width: 425px) {
+            padding: 45px 15px;
+        }
+    }
 
     &__title {
         margin-bottom: 5px;

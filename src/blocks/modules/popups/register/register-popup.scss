@@ -1,7 +1,17 @@
+
 .register-popup {
     display: none;
     width: 750px;
     min-height: 630px;
+    @media (max-width: 768px) {
+        width: 95%;
+    }
+
+    &__inner {
+        @media (max-width: 768px) {
+            display: grid;
+        }
+    }
 
     &__block {
         padding: 50px 40px;
@@ -13,6 +23,12 @@
         width: 50%;
         box-shadow: 0px 10px 40px rgba(0, 4, 41, 0.05);
         padding-right: 40px;
+        @media (max-width: 768px) {
+             width: 100%;
+        }
+        @media (max-width: 425px) {
+            padding: 15px
+        }
     }
 
     // .register-popup__title
@@ -71,6 +87,9 @@
         padding-left: 40px;
         background: $blue;
         color: #ffffff;
+        @media (max-width :768px) {
+            width: 100%;
+        }
     }
 
     &__blue-block-title {

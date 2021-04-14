@@ -2098,9 +2098,8 @@ required-tab--mini.tab--active {
 }
 
 .response-popup__form {
-  padding: 30px 0 30px 30px;
+  padding: 30px;
   background: #f5f9ff;
-  width: 638px;
   border-radius: 8px;
 }
 
@@ -14848,6 +14847,22 @@ input:-internal-autofill-selected {
 }
 
 @media (max-width: 768px) {
+  .register-popup {
+    width: 95%;
+  }
+
+  .register-popup__inner {
+    display: grid;
+  }
+
+  .register-popup__form {
+    width: 100%;
+  }
+
+  .register-popup__blue-block {
+    width: 100%;
+  }
+
   .cargo-order-card-popup__title-text {
     display: block;
   }
@@ -14881,6 +14896,19 @@ input:-internal-autofill-selected {
 
   .cargo-order-card-popup__column-metrics {
     margin-left: 0;
+  }
+
+  .response-popup {
+    width: 95%;
+  }
+
+  .response-popup__section {
+    width: 100%;
+  }
+
+  .span-text {
+    display: block;
+    padding-left: 0;
   }
 
   .section-results {
@@ -16829,6 +16857,42 @@ input:-internal-autofill-selected {
   .tab--active,
   required-tab--active {
     padding: 9px 55px;
+  }
+
+  .enter-popup {
+    width: 300px;
+  }
+
+  .enter-popup__form {
+    padding: 15px;
+  }
+
+  .enter-popup__form-item {
+    padding: 10px;
+  }
+
+  .register-popup__form {
+    padding: 15px;
+  }
+
+  .sms-popup {
+    width: 95%;
+  }
+
+  .sms-popup__form {
+    padding: 45px 15px;
+  }
+
+  .forgot-password-popup {
+    width: 300px;
+  }
+
+  .forgot-password-popup__form {
+    padding: 15px;
+  }
+
+  .forgot-password-popup__form-item {
+    padding: 10px;
   }
 
   .cargo-order-card-popup__content {
