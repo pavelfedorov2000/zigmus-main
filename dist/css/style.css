@@ -14172,6 +14172,41 @@ input:-internal-autofill-selected {
     margin: 0 0 20px;
   }
 
+  .profile-reg__content {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-areas: "block-a block-b" "block-c block-c";
+  }
+
+  .profile-reg__body {
+    grid-area: block-c;
+    width: 100%;
+  }
+
+  .profile-reg__aside {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    margin-bottom: 20px;
+    margin-left: 0;
+  }
+
+  .profile-reg__aside-item {
+    grid-area: block-a;
+    margin-right: 20px;
+    width: 205px;
+  }
+
+  .profile-reg__skip-step {
+    grid-area: block-b;
+    width: 205px;
+  }
+
+  .profile-reg__aside .profile-reg__skip-step {
+    margin-top: 0;
+  }
+
   .main-filters__col {
     width: 25%;
   }
@@ -16470,6 +16505,14 @@ input:-internal-autofill-selected {
 
   .contact-verification__item-status {
     margin-top: 5px;
+  }
+
+  .profile-reg__aside {
+    display: block;
+  }
+
+  .profile-reg__aside .profile-reg__skip-step {
+    margin-top: 20px;
   }
 
   .oval-check + .oval-check {

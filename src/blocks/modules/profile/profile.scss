@@ -1867,3 +1867,55 @@
         margin: 0 0 20px;
     }
 }
+
+.profile-reg__content {
+    @media (max-width: 1200px) {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-areas: "block-a block-b" "block-c block-c";
+    }
+}
+
+.profile-reg__body {
+    @media (max-width: 1200px) {
+        grid-area: block-c;
+        width: 100%;
+    }
+}
+
+.profile-reg__aside {
+    @media (max-width: 1200px) {
+        display: flex;
+        width: 100%;
+        margin-bottom: 20px;
+        margin-left: 0;
+    }
+    @media (max-width: 545px) {
+        display: block;
+    }
+}
+
+.profile-reg__aside-item {
+    @media (max-width: 1200px) {
+        grid-area: block-a;
+        margin-right: 20px;
+        width: 205px;
+    }
+}
+
+.profile-reg__skip-step {
+    @media (max-width: 1200px) {
+            grid-area: block-b;
+            width: 205px;
+    }
+    
+}
+
+.profile-reg__aside .profile-reg__skip-step  {
+    @media (max-width: 1200px) {
+        margin-top: 0;
+    }
+    @media (max-width: 545px) {
+        margin-top: 20px;
+    }
+}
